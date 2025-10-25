@@ -1,56 +1,62 @@
 {
-  "openapi": "3.0.3",
+  "openapi": "3.0.0",
   "info": {
-    "title": "Robots Web API",
-    "description": "Documentation for Users API",
-    "version": "1.0.0"
+    "title": "Robots API Documentation",
+    "version": "1.0.0",
+    "description": "API documentation for managing Users, Projects, Robots, and Buttons in the Robots system."
   },
-  "servers": [{ "url": "http://localhost/robots_api/api" }],
+  "servers": [
+    {
+      "url": "http://localhost/robots_api/api",
+      "description": "Local API server"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Users",
+      "description": "Endpoints for managing users"
+    },
+    {
+      "name": "Projects",
+      "description": "Endpoints for managing projects"
+    },
+    {
+      "name": "Robots",
+      "description": "Endpoints for managing robots"
+    },
+    {
+      "name": "Buttons",
+      "description": "Endpoints for managing buttons assigned to robots"
+    }
+  ],
   "paths": {
     "/users": {
       "get": {
+        "tags": ["Users"],
         "summary": "Get all users",
         "responses": {
-          "200": {
-            "description": "List of users",
-            "content": {
-              "application/json": {}
-            }
-          }
+          "200": { "description": "List of all users" }
         }
       },
       "post": {
+        "tags": ["Users"],
         "summary": "Create a new user",
         "requestBody": {
           "required": true,
           "content": {
             "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "Username": { "type": "string" },
-                  "Password": { "type": "string" },
-                  "TelephoneNumber": { "type": "string" },
-                  "ProjectName": { "type": "string" }
-                },
-                "required": [
-                  "Username",
-                  "Password",
-                  "TelephoneNumber",
-                  "ProjectName"
-                ]
-              }
+              "schema": { "$ref": "#/components/schemas/User" }
             }
           }
         },
         "responses": {
-          "201": { "description": "User created" },
-          "400": { "description": "Missing required fields" }
+          "201": { "description": "User created successfully" }
         }
       }
     },
     "/users/{id}": {
       "get": {
+        "tags": ["Users"],
         "summary": "Get a user by ID",
         "parameters": [
           {
@@ -61,11 +67,12 @@
           }
         ],
         "responses": {
-          "200": { "description": "User found" },
+          "200": { "description": "User details" },
           "404": { "description": "User not found" }
         }
       },
       "put": {
+        "tags": ["Users"],
         "summary": "Update a user by ID",
         "parameters": [
           {
@@ -79,30 +86,16 @@
           "required": true,
           "content": {
             "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "Username": { "type": "string" },
-                  "Password": { "type": "string" },
-                  "TelephoneNumber": { "type": "string" },
-                  "ProjectName": { "type": "string" }
-                },
-                "required": [
-                  "Username",
-                  "Password",
-                  "TelephoneNumber",
-                  "ProjectName"
-                ]
-              }
+              "schema": { "$ref": "#/components/schemas/User" }
             }
           }
         },
         "responses": {
-          "200": { "description": "User updated" },
-          "404": { "description": "User not found" }
+          "200": { "description": "User updated successfully" }
         }
       },
       "delete": {
+        "tags": ["Users"],
         "summary": "Delete a user by ID",
         "parameters": [
           {
@@ -113,8 +106,323 @@
           }
         ],
         "responses": {
-          "200": { "description": "User deleted" },
-          "404": { "description": "User not found" }
+          "200": { "description": "User deleted successfully" }
+        }
+      }
+    },
+
+    "/projects": {
+      "get": {
+        "tags": ["Projects"],
+        "summary": "Get all projects",
+        "responses": {
+          "200": { "description": "List of all projects" }
+        }
+      },
+      "post": {
+        "tags": ["Projects"],
+        "summary": "Create a new project",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Project" }
+            }
+          }
+        },
+        "responses": {
+          "201": { "description": "Project created successfully" }
+        }
+      }
+    },
+    "/projects/{id}": {
+      "get": {
+        "tags": ["Projects"],
+        "summary": "Get a project by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Project details" },
+          "404": { "description": "Project not found" }
+        }
+      },
+      "put": {
+        "tags": ["Projects"],
+        "summary": "Update a project by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Project" }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Project updated successfully" }
+        }
+      },
+      "delete": {
+        "tags": ["Projects"],
+        "summary": "Delete a project by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Project deleted successfully" }
+        }
+      }
+    },
+
+    "/robots": {
+      "get": {
+        "tags": ["Robots"],
+        "summary": "Get all robots",
+        "responses": {
+          "200": { "description": "List of all robots" }
+        }
+      },
+      "post": {
+        "tags": ["Robots"],
+        "summary": "Create a new robot",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Robot" }
+            }
+          }
+        },
+        "responses": {
+          "201": { "description": "Robot created successfully" }
+        }
+      }
+    },
+    "/robots/{id}": {
+      "get": {
+        "tags": ["Robots"],
+        "summary": "Get a robot by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Robot details" },
+          "404": { "description": "Robot not found" }
+        }
+      },
+      "put": {
+        "tags": ["Robots"],
+        "summary": "Update a robot by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Robot" }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Robot updated successfully" }
+        }
+      },
+      "delete": {
+        "tags": ["Robots"],
+        "summary": "Delete a robot by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Robot deleted successfully" }
+        }
+      }
+    },
+
+    "/buttons": {
+      "get": {
+        "tags": ["Buttons"],
+        "summary": "Get all buttons",
+        "responses": {
+          "200": { "description": "List of all buttons" }
+        }
+      },
+      "post": {
+        "tags": ["Buttons"],
+        "summary": "Create a new button",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Button" }
+            }
+          }
+        },
+        "responses": {
+          "201": { "description": "Button created successfully" }
+        }
+      }
+    },
+    "/buttons/{id}": {
+      "get": {
+        "tags": ["Buttons"],
+        "summary": "Get a button by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Button details" },
+          "404": { "description": "Button not found" }
+        }
+      },
+      "put": {
+        "tags": ["Buttons"],
+        "summary": "Update a button by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Button" }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Button updated successfully" }
+        }
+      },
+      "delete": {
+        "tags": ["Buttons"],
+        "summary": "Delete a button by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Button deleted successfully" }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "User": {
+        "type": "object",
+        "properties": {
+          "Username": { "type": "string", "example": "Ahmed" },
+          "Password": { "type": "string", "example": "123456" },
+          "TelephoneNumber": { "type": "string", "example": "+201234567890" },
+          "ProjectName": { "type": "string", "example": "AI Robot" }
+        }
+      },
+      "Project": {
+        "type": "object",
+        "properties": {
+          "ProjectName": { "type": "string", "example": "Airport Bot" },
+          "Description": {
+            "type": "string",
+            "example": "Smart robot for airport security"
+          },
+          "Location": { "type": "string", "example": "Saudi Arabia" },
+          "Image": { "type": "string", "example": "uploads/robot.jpg" }
+        }
+      },
+      "Robot": {
+        "type": "object",
+        "properties": {
+          "RobotName": { "type": "string", "example": "Guardian-X" },
+          "Image": { "type": "string", "example": "uploads/guardian.jpg" },
+          "Voltage": { "type": "integer", "example": 220 },
+          "Cycles": { "type": "integer", "example": 45 },
+          "Status": {
+            "type": "string",
+            "enum": ["Running", "Stop"],
+            "example": "Running"
+          },
+          "ActiveBtns": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": { "type": "integer", "example": 1 },
+                "name": {
+                  "type": "string",
+                  "enum": [
+                    "start",
+                    "stop",
+                    "forward",
+                    "backward",
+                    "SCHEDULING"
+                  ],
+                  "example": "start"
+                }
+              }
+            },
+            "example": [
+              { "id": 1, "name": "start" },
+              { "id": 2, "name": "stop" },
+              { "id": 3, "name": "SCHEDULING" }
+            ]
+          }
+        }
+      },
+      "Button": {
+        "type": "object",
+        "properties": {
+          "BtnName": { "type": "string", "example": "Start" },
+          "RobotId": { "type": "integer", "example": 1 },
+          "Color": { "type": "string", "example": "#4CAF50" },
+          "Operation": { "type": "string", "example": "/start" }
         }
       }
     }
