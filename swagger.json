@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "http://localhost/robots_api/api",
+      "url": "https://mahmoudmohammed.42web.io/robots_web_apis/api",
       "description": "Local API server"
     }
   ],
