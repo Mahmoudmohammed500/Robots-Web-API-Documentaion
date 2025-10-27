@@ -3,7 +3,7 @@
   "info": {
     "title": "Robots API Documentation",
     "version": "1.0.0",
-    "description": "API documentation for managing Users, Projects, Robots, and Buttons in the Robots system."
+    "description": "API documentation for managing Users, Projects, Robots, Buttons, and Authentication in the Robots system."
   },
   "servers": [
     {
@@ -12,6 +12,10 @@
     }
   ],
   "tags": [
+    {
+      "name": "Authentication",
+      "description": "User login and authentication endpoints"
+    },
     { "name": "Users", "description": "Endpoints for managing users" },
     { "name": "Projects", "description": "Endpoints for managing projects" },
     { "name": "Robots", "description": "Endpoints for managing robots" },
@@ -21,6 +25,65 @@
     }
   ],
   "paths": {
+    "/login": {
+      "post": {
+        "tags": ["Authentication"],
+        "summary": "Authenticate user login",
+        "description": "Validates a user's credentials (Username & Password) and returns user details on success.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Username": { "type": "string", "example": "mahmoud" },
+                  "Password": { "type": "string", "example": "123456" }
+                },
+                "required": ["Username", "Password"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Login successful",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Login successful"
+                    },
+                    "user": {
+                      "type": "object",
+                      "properties": {
+                        "id": { "type": "integer", "example": 1 },
+                        "Username": { "type": "string", "example": "mahmoud" },
+                        "TelephoneNumber": {
+                          "type": "string",
+                          "example": "+201234567890"
+                        },
+                        "ProjectName": {
+                          "type": "string",
+                          "example": "AI Robot"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Missing Username or Password" },
+          "401": { "description": "Invalid username or password" },
+          "500": { "description": "Database error" }
+        }
+      }
+    },
+
     "/users": {
       "get": {
         "tags": ["Users"],
