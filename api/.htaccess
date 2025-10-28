@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /robots_api/api/
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  RewriteRule ^login/?(.*)$ login.php [QSA,L]
+
+  RewriteRule ^users/?(.*)$ users.php [QSA,L]
+
+  RewriteRule ^projects/?(.*)$ projects.php [QSA,L]
+
+  RewriteRule ^robots/?(.*)$ robots.php [QSA,L]
+
+  RewriteRule ^buttons/?(.*)$ buttons.php [QSA,L]
+</IfModule>

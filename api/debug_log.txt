@@ -1,0 +1,3103 @@
+=== GET 2025-10-23 11:04:02 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-10-23 11:04:22 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-10-23 11:04:49 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+{
+  "Username": "Sara",
+  "Password": "bbbggg",
+  "TelephoneNumber": "0000000000",
+  "ProjectName": "third Project"
+}
+
+Decoded:
+Array
+(
+    [Username] => Sara
+    [Password] => bbbggg
+    [TelephoneNumber] => 0000000000
+    [ProjectName] => third Project
+)
+
+
+=== GET 2025-10-23 11:04:59 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== PUT 2025-10-23 11:05:29 ===
+URI: /robots_api/api/users.php/5
+ID: 5
+RAW:
+{
+  "Username": "Sara kamal",
+  "Password": "bbbggg",
+  "TelephoneNumber": "0000000000",
+  "ProjectName": "third Project"
+}
+
+Decoded:
+Array
+(
+    [Username] => Sara kamal
+    [Password] => bbbggg
+    [TelephoneNumber] => 0000000000
+    [ProjectName] => third Project
+)
+
+
+=== GET 2025-10-23 11:05:32 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== DELETE 2025-10-23 11:05:42 ===
+URI: /robots_api/api/users.php/5
+ID: 5
+RAW:
+{
+  "Username": "Sara kamal",
+  "Password": "bbbggg",
+  "TelephoneNumber": "0000000000",
+  "ProjectName": "third Project"
+}
+
+Decoded:
+Array
+(
+    [Username] => Sara kamal
+    [Password] => bbbggg
+    [TelephoneNumber] => 0000000000
+    [ProjectName] => third Project
+)
+
+
+=== GET 2025-10-23 11:05:45 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-10-23 11:06:18 ===
+URI: /robots_api/api/users.php/4
+ID: 4
+RAW:
+{
+  "Username": "Sara kamal",
+  "Password": "bbbggg",
+  "TelephoneNumber": "0000000000",
+  "ProjectName": "third Project"
+}
+
+Decoded:
+Array
+(
+    [Username] => Sara kamal
+    [Password] => bbbggg
+    [TelephoneNumber] => 0000000000
+    [ProjectName] => third Project
+)
+
+
+=== GET 2025-10-23 11:08:38 ===
+URI: /robots_api/api/users.
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-10-23 11:08:42 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-10-23 11:08:54 ===
+URI: /robots_api/api/users/3
+ID: 3
+RAW:
+{
+  "Username": "Sara kamal",
+  "Password": "bbbggg",
+  "TelephoneNumber": "0000000000",
+  "ProjectName": "third Project"
+}
+
+Decoded:
+Array
+(
+    [Username] => Sara kamal
+    [Password] => bbbggg
+    [TelephoneNumber] => 0000000000
+    [ProjectName] => third Project
+)
+
+
+=== GET 2025-10-23 11:09:02 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+{
+  "Username": "Sara kamal",
+  "Password": "bbbggg",
+  "TelephoneNumber": "0000000000",
+  "ProjectName": "third Project"
+}
+
+Decoded:
+Array
+(
+    [Username] => Sara kamal
+    [Password] => bbbggg
+    [TelephoneNumber] => 0000000000
+    [ProjectName] => third Project
+)
+
+
+=== GET 2025-10-25 10:24:15 ===
+URI: /robots_api/api/projects.php
+ID: null
+RAW:
+{
+  "ProjectName": "AirPort-Update",
+  "Description": "A smart robot that learns user behavior",
+  "Location": "Saudi-Arabia",
+  "Image": "uploads/robot.jpg"
+}
+
+Decoded:
+Array
+(
+    [ProjectName] => AirPort-Update
+    [Description] => A smart robot that learns user behavior
+    [Location] => Saudi-Arabia
+    [Image] => uploads/robot.jpg
+)
+
+
+=== GET 2025-10-25 10:24:25 ===
+URI: /robots_api/api/projects.php/2
+ID: 2
+RAW:
+
+Decoded:
+
+
+=== GET 2025-10-25 10:24:31 ===
+URI: /robots_api/api/projects.php/1
+ID: 1
+RAW:
+
+Decoded:
+
+
+=== PUT 2025-10-25 10:24:46 ===
+URI: /robots_api/api/projects.php/2
+ID: 2
+RAW:
+{
+  "ProjectName": "AirPort-Update",
+  "Description": "A smart robot that learns user behavior",
+  "Location": "Saudi-Arabia",
+  "Image": "uploads/robot.jpg"
+}
+
+Decoded:
+Array
+(
+    [ProjectName] => AirPort-Update
+    [Description] => A smart robot that learns user behavior
+    [Location] => Saudi-Arabia
+    [Image] => uploads/robot.jpg
+)
+
+
+=== GET 2025-10-25 10:24:51 ===
+URI: /robots_api/api/projects.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-10-25 10:26:10 ===
+URI: /robots_api/api/projects.php
+ID: null
+RAW:
+{
+  "ProjectName": "ccccccccc",
+  "Description": "xxxxxxxxxxxxxxxxx",
+  "Location": "xxxxxxxxxxxxxxxx",
+  "Image": "uploads/xxxxxxxxx.jpg"
+}
+
+Decoded:
+Array
+(
+    [ProjectName] => ccccccccc
+    [Description] => xxxxxxxxxxxxxxxxx
+    [Location] => xxxxxxxxxxxxxxxx
+    [Image] => uploads/xxxxxxxxx.jpg
+)
+
+
+=== GET 2025-10-25 10:26:14 ===
+URI: /robots_api/api/projects.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== DELETE 2025-10-25 10:26:36 ===
+URI: /robots_api/api/projects.php/3
+ID: 3
+RAW:
+{
+  "ProjectName": "ccccccccc",
+  "Description": "xxxxxxxxxxxxxxxxx",
+  "Location": "xxxxxxxxxxxxxxxx",
+  "Image": "uploads/xxxxxxxxx.jpg"
+}
+
+Decoded:
+Array
+(
+    [ProjectName] => ccccccccc
+    [Description] => xxxxxxxxxxxxxxxxx
+    [Location] => xxxxxxxxxxxxxxxx
+    [Image] => uploads/xxxxxxxxx.jpg
+)
+
+
+=== GET 2025-10-25 10:26:41 ===
+URI: /robots_api/api/projects.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-10-25 10:29:35 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-10-25 10:32:27 ===
+URI: /robots_api/api/projects/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-10-25 10:32:41 ===
+URI: /robots_api/api/projects/
+ID: null
+RAW:
+{
+  "ProjectName": "ccccccccc",
+  "Description": "xxxxxxxxxxxxxxxxx",
+  "Location": "xxxxxxxxxxxxxxxx",
+  "Image": "uploads/xxxxxxxxx.jpg"
+}
+
+Decoded:
+Array
+(
+    [ProjectName] => ccccccccc
+    [Description] => xxxxxxxxxxxxxxxxx
+    [Location] => xxxxxxxxxxxxxxxx
+    [Image] => uploads/xxxxxxxxx.jpg
+)
+
+
+=== POST 2025-10-25 10:33:14 ===
+URI: /robots_api/api/projects/
+ID: null
+RAW:
+{
+  "ProjectName": "Alpha",
+  "Description": "xxxxxxxxxxxxxxxxx",
+  "Location": "Jordan",
+  "Image": "uploads/JJJJJJJJ.jpg"
+}
+
+Decoded:
+Array
+(
+    [ProjectName] => Alpha
+    [Description] => xxxxxxxxxxxxxxxxx
+    [Location] => Jordan
+    [Image] => uploads/JJJJJJJJ.jpg
+)
+
+
+=== GET 2025-10-25 10:33:18 ===
+URI: /robots_api/api/projects/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== PUT 2025-10-25 10:34:02 ===
+URI: /robots_api/api/projects/4
+ID: 4
+RAW:
+{
+  "ProjectName": "Alpha",
+  "Description": "ALPHA-111111",
+  "Location": "Jordan",
+  "Image": "uploads/AlphaXX.jpg"
+}
+
+Decoded:
+Array
+(
+    [ProjectName] => Alpha
+    [Description] => ALPHA-111111
+    [Location] => Jordan
+    [Image] => uploads/AlphaXX.jpg
+)
+
+
+=== DELETE 2025-10-25 10:34:27 ===
+URI: /robots_api/api/projects/4
+ID: 4
+RAW:
+{
+  "ProjectName": "Alpha",
+  "Description": "ALPHA-111111",
+  "Location": "Jordan",
+  "Image": "uploads/AlphaXX.jpg"
+}
+
+Decoded:
+Array
+(
+    [ProjectName] => Alpha
+    [Description] => ALPHA-111111
+    [Location] => Jordan
+    [Image] => uploads/AlphaXX.jpg
+)
+
+
+=== GET 2025-10-25 11:28:18 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-10-25 11:28:37 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-10-25 11:29:12 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+  "RobotName": "SecurityBot-7",
+  "Image": "uploads/securitybot7.jpg",
+  "Voltage": 220,
+  "Cycles": 5,
+  "Status": "Running",
+  "ActiveBtns": [
+    { "id": 1, "name": "start" },
+    { "id": 2, "name": "stop" },
+    { "id": 5, "name": "SCHEDULING" }
+  ]
+}
+
+Decoded:
+Array
+(
+    [RobotName] => SecurityBot-7
+    [Image] => uploads/securitybot7.jpg
+    [Voltage] => 220
+    [Cycles] => 5
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 5
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== GET 2025-10-25 11:29:16 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-10-25 11:31:01 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+  "RobotName": "RoBot-8",
+  "Image": "uploads/securitybot7.jpg",
+  "Voltage": 200,
+  "Cycles": 10,
+  "Status": "Running",
+  "ActiveBtns": [
+    { "id": 1, "name": "start" },
+    { "id": 2, "name": "stop" },
+    { "id": 5, "name": "SCHEDULING" }
+  ]
+}
+
+Decoded:
+Array
+(
+    [RobotName] => RoBot-8
+    [Image] => uploads/securitybot7.jpg
+    [Voltage] => 200
+    [Cycles] => 10
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 5
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== GET 2025-10-25 11:31:06 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+  "RobotName": "RoBot-8",
+  "Image": "uploads/securitybot7.jpg",
+  "Voltage": 200,
+  "Cycles": 10,
+  "Status": "Running",
+  "ActiveBtns": [
+    { "id": 1, "name": "start" },
+    { "id": 2, "name": "stop" },
+    { "id": 5, "name": "SCHEDULING" }
+  ]
+}
+
+Decoded:
+Array
+(
+    [RobotName] => RoBot-8
+    [Image] => uploads/securitybot7.jpg
+    [Voltage] => 200
+    [Cycles] => 10
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 5
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== GET 2025-10-25 11:31:13 ===
+URI: /robots_api/api/robots/2
+ID: 2
+RAW:
+{
+  "RobotName": "RoBot-8",
+  "Image": "uploads/securitybot7.jpg",
+  "Voltage": 200,
+  "Cycles": 10,
+  "Status": "Running",
+  "ActiveBtns": [
+    { "id": 1, "name": "start" },
+    { "id": 2, "name": "stop" },
+    { "id": 5, "name": "SCHEDULING" }
+  ]
+}
+
+Decoded:
+Array
+(
+    [RobotName] => RoBot-8
+    [Image] => uploads/securitybot7.jpg
+    [Voltage] => 200
+    [Cycles] => 10
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 5
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== GET 2025-10-25 11:31:23 ===
+URI: /robots_api/api/robots/1
+ID: 1
+RAW:
+{
+  "RobotName": "RoBot-8",
+  "Image": "uploads/securitybot7.jpg",
+  "Voltage": 200,
+  "Cycles": 10,
+  "Status": "Running",
+  "ActiveBtns": [
+    { "id": 1, "name": "start" },
+    { "id": 2, "name": "stop" },
+    { "id": 5, "name": "SCHEDULING" }
+  ]
+}
+
+Decoded:
+Array
+(
+    [RobotName] => RoBot-8
+    [Image] => uploads/securitybot7.jpg
+    [Voltage] => 200
+    [Cycles] => 10
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 5
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== PUT 2025-10-25 11:32:05 ===
+URI: /robots_api/api/robots/2
+ID: 2
+RAW:
+{
+  "RobotName": "RoBot-8-Update",
+  "Image": "uploads/securitybot7.jpg",
+  "Voltage": 100,
+  "Cycles": 30,
+  "Status": "Stop",
+  "ActiveBtns": [
+    { "id": 1, "name": "start" },
+    { "id": 2, "name": "stop" }
+  ]
+}
+
+Decoded:
+Array
+(
+    [RobotName] => RoBot-8-Update
+    [Image] => uploads/securitybot7.jpg
+    [Voltage] => 100
+    [Cycles] => 30
+    [Status] => Stop
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+        )
+
+)
+
+
+=== GET 2025-10-25 11:32:13 ===
+URI: /robots_api/api/robots/2
+ID: 2
+RAW:
+{
+  "RobotName": "RoBot-8-Update",
+  "Image": "uploads/securitybot7.jpg",
+  "Voltage": 100,
+  "Cycles": 30,
+  "Status": "Stop",
+  "ActiveBtns": [
+    { "id": 1, "name": "start" },
+    { "id": 2, "name": "stop" }
+  ]
+}
+
+Decoded:
+Array
+(
+    [RobotName] => RoBot-8-Update
+    [Image] => uploads/securitybot7.jpg
+    [Voltage] => 100
+    [Cycles] => 30
+    [Status] => Stop
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+        )
+
+)
+
+
+=== GET 2025-10-25 11:32:18 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-10-25 11:32:49 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+  "RobotName": "RoBot-8-vvvvvvvvvv",
+  "Image": "uploads/vvvvvvv.jpg",
+  "Voltage": 100,
+  "Cycles": 30,
+  "Status": "Stop",
+  "ActiveBtns": [
+    { "id": 1, "name": "start" },
+    { "id": 2, "name": "stop" }
+  ]
+}
+
+Decoded:
+Array
+(
+    [RobotName] => RoBot-8-vvvvvvvvvv
+    [Image] => uploads/vvvvvvv.jpg
+    [Voltage] => 100
+    [Cycles] => 30
+    [Status] => Stop
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+        )
+
+)
+
+
+=== GET 2025-10-25 11:32:53 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== DELETE 2025-10-25 11:33:17 ===
+URI: /robots_api/api/robots/3
+ID: 3
+RAW:
+{
+  "RobotName": "RoBot-8-vvvvvvvvvv",
+  "Image": "uploads/vvvvvvv.jpg",
+  "Voltage": 100,
+  "Cycles": 30,
+  "Status": "Stop",
+  "ActiveBtns": [
+    { "id": 1, "name": "start" },
+    { "id": 2, "name": "stop" }
+  ]
+}
+
+Decoded:
+Array
+(
+    [RobotName] => RoBot-8-vvvvvvvvvv
+    [Image] => uploads/vvvvvvv.jpg
+    [Voltage] => 100
+    [Cycles] => 30
+    [Status] => Stop
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+        )
+
+)
+
+
+=== GET 2025-10-25 11:33:20 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-10-25 21:26:09 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-10-25 21:42:12 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-10-25 21:45:16 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-10-25 21:45:19 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-10-25 21:45:20 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-10-25 21:47:20 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-10-25 21:49:12 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-10-25 21:51:09 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+[
+  {
+    "BtnName": "Start",
+    "RobotId": 1,
+    "Color": "#4CAF50",
+    "Operation": "/start"
+  },
+  {
+    "BtnName": "Stop",
+    "RobotId": 1,
+    "Color": "#F44336",
+    "Operation": "/stop"
+  },
+  {
+    "BtnName": "Forward",
+    "RobotId": 2,
+    "Color": "#2196F3",
+    "Operation": "/forward"
+  },
+  {
+    "BtnName": "Backward",
+    "RobotId": 2,
+    "Color": "#FF9800",
+    "Operation": "/backward"
+  },
+  {
+    "BtnName": "Scheduling",
+    "RobotId": 3,
+    "Color": "#9C27B0",
+    "Operation": "/scheduling"
+  },
+  {
+    "BtnName": "Start",
+    "RobotId": 3,
+    "Color": "rgb(76, 175, 80)",
+    "Operation": "/start"
+  },
+  {
+    "BtnName": "Stop",
+    "RobotId": 4,
+    "Color": "rgb(244, 67, 54)",
+    "Operation": "/stop"
+  }
+]
+
+Decoded:
+Array
+(
+    [0] => Array
+        (
+            [BtnName] => Start
+            [RobotId] => 1
+            [Color] => #4CAF50
+            [Operation] => /start
+        )
+
+    [1] => Array
+        (
+            [BtnName] => Stop
+            [RobotId] => 1
+            [Color] => #F44336
+            [Operation] => /stop
+        )
+
+    [2] => Array
+        (
+            [BtnName] => Forward
+            [RobotId] => 2
+            [Color] => #2196F3
+            [Operation] => /forward
+        )
+
+    [3] => Array
+        (
+            [BtnName] => Backward
+            [RobotId] => 2
+            [Color] => #FF9800
+            [Operation] => /backward
+        )
+
+    [4] => Array
+        (
+            [BtnName] => Scheduling
+            [RobotId] => 3
+            [Color] => #9C27B0
+            [Operation] => /scheduling
+        )
+
+    [5] => Array
+        (
+            [BtnName] => Start
+            [RobotId] => 3
+            [Color] => rgb(76, 175, 80)
+            [Operation] => /start
+        )
+
+    [6] => Array
+        (
+            [BtnName] => Stop
+            [RobotId] => 4
+            [Color] => rgb(244, 67, 54)
+            [Operation] => /stop
+        )
+
+)
+
+
+=== POST 2025-10-25 21:51:29 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+  {
+    "BtnName": "Start",
+    "RobotId": 1,
+    "Color": "#4CAF50",
+    "Operation": "/start"
+  }
+  
+
+Decoded:
+Array
+(
+    [BtnName] => Start
+    [RobotId] => 1
+    [Color] => #4CAF50
+    [Operation] => /start
+)
+
+
+=== GET 2025-10-25 21:51:34 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-10-25 21:51:54 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+  {
+    "BtnName": "Stop",
+    "RobotId": 3,
+    "Color": "#4CAF50",
+    "Operation": "/stop"
+  }
+  
+
+Decoded:
+Array
+(
+    [BtnName] => Stop
+    [RobotId] => 3
+    [Color] => #4CAF50
+    [Operation] => /stop
+)
+
+
+=== POST 2025-10-25 21:52:08 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+  {
+    "BtnName": "stop",
+    "RobotId": 3,
+    "Color": "#4CAF50",
+    "Operation": "/stop"
+  }
+  
+
+Decoded:
+Array
+(
+    [BtnName] => stop
+    [RobotId] => 3
+    [Color] => #4CAF50
+    [Operation] => /stop
+)
+
+
+=== POST 2025-10-25 21:52:26 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+  {
+    "BtnName": "stop",
+    "RobotId": 1,
+    "Color": "#4CAF50",
+    "Operation": "/stop"
+  }
+  
+
+Decoded:
+Array
+(
+    [BtnName] => stop
+    [RobotId] => 1
+    [Color] => #4CAF50
+    [Operation] => /stop
+)
+
+
+=== POST 2025-10-25 21:52:38 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+  {
+    "BtnName": "stop",
+    "RobotId": 2,
+    "Color": "#4CAF50",
+    "Operation": "/stop"
+  }
+  
+
+Decoded:
+Array
+(
+    [BtnName] => stop
+    [RobotId] => 2
+    [Color] => #4CAF50
+    [Operation] => /stop
+)
+
+
+=== POST 2025-10-25 21:52:44 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+  {
+    "BtnName": "stop",
+    "RobotId": 4,
+    "Color": "#4CAF50",
+    "Operation": "/stop"
+  }
+  
+
+Decoded:
+Array
+(
+    [BtnName] => stop
+    [RobotId] => 4
+    [Color] => #4CAF50
+    [Operation] => /stop
+)
+
+
+=== POST 2025-10-25 21:52:50 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+  {
+    "BtnName": "stop",
+    "RobotId": 3,
+    "Color": "#4CAF50",
+    "Operation": "/stop"
+  }
+  
+
+Decoded:
+Array
+(
+    [BtnName] => stop
+    [RobotId] => 3
+    [Color] => #4CAF50
+    [Operation] => /stop
+)
+
+
+=== POST 2025-10-25 21:52:56 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+  {
+    "BtnName": "stop",
+    "RobotId": 3,
+    "Color": "#4CAF50",
+    "Operation": "/stop"
+  }
+  
+
+Decoded:
+Array
+(
+    [BtnName] => stop
+    [RobotId] => 3
+    [Color] => #4CAF50
+    [Operation] => /stop
+)
+
+
+=== POST 2025-10-25 21:53:04 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+  {
+    "BtnName": "stop",
+    "RobotId": 2,
+    "Color": "#4CAF50",
+    "Operation": "/stop"
+  }
+  
+
+Decoded:
+Array
+(
+    [BtnName] => stop
+    [RobotId] => 2
+    [Color] => #4CAF50
+    [Operation] => /stop
+)
+
+
+=== GET 2025-10-25 21:53:20 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== PUT 2025-10-25 21:53:54 ===
+URI: /robots_api/api/buttons/1
+ID: 1
+RAW:
+
+  {
+    "BtnName": "Update",
+    "RobotId": 2,
+    "Color": "#55555",
+    "Operation": "/update"
+  }
+  
+
+Decoded:
+Array
+(
+    [BtnName] => Update
+    [RobotId] => 2
+    [Color] => #55555
+    [Operation] => /update
+)
+
+
+=== GET 2025-10-25 21:54:22 ===
+URI: /robots_api/api/buttons/9
+ID: 9
+RAW:
+
+  {
+    "BtnName": "Update",
+    "RobotId": 2,
+    "Color": "#55555",
+    "Operation": "/update"
+  }
+  
+
+Decoded:
+Array
+(
+    [BtnName] => Update
+    [RobotId] => 2
+    [Color] => #55555
+    [Operation] => /update
+)
+
+
+=== DELETE 2025-10-25 21:54:28 ===
+URI: /robots_api/api/buttons/9
+ID: 9
+RAW:
+
+  {
+    "BtnName": "Update",
+    "RobotId": 2,
+    "Color": "#55555",
+    "Operation": "/update"
+  }
+  
+
+Decoded:
+Array
+(
+    [BtnName] => Update
+    [RobotId] => 2
+    [Color] => #55555
+    [Operation] => /update
+)
+
+
+=== GET 2025-10-26 14:03:03 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-10-26 14:03:19 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+  {
+    "BtnName": "Update",
+    "RobotId": 2,
+    "Color": "#55555",
+    "Operation": "/update"
+  }
+  
+
+Decoded:
+Array
+(
+    [BtnName] => Update
+    [RobotId] => 2
+    [Color] => #55555
+    [Operation] => /update
+)
+
+
+=== GET 2025-10-26 14:04:00 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+
+  {
+    "BtnName": "Update",
+    "RobotId": 2,
+    "Color": "#55555",
+    "Operation": "/update"
+  }
+  
+
+Decoded:
+Array
+(
+    [BtnName] => Update
+    [RobotId] => 2
+    [Color] => #55555
+    [Operation] => /update
+)
+
+
+=== GET 2025-10-26 14:04:47 ===
+URI: /robots_api/api/buttons/
+ID: null
+RAW:
+
+  {
+    "BtnName": "Update",
+    "RobotId": 2,
+    "Color": "#55555",
+    "Operation": "/update"
+  }
+  
+
+Decoded:
+Array
+(
+    [BtnName] => Update
+    [RobotId] => 2
+    [Color] => #55555
+    [Operation] => /update
+)
+
+
+=== POST 2025-10-26 14:05:12 ===
+URI: /robots_api/api/buttons/
+ID: null
+RAW:
+
+  {
+    "BtnName": "Update",
+    "RobotId": 3,
+    "Color": "#55555",
+    "Operation": "/update"
+  }
+  
+
+Decoded:
+Array
+(
+    [BtnName] => Update
+    [RobotId] => 3
+    [Color] => #55555
+    [Operation] => /update
+)
+
+
+=== GET 2025-10-26 14:13:02 ===
+URI: /robots_api/api/robots/1
+ID: 1
+RAW:
+
+  {
+    "BtnName": "Update",
+    "RobotId": 3,
+    "Color": "#55555",
+    "Operation": "/update"
+  }
+  
+
+Decoded:
+Array
+(
+    [BtnName] => Update
+    [RobotId] => 3
+    [Color] => #55555
+    [Operation] => /update
+)
+
+
+=== POST 2025-10-26 14:13:38 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+    "id": "1",
+    "RobotName": "SecurityBot-1200",
+    "Image": "uploads/securitybot7.jpg",
+    "projectId": "3",
+    "Voltage": "220",
+    "Cycles": "5",
+    "Status": "Running",
+    "ActiveBtns": [
+        {
+            "id": 1,
+            "name": "start"
+        },
+        {
+            "id": 2,
+            "name": "stop"
+        },
+        {
+            "id": 5,
+            "name": "SCHEDULING"
+        }
+    ]
+}
+Decoded:
+Array
+(
+    [id] => 1
+    [RobotName] => SecurityBot-1200
+    [Image] => uploads/securitybot7.jpg
+    [projectId] => 3
+    [Voltage] => 220
+    [Cycles] => 5
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 5
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== POST 2025-10-26 14:13:45 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+    "id": "1",
+    "RobotName": "SecurityBot-1200",
+    "Image": "uploads/securitybot7.jpg",
+    "projectId": "2",
+    "Voltage": "220",
+    "Cycles": "5",
+    "Status": "Running",
+    "ActiveBtns": [
+        {
+            "id": 1,
+            "name": "start"
+        },
+        {
+            "id": 2,
+            "name": "stop"
+        },
+        {
+            "id": 5,
+            "name": "SCHEDULING"
+        }
+    ]
+}
+Decoded:
+Array
+(
+    [id] => 1
+    [RobotName] => SecurityBot-1200
+    [Image] => uploads/securitybot7.jpg
+    [projectId] => 2
+    [Voltage] => 220
+    [Cycles] => 5
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 5
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== POST 2025-10-26 14:17:02 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+    "id": "1",
+    "RobotName": "SecurityBot-1200",
+    "Image": "uploads/securitybot7.jpg",
+    "projectId": "2",
+    "Voltage": "220",
+    "Cycles": "5",
+    "Status": "Running",
+    "ActiveBtns": [
+        {
+            "id": 1,
+            "name": "start"
+        },
+        {
+            "id": 2,
+            "name": "stop"
+        },
+        {
+            "id": 5,
+            "name": "SCHEDULING"
+        }
+    ]
+}
+Decoded:
+Array
+(
+    [id] => 1
+    [RobotName] => SecurityBot-1200
+    [Image] => uploads/securitybot7.jpg
+    [projectId] => 2
+    [Voltage] => 220
+    [Cycles] => 5
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 5
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== POST 2025-10-26 14:17:34 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+    "id": "1",
+    "RobotName": "SecurityBot-1200",
+    "Image": "uploads/securitybot7.jpg",
+    "projectId": "1",
+    "Voltage": "220",
+    "Cycles": "5",
+    "Status": "Running",
+    "ActiveBtns": [
+        {
+            "id": 1,
+            "name": "start"
+        },
+        {
+            "id": 2,
+            "name": "stop"
+        },
+        {
+            "id": 5,
+            "name": "SCHEDULING"
+        }
+    ]
+}
+Decoded:
+Array
+(
+    [id] => 1
+    [RobotName] => SecurityBot-1200
+    [Image] => uploads/securitybot7.jpg
+    [projectId] => 1
+    [Voltage] => 220
+    [Cycles] => 5
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 5
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== POST 2025-10-26 14:18:28 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+    "RobotName": "SecurityBot-1200",
+    "Image": "uploads/securitybot7.jpg",
+    "projectId": "1",
+    "Voltage": "220",
+    "Cycles": "5",
+    "Status": "Running",
+    "ActiveBtns": [
+        {
+            "id": 1,
+            "name": "start"
+        },
+        {
+            "id": 2,
+            "name": "stop"
+        },
+        {
+            "id": 5,
+            "name": "SCHEDULING"
+        }
+    ]
+}
+Decoded:
+Array
+(
+    [RobotName] => SecurityBot-1200
+    [Image] => uploads/securitybot7.jpg
+    [projectId] => 1
+    [Voltage] => 220
+    [Cycles] => 5
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 5
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== POST 2025-10-26 14:36:09 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+  "RobotName": "TestBot",
+  "Image": "uploads/testbot.jpg",
+  "projectId": 9999,
+  "Voltage": 110,
+  "Cycles": 3,
+  "Status": "Running",
+  "ActiveBtns": [
+    { "id": 1, "name": "start" },
+    { "id": 2, "name": "stop" }
+  ]
+}
+
+Decoded:
+Array
+(
+    [RobotName] => TestBot
+    [Image] => uploads/testbot.jpg
+    [projectId] => 9999
+    [Voltage] => 110
+    [Cycles] => 3
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+        )
+
+)
+
+
+=== POST 2025-10-26 14:36:16 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+  "RobotName": "TestBot",
+  "Image": "uploads/testbot.jpg",
+  "projectId": 1,
+  "Voltage": 110,
+  "Cycles": 3,
+  "Status": "Running",
+  "ActiveBtns": [
+    { "id": 1, "name": "start" },
+    { "id": 2, "name": "stop" }
+  ]
+}
+
+Decoded:
+Array
+(
+    [RobotName] => TestBot
+    [Image] => uploads/testbot.jpg
+    [projectId] => 1
+    [Voltage] => 110
+    [Cycles] => 3
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+        )
+
+)
+
+
+=== GET 2025-10-26 14:37:13 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+  "RobotName": "TestBot",
+  "Image": "uploads/testbot.jpg",
+  "projectId": 1,
+  "Voltage": 110,
+  "Cycles": 3,
+  "Status": "Running",
+  "ActiveBtns": [
+    { "id": 1, "name": "start" },
+    { "id": 2, "name": "stop" }
+  ]
+}
+
+Decoded:
+Array
+(
+    [RobotName] => TestBot
+    [Image] => uploads/testbot.jpg
+    [projectId] => 1
+    [Voltage] => 110
+    [Cycles] => 3
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+        )
+
+)
+
+
+=== POST 2025-10-26 14:37:25 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+  "RobotName": "TestBot",
+  "Image": "uploads/testbot.jpg",
+  "projectId": 1,
+  "Voltage": 110,
+  "Cycles": 3,
+  "Status": "Running",
+  "ActiveBtns": [
+    { "id": 1, "name": "start" },
+    { "id": 2, "name": "stop" }
+  ]
+}
+
+Decoded:
+Array
+(
+    [RobotName] => TestBot
+    [Image] => uploads/testbot.jpg
+    [projectId] => 1
+    [Voltage] => 110
+    [Cycles] => 3
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+        )
+
+)
+
+
+=== POST 2025-10-26 14:40:56 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+    "RobotName": "SecurityBot-2000",
+    "Image": "uploads/securitybot2000.jpg",
+    "projectId": 5,
+    "Voltage": "220",
+    "Cycles": "5",
+    "Status": "Running",
+    "ActiveBtns": [
+        { "id": 1, "name": "start" },
+        { "id": 2, "name": "stop" },
+        { "id": 3, "name": "SCHEDULING" }
+    ]
+}
+
+Decoded:
+Array
+(
+    [RobotName] => SecurityBot-2000
+    [Image] => uploads/securitybot2000.jpg
+    [projectId] => 5
+    [Voltage] => 220
+    [Cycles] => 5
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 3
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== POST 2025-10-26 14:46:24 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+    "RobotName": "SecurityBot-2000",
+    "Image": "uploads/securitybot2000.jpg",
+    "projectId": "5",
+    "Voltage": "220",
+    "Cycles": "5",
+    "Status": "Running",
+    "ActiveBtns": [
+        { "id": 1, "name": "start" },
+        { "id": 2, "name": "stop" },
+        { "id": 3, "name": "SCHEDULING" }
+    ]
+}
+
+Decoded:
+Array
+(
+    [RobotName] => SecurityBot-2000
+    [Image] => uploads/securitybot2000.jpg
+    [projectId] => 5
+    [Voltage] => 220
+    [Cycles] => 5
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 3
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== POST 2025-10-26 14:46:35 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+    "RobotName": "SecurityBot-2000",
+    "Image": "uploads/securitybot2000.jpg",
+    "projectId": 5,
+    "Voltage": "220",
+    "Cycles": "5",
+    "Status": "Running",
+    "ActiveBtns": [
+        { "id": 1, "name": "start" },
+        { "id": 2, "name": "stop" },
+        { "id": 3, "name": "SCHEDULING" }
+    ]
+}
+
+Decoded:
+Array
+(
+    [RobotName] => SecurityBot-2000
+    [Image] => uploads/securitybot2000.jpg
+    [projectId] => 5
+    [Voltage] => 220
+    [Cycles] => 5
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 3
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== GET 2025-10-26 14:54:32 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-10-26 14:54:40 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+    "RobotName": "SecurityBot-2000",
+    "Image": "uploads/securitybot2000.jpg",
+    "projectId": 5,
+    "Voltage": "220",
+    "Cycles": "5",
+    "Status": "Running",
+    "ActiveBtns": [
+        { "id": 1, "name": "start" },
+        { "id": 2, "name": "stop" },
+        { "id": 3, "name": "SCHEDULING" }
+    ]
+}
+
+Decoded:
+Array
+(
+    [RobotName] => SecurityBot-2000
+    [Image] => uploads/securitybot2000.jpg
+    [projectId] => 5
+    [Voltage] => 220
+    [Cycles] => 5
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 3
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== POST 2025-10-26 14:55:08 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+    "RobotName": "SecurityBot-New",
+    "Image": "uploads/securitybot2000.jpg",
+    "projectId": 5,
+    "Voltage": "220",
+    "Cycles": "7",
+    "Status": "Running",
+    "ActiveBtns": [
+        { "id": 1, "name": "start" },
+        { "id": 2, "name": "stop" },
+        { "id": 3, "name": "SCHEDULING" }
+    ]
+}
+
+Decoded:
+Array
+(
+    [RobotName] => SecurityBot-New
+    [Image] => uploads/securitybot2000.jpg
+    [projectId] => 5
+    [Voltage] => 220
+    [Cycles] => 7
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 3
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== POST 2025-10-26 14:55:23 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+    "RobotName": "SecurityBot-New1111",
+    "Image": "uploads/securitybot2000.jpg",
+    "projectId": 75,
+    "Voltage": "220",
+    "Cycles": "7",
+    "Status": "Running",
+    "ActiveBtns": [
+        { "id": 1, "name": "start" },
+        { "id": 2, "name": "stop" },
+        { "id": 3, "name": "SCHEDULING" }
+    ]
+}
+
+Decoded:
+Array
+(
+    [RobotName] => SecurityBot-New1111
+    [Image] => uploads/securitybot2000.jpg
+    [projectId] => 75
+    [Voltage] => 220
+    [Cycles] => 7
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 3
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== POST 2025-10-26 14:55:30 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+    "RobotName": "SecurityBot-New1111",
+    "Image": "uploads/securitybot2000.jpg",
+    "projectId": 1,
+    "Voltage": "220",
+    "Cycles": "7",
+    "Status": "Running",
+    "ActiveBtns": [
+        { "id": 1, "name": "start" },
+        { "id": 2, "name": "stop" },
+        { "id": 3, "name": "SCHEDULING" }
+    ]
+}
+
+Decoded:
+Array
+(
+    [RobotName] => SecurityBot-New1111
+    [Image] => uploads/securitybot2000.jpg
+    [projectId] => 1
+    [Voltage] => 220
+    [Cycles] => 7
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 3
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== POST 2025-10-26 14:56:11 ===
+URI: /robots_api/api/buttons/
+ID: null
+RAW:
+{
+    "RobotName": "SecurityBot-New1111",
+    "Image": "uploads/securitybot2000.jpg",
+    "projectId": 1,
+    "Voltage": "220",
+    "Cycles": "7",
+    "Status": "Running",
+    "ActiveBtns": [
+        { "id": 1, "name": "start" },
+        { "id": 2, "name": "stop" },
+        { "id": 3, "name": "SCHEDULING" }
+    ]
+}
+
+Decoded:
+Array
+(
+    [RobotName] => SecurityBot-New1111
+    [Image] => uploads/securitybot2000.jpg
+    [projectId] => 1
+    [Voltage] => 220
+    [Cycles] => 7
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 3
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== GET 2025-10-26 14:56:16 ===
+URI: /robots_api/api/buttons/
+ID: null
+RAW:
+{
+    "RobotName": "SecurityBot-New1111",
+    "Image": "uploads/securitybot2000.jpg",
+    "projectId": 1,
+    "Voltage": "220",
+    "Cycles": "7",
+    "Status": "Running",
+    "ActiveBtns": [
+        { "id": 1, "name": "start" },
+        { "id": 2, "name": "stop" },
+        { "id": 3, "name": "SCHEDULING" }
+    ]
+}
+
+Decoded:
+Array
+(
+    [RobotName] => SecurityBot-New1111
+    [Image] => uploads/securitybot2000.jpg
+    [projectId] => 1
+    [Voltage] => 220
+    [Cycles] => 7
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 3
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== GET 2025-10-26 14:56:24 ===
+URI: /robots_api/api/buttons/5
+ID: 5
+RAW:
+{
+    "RobotName": "SecurityBot-New1111",
+    "Image": "uploads/securitybot2000.jpg",
+    "projectId": 1,
+    "Voltage": "220",
+    "Cycles": "7",
+    "Status": "Running",
+    "ActiveBtns": [
+        { "id": 1, "name": "start" },
+        { "id": 2, "name": "stop" },
+        { "id": 3, "name": "SCHEDULING" }
+    ]
+}
+
+Decoded:
+Array
+(
+    [RobotName] => SecurityBot-New1111
+    [Image] => uploads/securitybot2000.jpg
+    [projectId] => 1
+    [Voltage] => 220
+    [Cycles] => 7
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 3
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== POST 2025-10-26 14:57:13 ===
+URI: /robots_api/api/buttons/
+ID: null
+RAW:
+{
+    "BtnID": "5",
+    "BtnName": "stop",
+    "RobotId": "12",
+    "Color": "#4CAF50",
+    "Operation": "/stop"
+}
+Decoded:
+Array
+(
+    [BtnID] => 5
+    [BtnName] => stop
+    [RobotId] => 12
+    [Color] => #4CAF50
+    [Operation] => /stop
+)
+
+
+=== POST 2025-10-26 14:57:26 ===
+URI: /robots_api/api/buttons/
+ID: null
+RAW:
+{
+    "BtnID": "5",
+    "BtnName": "stop",
+    "RobotId": "15",
+    "Color": "#4CAF50",
+    "Operation": "/stop"
+}
+Decoded:
+Array
+(
+    [BtnID] => 5
+    [BtnName] => stop
+    [RobotId] => 15
+    [Color] => #4CAF50
+    [Operation] => /stop
+)
+
+
+=== GET 2025-10-26 15:06:23 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+{
+    "BtnID": "5",
+    "BtnName": "stop",
+    "RobotId": "15",
+    "Color": "#4CAF50",
+    "Operation": "/stop"
+}
+Decoded:
+Array
+(
+    [BtnID] => 5
+    [BtnName] => stop
+    [RobotId] => 15
+    [Color] => #4CAF50
+    [Operation] => /stop
+)
+
+
+=== DELETE 2025-10-26 15:06:33 ===
+URI: /robots_api/api/users/4
+ID: 4
+RAW:
+{
+    "BtnID": "5",
+    "BtnName": "stop",
+    "RobotId": "15",
+    "Color": "#4CAF50",
+    "Operation": "/stop"
+}
+Decoded:
+Array
+(
+    [BtnID] => 5
+    [BtnName] => stop
+    [RobotId] => 15
+    [Color] => #4CAF50
+    [Operation] => /stop
+)
+
+
+=== DELETE 2025-10-26 15:06:40 ===
+URI: /robots_api/api/users/3
+ID: 3
+RAW:
+{
+    "BtnID": "5",
+    "BtnName": "stop",
+    "RobotId": "15",
+    "Color": "#4CAF50",
+    "Operation": "/stop"
+}
+Decoded:
+Array
+(
+    [BtnID] => 5
+    [BtnName] => stop
+    [RobotId] => 15
+    [Color] => #4CAF50
+    [Operation] => /stop
+)
+
+
+=== POST 2025-10-26 15:12:23 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+{
+  "Username": "test_user",
+  "Password": "123456",
+  "TelephoneNumber": "01098765432",
+  "ProjectName": "Main Project"
+}
+
+Decoded:
+Array
+(
+    [Username] => test_user
+    [Password] => 123456
+    [TelephoneNumber] => 01098765432
+    [ProjectName] => Main Project
+)
+
+
+=== POST 2025-10-26 15:13:10 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+{
+  "Username": "New_test_user",
+  "Password": "123456",
+  "TelephoneNumber": "01098765432",
+  "ProjectName": "Mainxxxxx"
+}
+
+Decoded:
+Array
+(
+    [Username] => New_test_user
+    [Password] => 123456
+    [TelephoneNumber] => 01098765432
+    [ProjectName] => Mainxxxxx
+)
+
+
+=== POST 2025-10-26 15:13:34 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+{
+  "Username": "New_test_user",
+  "Password": "123456",
+  "TelephoneNumber": "01098765432",
+  "ProjectName": "main project"
+}
+
+Decoded:
+Array
+(
+    [Username] => New_test_user
+    [Password] => 123456
+    [TelephoneNumber] => 01098765432
+    [ProjectName] => main project
+)
+
+
+=== POST 2025-10-26 15:14:03 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+{
+  "Username": "New_test_user1111",
+  "Password": "123456",
+  "TelephoneNumber": "01098765432",
+  "ProjectName": "main_project"
+}
+
+Decoded:
+Array
+(
+    [Username] => New_test_user1111
+    [Password] => 123456
+    [TelephoneNumber] => 01098765432
+    [ProjectName] => main_project
+)
+
+
+=== POST 2025-10-26 15:14:11 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+{
+  "Username": "New_test_user1111",
+  "Password": "123456",
+  "TelephoneNumber": "01098765432",
+  "ProjectName": "main prooject"
+}
+
+Decoded:
+Array
+(
+    [Username] => New_test_user1111
+    [Password] => 123456
+    [TelephoneNumber] => 01098765432
+    [ProjectName] => main prooject
+)
+
+
+=== GET 2025-10-26 15:18:30 ===
+URI: /robots_api/api/buttons/
+ID: null
+RAW:
+{
+  "Username": "New_test_user1111",
+  "Password": "123456",
+  "TelephoneNumber": "01098765432",
+  "ProjectName": "main prooject"
+}
+
+Decoded:
+Array
+(
+    [Username] => New_test_user1111
+    [Password] => 123456
+    [TelephoneNumber] => 01098765432
+    [ProjectName] => main prooject
+)
+
+
+=== DELETE 2025-10-26 15:18:38 ===
+URI: /robots_api/api/buttons/
+ID: null
+RAW:
+{
+  "Username": "New_test_user1111",
+  "Password": "123456",
+  "TelephoneNumber": "01098765432",
+  "ProjectName": "main prooject"
+}
+
+Decoded:
+Array
+(
+    [Username] => New_test_user1111
+    [Password] => 123456
+    [TelephoneNumber] => 01098765432
+    [ProjectName] => main prooject
+)
+
+
+=== DELETE 2025-10-26 15:23:13 ===
+URI: /robots_api/api/projects/
+projectId: null
+RAW:
+{
+  "Username": "New_test_user1111",
+  "Password": "123456",
+  "TelephoneNumber": "01098765432",
+  "ProjectName": "main prooject"
+}
+
+Decoded:
+Array
+(
+    [Username] => New_test_user1111
+    [Password] => 123456
+    [TelephoneNumber] => 01098765432
+    [ProjectName] => main prooject
+)
+
+
+=== GET 2025-10-26 15:33:34 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+  "Username": "New_test_user1111",
+  "Password": "123456",
+  "TelephoneNumber": "01098765432",
+  "ProjectName": "main prooject"
+}
+
+Decoded:
+Array
+(
+    [Username] => New_test_user1111
+    [Password] => 123456
+    [TelephoneNumber] => 01098765432
+    [ProjectName] => main prooject
+)
+
+
+=== DELETE 2025-10-26 15:33:44 ===
+URI: /robots_api/api/robots/16
+ID: 16
+RAW:
+{
+  "Username": "New_test_user1111",
+  "Password": "123456",
+  "TelephoneNumber": "01098765432",
+  "ProjectName": "main prooject"
+}
+
+Decoded:
+Array
+(
+    [Username] => New_test_user1111
+    [Password] => 123456
+    [TelephoneNumber] => 01098765432
+    [ProjectName] => main prooject
+)
+
+
+=== DELETE 2025-10-26 15:34:04 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+  "Username": "New_test_user1111",
+  "Password": "123456",
+  "TelephoneNumber": "01098765432",
+  "ProjectName": "main prooject"
+}
+
+Decoded:
+Array
+(
+    [Username] => New_test_user1111
+    [Password] => 123456
+    [TelephoneNumber] => 01098765432
+    [ProjectName] => main prooject
+)
+
+
+=== DELETE 2025-10-26 15:37:47 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+  "Username": "New_test_user1111",
+  "Password": "123456",
+  "TelephoneNumber": "01098765432",
+  "ProjectName": "main prooject"
+}
+
+Decoded:
+Array
+(
+    [Username] => New_test_user1111
+    [Password] => 123456
+    [TelephoneNumber] => 01098765432
+    [ProjectName] => main prooject
+)
+
+
+=== DELETE 2025-10-26 15:38:39 ===
+URI: /robots_api/api/projects/
+projectId: null
+RAW:
+{
+  "Username": "New_test_user1111",
+  "Password": "123456",
+  "TelephoneNumber": "01098765432",
+  "ProjectName": "main prooject"
+}
+
+Decoded:
+Array
+(
+    [Username] => New_test_user1111
+    [Password] => 123456
+    [TelephoneNumber] => 01098765432
+    [ProjectName] => main prooject
+)
+
+
+=== POST 2025-10-26 15:43:00 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+{
+  "Username": "bbbbbbbbbb",
+  "Password": "123456",
+  "TelephoneNumber": "01098765432",
+  "ProjectName": "main project"
+}
+
+Decoded:
+Array
+(
+    [Username] => bbbbbbbbbb
+    [Password] => 123456
+    [TelephoneNumber] => 01098765432
+    [ProjectName] => main project
+)
+
+
+=== GET 2025-10-26 15:43:08 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+{
+  "Username": "bbbbbbbbbb",
+  "Password": "123456",
+  "TelephoneNumber": "01098765432",
+  "ProjectName": "main project"
+}
+
+Decoded:
+Array
+(
+    [Username] => bbbbbbbbbb
+    [Password] => 123456
+    [TelephoneNumber] => 01098765432
+    [ProjectName] => main project
+)
+
+
+=== DELETE 2025-10-26 15:43:16 ===
+URI: /robots_api/api/users/6
+ID: 6
+RAW:
+{
+  "Username": "bbbbbbbbbb",
+  "Password": "123456",
+  "TelephoneNumber": "01098765432",
+  "ProjectName": "main project"
+}
+
+Decoded:
+Array
+(
+    [Username] => bbbbbbbbbb
+    [Password] => 123456
+    [TelephoneNumber] => 01098765432
+    [ProjectName] => main project
+)
+
+
+=== DELETE 2025-10-26 15:43:29 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+{
+  "Username": "bbbbbbbbbb",
+  "Password": "123456",
+  "TelephoneNumber": "01098765432",
+  "ProjectName": "main project"
+}
+
+Decoded:
+Array
+(
+    [Username] => bbbbbbbbbb
+    [Password] => 123456
+    [TelephoneNumber] => 01098765432
+    [ProjectName] => main project
+)
+
+
+=== DELETE 2025-10-26 15:43:45 ===
+URI: /robots_api/api/projects/
+projectId: null
+RAW:
+{
+  "Username": "bbbbbbbbbb",
+  "Password": "123456",
+  "TelephoneNumber": "01098765432",
+  "ProjectName": "main project"
+}
+
+Decoded:
+Array
+(
+    [Username] => bbbbbbbbbb
+    [Password] => 123456
+    [TelephoneNumber] => 01098765432
+    [ProjectName] => main project
+)
+
+
+=== DELETE 2025-10-26 15:51:49 ===
+URI: /robots_api/api/projects
+projectId: null
+RAW:
+{
+  "Username": "bbbbbbbbbb",
+  "Password": "123456",
+  "TelephoneNumber": "01098765432",
+  "ProjectName": "main project"
+}
+
+Decoded:
+Array
+(
+    [Username] => bbbbbbbbbb
+    [Password] => 123456
+    [TelephoneNumber] => 01098765432
+    [ProjectName] => main project
+)
+
+
+=== DELETE 2025-10-26 15:52:54 ===
+URI: /robots_api/api/projects/
+projectId: null
+RAW:
+{
+  "Username": "bbbbbbbbbb",
+  "Password": "123456",
+  "TelephoneNumber": "01098765432",
+  "ProjectName": "main project"
+}
+
+Decoded:
+Array
+(
+    [Username] => bbbbbbbbbb
+    [Password] => 123456
+    [TelephoneNumber] => 01098765432
+    [ProjectName] => main project
+)
+
+
+=== DELETE 2025-10-26 15:53:00 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+{
+  "Username": "bbbbbbbbbb",
+  "Password": "123456",
+  "TelephoneNumber": "01098765432",
+  "ProjectName": "main project"
+}
+
+Decoded:
+Array
+(
+    [Username] => bbbbbbbbbb
+    [Password] => 123456
+    [TelephoneNumber] => 01098765432
+    [ProjectName] => main project
+)
+
+
+=== GET 2025-10-27 21:06:12 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-10-27 21:07:06 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+{
+  "Username": "mahmoud",
+  "Password": "123456",
+  "TelephoneNumber": "01098765432",
+  "ProjectName": "main project"
+}
+
+Decoded:
+Array
+(
+    [Username] => mahmoud
+    [Password] => 123456
+    [TelephoneNumber] => 01098765432
+    [ProjectName] => main project
+)
+
+
+=== POST 2025-10-27 21:09:33 ===
+URI: /robots_api/api/projects/
+projectId: null
+RAW:
+{
+  "Description": "main_projectccccc",
+  "Location": "cairo",
+  "Image": "url/image.jpg",
+  "ProjectName": "main project"
+}
+
+Decoded:
+Array
+(
+    [Description] => main_projectccccc
+    [Location] => cairo
+    [Image] => url/image.jpg
+    [ProjectName] => main project
+)
+
+
+=== POST 2025-10-27 21:10:01 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+{
+  "Username": "mahmoud",
+  "Password": "123456",
+  "TelephoneNumber": "01098765432",
+  "ProjectName": "main project"
+}
+Decoded:
+Array
+(
+    [Username] => mahmoud
+    [Password] => 123456
+    [TelephoneNumber] => 01098765432
+    [ProjectName] => main project
+)
+
+
