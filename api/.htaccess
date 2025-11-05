@@ -2,16 +2,20 @@
   RewriteEngine On
   RewriteBase /robots_api/api/
 
+  # تجاهل الملفات والمجلدات الحقيقية
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
 
+  # تعريف المسارات الخاصة بالـ APIs
   RewriteRule ^login/?(.*)$ login.php [QSA,L]
-
   RewriteRule ^users/?(.*)$ users.php [QSA,L]
-
   RewriteRule ^projects/?(.*)$ projects.php [QSA,L]
-
   RewriteRule ^robots/?(.*)$ robots.php [QSA,L]
-
   RewriteRule ^buttons/?(.*)$ buttons.php [QSA,L]
+  RewriteRule ^notifications/?(.*)$ notifications.php [QSA,L]
+  RewriteRule ^logs/?(.*)$ logs.php [QSA,L]
+
+  # السماح بالوصول إلى swagger والملفات الثابتة
+  RewriteRule ^swagger\.json$ swagger.json [QSA,L]
+  RewriteRule ^index\.html$ index.html [QSA,L]
 </IfModule>

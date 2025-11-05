@@ -3,12 +3,12 @@
   "info": {
     "title": "Robots API Documentation",
     "version": "1.0.0",
-    "description": "API documentation for managing Users, Projects, Robots, Buttons, and Authentication in the Robots system."
+    "description": "API documentation for managing Users, Projects, Robots, Buttons, Notifications, Logs, and Authentication in the Robots system."
   },
   "servers": [
     {
-      "url": "https://mahmoudmohammed.42web.io/robots_web_apis/api",
-      "description": "Live (Online) API server"
+      "url": "http://localhost/robots_api/api/",
+      "description": "Local API server"
     }
   ],
   "tags": [
@@ -22,6 +22,14 @@
     {
       "name": "Buttons",
       "description": "Endpoints for managing buttons assigned to robots"
+    },
+    {
+      "name": "Notifications",
+      "description": "Endpoints for managing notifications between robots and projects"
+    },
+    {
+      "name": "Logs",
+      "description": "Endpoints for managing logs related to robot and project activities"
     }
   ],
   "paths": {
@@ -258,11 +266,14 @@
       "get": {
         "tags": ["Robots"],
         "summary": "Get all robots",
-        "responses": { "200": { "description": "List of all robots" } }
+        "responses": {
+          "200": { "description": "List of all robots" }
+        }
       },
       "post": {
         "tags": ["Robots"],
         "summary": "Create a new robot",
+        "description": "⚠️ Logic Note: If `isTrolley` = `false`, then the `car` object should be empty `{}` and system will do it automoticaly by sql and js.",
         "requestBody": {
           "required": true,
           "content": {
@@ -271,7 +282,9 @@
             }
           }
         },
-        "responses": { "201": { "description": "Robot created successfully" } }
+        "responses": {
+          "201": { "description": "Robot created successfully" }
+        }
       }
     },
     "/robots/{id}": {
@@ -294,6 +307,7 @@
       "put": {
         "tags": ["Robots"],
         "summary": "Update a robot by ID",
+        "description": "⚠️ Logic Note : If `isTrolley` = `false`, then the `car` object should be empty `{}` and system will do it automoticaly by sql and js.",
         "parameters": [
           {
             "name": "id",
@@ -310,7 +324,9 @@
             }
           }
         },
-        "responses": { "200": { "description": "Robot updated successfully" } }
+        "responses": {
+          "200": { "description": "Robot updated successfully" }
+        }
       },
       "delete": {
         "tags": ["Robots"],
@@ -323,7 +339,9 @@
             "schema": { "type": "integer" }
           }
         ],
-        "responses": { "200": { "description": "Robot deleted successfully" } }
+        "responses": {
+          "200": { "description": "Robot deleted successfully" }
+        }
       }
     },
     "/robots/": {
@@ -416,8 +434,161 @@
           "200": { "description": "All buttons deleted successfully" }
         }
       }
+    },
+
+    "/notifications": {
+      "get": {
+        "tags": ["Notifications"],
+        "summary": "Get all notifications",
+        "responses": { "200": { "description": "List of all notifications" } }
+      },
+      "post": {
+        "tags": ["Notifications"],
+        "summary": "Create a new notification",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Notification" }
+            }
+          }
+        },
+        "responses": {
+          "201": { "description": "Notification created successfully" }
+        }
+      }
+    },
+    "/notifications/{id}": {
+      "get": {
+        "tags": ["Notifications"],
+        "summary": "Get a notification by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Notification details" },
+          "404": { "description": "Notification not found" }
+        }
+      },
+      "put": {
+        "tags": ["Notifications"],
+        "summary": "Update a notification by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Notification" }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Notification updated successfully" }
+        }
+      },
+      "delete": {
+        "tags": ["Notifications"],
+        "summary": "Delete a notification by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Notification deleted successfully" }
+        }
+      }
+    },
+
+    "/logs": {
+      "get": {
+        "tags": ["Logs"],
+        "summary": "Get all logs",
+        "responses": { "200": { "description": "List of all logs" } }
+      },
+      "post": {
+        "tags": ["Logs"],
+        "summary": "Create a new log",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Log" }
+            }
+          }
+        },
+        "responses": { "201": { "description": "Log created successfully" } }
+      }
+    },
+    "/logs/{id}": {
+      "get": {
+        "tags": ["Logs"],
+        "summary": "Get a log by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Log details" },
+          "404": { "description": "Log not found" }
+        }
+      },
+      "put": {
+        "tags": ["Logs"],
+        "summary": "Update a log by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Log" }
+            }
+          }
+        },
+        "responses": { "200": { "description": "Log updated successfully" } }
+      },
+      "delete": {
+        "tags": ["Logs"],
+        "summary": "Delete a log by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": { "200": { "description": "Log deleted successfully" } }
+      }
     }
   },
+
   "components": {
     "schemas": {
       "User": {
@@ -444,39 +615,116 @@
       "Robot": {
         "type": "object",
         "properties": {
-          "RobotName": { "type": "string", "example": "Guardian-X" },
-          "Image": { "type": "string", "example": "uploads/guardian.jpg" },
-          "Voltage": { "type": "integer", "example": 220 },
-          "Cycles": { "type": "integer", "example": 45 },
-          "Status": {
+          "RobotName": { "type": "string", "example": "cccccccccccccccc  New" },
+          "Image": { "type": "string", "example": "warehousebot.png" },
+          "projectId": { "type": "integer", "example": 10 },
+          "mqttUrl": {
             "type": "string",
-            "enum": ["Running", "Stop"],
-            "example": "Running"
+            "example": "mqtt://192.168.1.50:1883"
           },
-          "ActiveBtns": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "id": { "type": "integer", "example": 1 },
-                "name": {
-                  "type": "string",
-                  "enum": [
-                    "start",
-                    "stop",
-                    "forward",
-                    "backward",
-                    "SCHEDULING"
-                  ],
-                  "example": "start"
+          "isTrolley": { "type": "boolean", "example": true },
+          "Sections": {
+            "type": "object",
+            "properties": {
+              "main": {
+                "type": "object",
+                "properties": {
+                  "Voltage": { "type": "number", "example": 24 },
+                  "Cycles": { "type": "integer", "example": 500 },
+                  "Status": { "type": "string", "example": "Running" },
+                  "ActiveBtns": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "Name": { "type": "string", "example": "Forward" },
+                        "id": { "type": "string", "example": "1" }
+                      }
+                    },
+                    "example": [
+                      { "Name": "Forward", "id": "1" },
+                      { "Name": "stop", "id": "2" }
+                    ]
+                  },
+                  "Topic_subscribe": {
+                    "type": "string",
+                    "example": "robot/main/in"
+                  },
+                  "Topic_main": {
+                    "type": "string",
+                    "example": "robot/main/out"
+                  }
+                }
+              },
+              "car": {
+                "type": "object",
+                "properties": {
+                  "Voltage": { "type": "number", "example": 24 },
+                  "Cycles": { "type": "integer", "example": 500 },
+                  "Status": { "type": "string", "example": "Running" },
+                  "ActiveBtns": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "Name": { "type": "string", "example": "Forward" },
+                        "id": { "type": "string", "example": "1" }
+                      }
+                    },
+                    "example": [
+                      { "Name": "Forward", "id": "1" },
+                      { "Name": "stop", "id": "2" }
+                    ]
+                  },
+                  "Topic_subscribe": {
+                    "type": "string",
+                    "example": "robot/main/in"
+                  },
+                  "Topic_main": {
+                    "type": "string",
+                    "example": "robot/main/out"
+                  }
                 }
               }
+            }
+          }
+        },
+        "required": [
+          "RobotName",
+          "projectId",
+          "mqttUrl",
+          "isTrolley",
+          "Sections"
+        ],
+        "example": {
+          "RobotName": "cccccccccccccccc  New",
+          "Image": "warehousebot.png",
+          "projectId": 10,
+          "mqttUrl": "mqtt://192.168.1.50:1883",
+          "isTrolley": true,
+          "Sections": {
+            "main": {
+              "Voltage": 24,
+              "Cycles": 500,
+              "Status": "Running",
+              "ActiveBtns": [
+                { "Name": "Forward", "id": "1" },
+                { "Name": "stop", "id": "2" }
+              ],
+              "Topic_subscribe": "robot/main/in",
+              "Topic_main": "robot/main/out"
             },
-            "example": [
-              { "id": 1, "name": "start" },
-              { "id": 2, "name": "stop" },
-              { "id": 3, "name": "SCHEDULING" }
-            ]
+            "car": {
+              "Voltage": 24,
+              "Cycles": 500,
+              "Status": "Running",
+              "ActiveBtns": [
+                { "Name": "Forward", "id": "1" },
+                { "Name": "stop", "id": "2" }
+              ],
+              "Topic_subscribe": "robot/main/in",
+              "Topic_main": "robot/main/out"
+            }
           }
         }
       },
@@ -487,6 +735,31 @@
           "RobotId": { "type": "integer", "example": 1 },
           "Color": { "type": "string", "example": "#4CAF50" },
           "Operation": { "type": "string", "example": "/start" }
+        }
+      },
+      "Notification": {
+        "type": "object",
+        "properties": {
+          "projectId": { "type": "integer", "example": 5 },
+          "robotId": { "type": "integer", "example": 3 },
+          "message": { "type": "string", "example": "Battery level low" },
+          "type": { "type": "string", "example": "alert" },
+          "date": { "type": "string", "example": "2025-11-05" },
+          "time": { "type": "string", "example": "14:25:00" }
+        }
+      },
+      "Log": {
+        "type": "object",
+        "properties": {
+          "projectId": { "type": "integer", "example": 5 },
+          "robotId": { "type": "integer", "example": 3 },
+          "message": {
+            "type": "string",
+            "example": "Robot connected successfully"
+          },
+          "type": { "type": "string", "example": "info" },
+          "date": { "type": "string", "example": "2025-11-05" },
+          "time": { "type": "string", "example": "14:26:30" }
         }
       }
     }

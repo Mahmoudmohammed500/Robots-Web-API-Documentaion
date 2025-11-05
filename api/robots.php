@@ -15,20 +15,10 @@ $id = is_numeric($idCandidate) ? intval($idCandidate) : null;
 $input = file_get_contents("php://input");
 $data = json_decode($input, true);
 
-// Debug log
-file_put_contents(__DIR__ . "/debug_log.txt",
-    "=== $method " . date("Y-m-d H:i:s") . " ===\n" .
-    "URI: $requestUri\n" .
-    "ID: " . ($id ?? 'null') . "\n" .
-    "RAW:\n$input\n" .
-    "Decoded:\n" . print_r($data, true) . "\n\n",
-    FILE_APPEND
-);
-
 try {
     switch ($method) {
 
-        //  Get all robots or get one by ID
+        // ✅ Get all robots or one by ID
         case 'GET':
             if ($id) {
                 $stmt = $pdo->prepare("SELECT * FROM Robots WHERE id = ?");
@@ -36,7 +26,7 @@ try {
                 $robot = $stmt->fetch();
 
                 if ($robot) {
-                    $robot['ActiveBtns'] = json_decode($robot['ActiveBtns'], true);
+                    $robot['Sections'] = json_decode($robot['Sections'], true);
                     echo json_encode($robot);
                 } else {
                     http_response_code(404);
@@ -47,37 +37,47 @@ try {
                 $robots = $stmt->fetchAll();
 
                 foreach ($robots as &$r) {
-                    $r['ActiveBtns'] = json_decode($r['ActiveBtns'], true);
+                    $r['Sections'] = json_decode($r['Sections'], true);
                 }
 
                 echo json_encode($robots);
             }
             break;
 
-        //  Create new robot
+        // ✅ Create new robot
         case 'POST':
-            if (!isset($data['RobotName'], $data['Image'], $data['projectId'], $data['Voltage'], $data['Cycles'], $data['Status'], $data['ActiveBtns'])) {
+            if (!isset($data['RobotName'], $data['projectId'], $data['mqttUrl'], $data['Sections'])) {
                 http_response_code(400);
                 echo json_encode(['message' => 'Missing required fields']);
                 exit;
             }
 
-            $stmt = $pdo->prepare("INSERT INTO Robots (RobotName, Image, projectId, Voltage, Cycles, Status, ActiveBtns) VALUES (?, ?, ?, ?, ?, ?, ?)");
+            // 🧱 تحقق من وجود المشروع
+            $stmt = $pdo->prepare("SELECT projectId FROM Projects WHERE projectId = ?");
+            $stmt->execute([intval($data['projectId'])]);
+            if ($stmt->rowCount() === 0) {
+                http_response_code(400);
+                echo json_encode(['message' => 'Invalid projectId: project not found']);
+                exit;
+            }
+
+            // ✅ إدخال الروبوت
+            $stmt = $pdo->prepare("INSERT INTO Robots (RobotName, Image, projectId, mqttUrl, isTrolley, Sections)
+                                   VALUES (?, ?, ?, ?, ?, ?)");
             $stmt->execute([
                 trim($data['RobotName']),
-                trim($data['Image']),
+                trim($data['Image'] ?? ''),
                 intval($data['projectId']),
-                intval($data['Voltage']),
-                intval($data['Cycles']),
-                in_array($data['Status'], ['Running', 'Stop']) ? $data['Status'] : 'Stop',
-                json_encode($data['ActiveBtns'])
+                trim($data['mqttUrl']),
+                !empty($data['isTrolley']) ? 1 : 0,
+                json_encode($data['Sections'])
             ]);
 
             http_response_code(201);
             echo json_encode(['message' => 'Robot created successfully']);
             break;
 
-        //  Update robot by ID
+        // ✅ Update robot
         case 'PUT':
             if (!$id) {
                 http_response_code(400);
@@ -85,6 +85,7 @@ try {
                 exit;
             }
 
+            // تحقق من أن الروبوت موجود
             $stmt = $pdo->prepare("SELECT id FROM Robots WHERE id = ?");
             $stmt->execute([$id]);
             if ($stmt->rowCount() === 0) {
@@ -93,43 +94,45 @@ try {
                 exit;
             }
 
+            // 🧱 تحقق من المشروع في حال تعديل projectId
+            if (isset($data['projectId'])) {
+                $stmt = $pdo->prepare("SELECT projectId FROM Projects WHERE projectId = ?");
+                $stmt->execute([intval($data['projectId'])]);
+                if ($stmt->rowCount() === 0) {
+                    http_response_code(400);
+                    echo json_encode(['message' => 'Invalid projectId: project not found']);
+                    exit;
+                }
+            }
+
+            // ✅ تحديث البيانات
             $stmt = $pdo->prepare("
                 UPDATE Robots 
                 SET 
                     RobotName = COALESCE(?, RobotName),
                     Image = COALESCE(?, Image),
                     projectId = COALESCE(?, projectId),
-                    Voltage = COALESCE(?, Voltage),
-                    Cycles = COALESCE(?, Cycles),
-                    Status = COALESCE(?, Status),
-                    ActiveBtns = COALESCE(?, ActiveBtns)
+                    mqttUrl = COALESCE(?, mqttUrl),
+                    isTrolley = COALESCE(?, isTrolley),
+                    Sections = COALESCE(?, Sections)
                 WHERE id = ?
             ");
             $stmt->execute([
                 $data['RobotName'] ?? null,
                 $data['Image'] ?? null,
                 isset($data['projectId']) ? intval($data['projectId']) : null,
-                isset($data['Voltage']) ? intval($data['Voltage']) : null,
-                isset($data['Cycles']) ? intval($data['Cycles']) : null,
-                isset($data['Status']) && in_array($data['Status'], ['Running', 'Stop']) ? $data['Status'] : null,
-                isset($data['ActiveBtns']) ? json_encode($data['ActiveBtns']) : null,
+                $data['mqttUrl'] ?? null,
+                isset($data['isTrolley']) ? (int)$data['isTrolley'] : null,
+                isset($data['Sections']) ? json_encode($data['Sections']) : null,
                 $id
             ]);
 
             echo json_encode(['message' => 'Robot updated successfully']);
             break;
 
-        //  Delete robot by ID or ALL if no ID
+        // ✅ Delete
         case 'DELETE':
             if ($id) {
-                $stmt = $pdo->prepare("SELECT id FROM Robots WHERE id = ?");
-                $stmt->execute([$id]);
-                if ($stmt->rowCount() === 0) {
-                    http_response_code(404);
-                    echo json_encode(['message' => 'Robot not found']);
-                    exit;
-                }
-
                 $stmt = $pdo->prepare("DELETE FROM Robots WHERE id = ?");
                 $stmt->execute([$id]);
                 echo json_encode(['message' => 'Robot deleted successfully']);

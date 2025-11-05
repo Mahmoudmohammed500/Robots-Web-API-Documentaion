@@ -3101,3 +3101,1692 @@ Array
 )
 
 
+=== GET 2025-10-31 19:00:22 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-10-31 19:00:40 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-10-31 19:00:45 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-10-31 19:01:08 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+  "Username": "mahmoud",
+  "Password": "123456"
+}
+
+Decoded:
+Array
+(
+    [Username] => mahmoud
+    [Password] => 123456
+)
+
+
+=== POST 2025-10-31 19:02:37 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+  "RobotName": "Guardian-X",
+  "Image": "uploads/guardian.jpg",
+  "projectId" : 6,
+  "Voltage": 220,
+  "Cycles": 45,
+  "Status": "Running",
+  "ActiveBtns": [
+    {
+      "id": 1,
+      "name": "start"
+    },
+    {
+      "id": 2,
+      "name": "stop"
+    },
+    {
+      "id": 3,
+      "name": "SCHEDULING"
+    } ]
+}
+Decoded:
+Array
+(
+    [RobotName] => Guardian-X
+    [Image] => uploads/guardian.jpg
+    [projectId] => 6
+    [Voltage] => 220
+    [Cycles] => 45
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 3
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== GET 2025-10-31 19:17:04 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-10-31 19:23:29 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-10-31 19:24:34 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+  "RobotName": "New project",
+  "Image": "uploads/guardian.jpg",
+  "projectId": 6,
+  "Voltage": 220,
+  "Cycles": 45,
+  "Status": "Running",
+  "ActiveBtns": [
+    {
+      "id": 1,
+      "name": "start"
+    },
+    {
+      "id": 2,
+      "name": "stop"
+    },
+    {
+      "id": 3,
+      "name": "SCHEDULING"
+    }
+  ]
+}
+Decoded:
+Array
+(
+    [RobotName] => New project
+    [Image] => uploads/guardian.jpg
+    [projectId] => 6
+    [Voltage] => 220
+    [Cycles] => 45
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 3
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== GET 2025-10-31 19:26:20 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+  "RobotName": "New project",
+  "Image": "uploads/guardian.jpg",
+  "projectId": 6,
+  "Voltage": 220,
+  "Cycles": 45,
+  "Status": "Running",
+  "ActiveBtns": [
+    {
+      "id": 1,
+      "name": "start"
+    },
+    {
+      "id": 2,
+      "name": "stop"
+    },
+    {
+      "id": 3,
+      "name": "SCHEDULING"
+    }
+  ]
+}
+Decoded:
+Array
+(
+    [RobotName] => New project
+    [Image] => uploads/guardian.jpg
+    [projectId] => 6
+    [Voltage] => 220
+    [Cycles] => 45
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 3
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== POST 2025-10-31 19:27:06 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+{
+  "RobotName": "New Robot",
+  "Image": "uploads/guardian.jpg",
+  "projectId": 6,
+  "Voltage": 220,
+  "Cycles": 45,
+  "Status": "Running",
+  "ActiveBtns": [
+    {
+      "id": 1,
+      "name": "start"
+    },
+    {
+      "id": 2,
+      "name": "stop"
+    },
+    {
+      "id": 3,
+      "name": "SCHEDULING"
+    }
+  ]
+}
+Decoded:
+Array
+(
+    [RobotName] => New Robot
+    [Image] => uploads/guardian.jpg
+    [projectId] => 6
+    [Voltage] => 220
+    [Cycles] => 45
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 3
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== PUT 2025-10-31 19:28:07 ===
+URI: /robots_api/api/robots/22
+ID: 22
+RAW:
+{
+  "RobotName": "New Robot - Update",
+  "Image": "uploads/guardian.jpg",
+  "projectId": 6,
+  "Voltage": 220,
+  "Cycles": 45,
+  "Status": "Running",
+  "ActiveBtns": [
+    {
+      "id": 1,
+      "name": "start"
+    },
+    {
+      "id": 2,
+      "name": "stop"
+    },
+    {
+      "id": 3,
+      "name": "SCHEDULING"
+    }
+  ]
+}
+Decoded:
+Array
+(
+    [RobotName] => New Robot - Update
+    [Image] => uploads/guardian.jpg
+    [projectId] => 6
+    [Voltage] => 220
+    [Cycles] => 45
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 3
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== GET 2025-10-31 19:28:29 ===
+URI: /robots_api/api/robots/22
+ID: 22
+RAW:
+{
+  "RobotName": "New Robot - Update",
+  "Image": "uploads/guardian.jpg",
+  "projectId": 6,
+  "Voltage": 220,
+  "Cycles": 45,
+  "Status": "Running",
+  "ActiveBtns": [
+    {
+      "id": 1,
+      "name": "start"
+    },
+    {
+      "id": 2,
+      "name": "stop"
+    },
+    {
+      "id": 3,
+      "name": "SCHEDULING"
+    }
+  ]
+}
+Decoded:
+Array
+(
+    [RobotName] => New Robot - Update
+    [Image] => uploads/guardian.jpg
+    [projectId] => 6
+    [Voltage] => 220
+    [Cycles] => 45
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 3
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== GET 2025-10-31 19:28:46 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+{
+  "RobotName": "New Robot - Update",
+  "Image": "uploads/guardian.jpg",
+  "projectId": 6,
+  "Voltage": 220,
+  "Cycles": 45,
+  "Status": "Running",
+  "ActiveBtns": [
+    {
+      "id": 1,
+      "name": "start"
+    },
+    {
+      "id": 2,
+      "name": "stop"
+    },
+    {
+      "id": 3,
+      "name": "SCHEDULING"
+    }
+  ]
+}
+Decoded:
+Array
+(
+    [RobotName] => New Robot - Update
+    [Image] => uploads/guardian.jpg
+    [projectId] => 6
+    [Voltage] => 220
+    [Cycles] => 45
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 3
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== DELETE 2025-10-31 19:29:06 ===
+URI: /robots_api/api/robots/22
+ID: 22
+RAW:
+{
+  "RobotName": "New Robot - Update",
+  "Image": "uploads/guardian.jpg",
+  "projectId": 6,
+  "Voltage": 220,
+  "Cycles": 45,
+  "Status": "Running",
+  "ActiveBtns": [
+    {
+      "id": 1,
+      "name": "start"
+    },
+    {
+      "id": 2,
+      "name": "stop"
+    },
+    {
+      "id": 3,
+      "name": "SCHEDULING"
+    }
+  ]
+}
+Decoded:
+Array
+(
+    [RobotName] => New Robot - Update
+    [Image] => uploads/guardian.jpg
+    [projectId] => 6
+    [Voltage] => 220
+    [Cycles] => 45
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 3
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== GET 2025-10-31 19:29:27 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-10-31 19:30:20 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+{
+  "RobotName": "New Robot - Update",
+  "Image": "uploads/guardian.jpg",
+  "projectId": 6,
+  "Voltage": 220,
+  "Cycles": 45,
+  "Status": "Running",
+  "ActiveBtns": [
+    {
+      "id": 1,
+      "name": "start"
+    },
+    {
+      "id": 2,
+      "name": "stop"
+    },
+    {
+      "id": 3,
+      "name": "SCHEDULING"
+    }
+  ]
+}
+Decoded:
+Array
+(
+    [RobotName] => New Robot - Update
+    [Image] => uploads/guardian.jpg
+    [projectId] => 6
+    [Voltage] => 220
+    [Cycles] => 45
+    [Status] => Running
+    [ActiveBtns] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => start
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [name] => stop
+                )
+
+            [2] => Array
+                (
+                    [id] => 3
+                    [name] => SCHEDULING
+                )
+
+        )
+
+)
+
+
+=== POST 2025-10-31 19:30:43 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+{
+  "BtnName": "Start",
+  "RobotId": 1,
+  "Color": "#4CAF50",
+  "Operation": "/start"
+}
+Decoded:
+Array
+(
+    [BtnName] => Start
+    [RobotId] => 1
+    [Color] => #4CAF50
+    [Operation] => /start
+)
+
+
+=== POST 2025-10-31 19:31:10 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+{
+  "BtnName": "Start",
+  "RobotId": 20,
+  "Color": "#4CAF50",
+  "Operation": "/start"
+}
+Decoded:
+Array
+(
+    [BtnName] => Start
+    [RobotId] => 20
+    [Color] => #4CAF50
+    [Operation] => /start
+)
+
+
+=== GET 2025-10-31 19:31:34 ===
+URI: /robots_api/api/buttons/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-10-31 19:31:51 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+{
+  "BtnName": "End",
+  "RobotId": 20,
+  "Color": "#4CAF50",
+  "Operation": "/end"
+}
+Decoded:
+Array
+(
+    [BtnName] => End
+    [RobotId] => 20
+    [Color] => #4CAF50
+    [Operation] => /end
+)
+
+
+=== GET 2025-10-31 19:31:58 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+{
+  "BtnName": "End",
+  "RobotId": 20,
+  "Color": "#4CAF50",
+  "Operation": "/end"
+}
+Decoded:
+Array
+(
+    [BtnName] => End
+    [RobotId] => 20
+    [Color] => #4CAF50
+    [Operation] => /end
+)
+
+
+=== PUT 2025-10-31 19:32:32 ===
+URI: /robots_api/api/buttons/15
+ID: 15
+RAW:
+{
+  "BtnName": "Update",
+  "RobotId": 20,
+  "Color": "#4CAF50",
+  "Operation": "/update"
+}
+Decoded:
+Array
+(
+    [BtnName] => Update
+    [RobotId] => 20
+    [Color] => #4CAF50
+    [Operation] => /update
+)
+
+
+=== GET 2025-10-31 19:32:52 ===
+URI: /robots_api/api/buttons/15
+ID: 15
+RAW:
+{
+  "BtnName": "Update",
+  "RobotId": 20,
+  "Color": "#4CAF50",
+  "Operation": "/update"
+}
+Decoded:
+Array
+(
+    [BtnName] => Update
+    [RobotId] => 20
+    [Color] => #4CAF50
+    [Operation] => /update
+)
+
+
+=== DELETE 2025-10-31 19:33:00 ===
+URI: /robots_api/api/buttons/15
+ID: 15
+RAW:
+{
+  "BtnName": "Update",
+  "RobotId": 20,
+  "Color": "#4CAF50",
+  "Operation": "/update"
+}
+Decoded:
+Array
+(
+    [BtnName] => Update
+    [RobotId] => 20
+    [Color] => #4CAF50
+    [Operation] => /update
+)
+
+
+=== POST 2025-10-31 19:34:14 ===
+URI: /robots_api/api/projects
+projectId: null
+RAW:
+{
+  "ProjectName": "New project",
+  "Description": "Smart robot for airport security",
+  "Location": "Cairo",
+  "Image": "uploads/robot.jpg"
+}
+Decoded:
+Array
+(
+    [ProjectName] => New project
+    [Description] => Smart robot for airport security
+    [Location] => Cairo
+    [Image] => uploads/robot.jpg
+)
+
+
+=== POST 2025-10-31 19:34:52 ===
+URI: /robots_api/api/projects/7
+projectId: 7
+RAW:
+{
+  "ProjectName": "New project updated",
+  "Description": "Smart robot for airport security",
+  "Location": "Cairo",
+  "Image": "uploads/robot.jpg"
+}
+Decoded:
+Array
+(
+    [ProjectName] => New project updated
+    [Description] => Smart robot for airport security
+    [Location] => Cairo
+    [Image] => uploads/robot.jpg
+)
+
+
+=== PUT 2025-10-31 19:35:14 ===
+URI: /robots_api/api/projects/7
+projectId: 7
+RAW:
+{
+  "ProjectName": "New project updated",
+  "Description": "Smart robot for airport security",
+  "Location": "Cairo",
+  "Image": "uploads/robot.jpg"
+}
+Decoded:
+Array
+(
+    [ProjectName] => New project updated
+    [Description] => Smart robot for airport security
+    [Location] => Cairo
+    [Image] => uploads/robot.jpg
+)
+
+
+=== PUT 2025-10-31 19:35:55 ===
+URI: /robots_api/api/projects/7
+projectId: 7
+RAW:
+{
+  "ProjectName": "New project updated",
+  "Description": "Smart robot for airport security",
+  "Location": "Cairo",
+  "Image": "uploads/robot.jpg"
+}
+Decoded:
+Array
+(
+    [ProjectName] => New project updated
+    [Description] => Smart robot for airport security
+    [Location] => Cairo
+    [Image] => uploads/robot.jpg
+)
+
+
+=== PUT 2025-10-31 19:36:19 ===
+URI: /robots_api/api/projects/8
+projectId: 8
+RAW:
+{
+  "ProjectName": "xxxxxxx",
+  "Description": "Smart robot for airport security",
+  "Location": "Cairo",
+  "Image": "uploads/robot.jpg"
+}
+Decoded:
+Array
+(
+    [ProjectName] => xxxxxxx
+    [Description] => Smart robot for airport security
+    [Location] => Cairo
+    [Image] => uploads/robot.jpg
+)
+
+
+=== DELETE 2025-10-31 19:36:47 ===
+URI: /robots_api/api/projects/8
+projectId: 8
+RAW:
+{
+  "ProjectName": "xxxxxxx",
+  "Description": "Smart robot for airport security",
+  "Location": "Cairo",
+  "Image": "uploads/robot.jpg"
+}
+Decoded:
+Array
+(
+    [ProjectName] => xxxxxxx
+    [Description] => Smart robot for airport security
+    [Location] => Cairo
+    [Image] => uploads/robot.jpg
+)
+
+
+=== DELETE 2025-10-31 19:37:35 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+{
+  "Username": "Ahmed",
+  "Password": "123456",
+  "TelephoneNumber": "+201234567890",
+  "ProjectName": "AI Robot"
+}
+Decoded:
+Array
+(
+    [Username] => Ahmed
+    [Password] => 123456
+    [TelephoneNumber] => +201234567890
+    [ProjectName] => AI Robot
+)
+
+
+=== POST 2025-10-31 19:38:04 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+{
+  "Username": "Ahmed",
+  "Password": "123456",
+  "TelephoneNumber": "+201234567890",
+  "ProjectName": "AI Robot"
+}
+Decoded:
+Array
+(
+    [Username] => Ahmed
+    [Password] => 123456
+    [TelephoneNumber] => +201234567890
+    [ProjectName] => AI Robot
+)
+
+
+=== POST 2025-10-31 19:38:17 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+{
+  "Username": "Ahmed",
+  "Password": "123456",
+  "TelephoneNumber": "+201234567890",
+  "ProjectName": "main project"
+}
+Decoded:
+Array
+(
+    [Username] => Ahmed
+    [Password] => 123456
+    [TelephoneNumber] => +201234567890
+    [ProjectName] => main project
+)
+
+
+=== PUT 2025-10-31 19:38:58 ===
+URI: /robots_api/api/users/15
+ID: 15
+RAW:
+{
+  "Username": "Ahmed - bbbbb",
+  "Password": "123456",
+  "TelephoneNumber": "+201234567890",
+  "ProjectName": "main project"
+}
+Decoded:
+Array
+(
+    [Username] => Ahmed - bbbbb
+    [Password] => 123456
+    [TelephoneNumber] => +201234567890
+    [ProjectName] => main project
+)
+
+
+=== POST 2025-10-31 19:39:24 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+{
+  "Username": "Ali",
+  "Password": "123456",
+  "TelephoneNumber": "+201234567890",
+  "ProjectName": "main project"
+}
+Decoded:
+Array
+(
+    [Username] => Ali
+    [Password] => 123456
+    [TelephoneNumber] => +201234567890
+    [ProjectName] => main project
+)
+
+
+=== DELETE 2025-10-31 19:40:06 ===
+URI: /robots_api/api/users/16
+ID: 16
+RAW:
+{
+  "Username": "Ali",
+  "Password": "123456",
+  "TelephoneNumber": "+201234567890",
+  "ProjectName": "main project"
+}
+Decoded:
+Array
+(
+    [Username] => Ali
+    [Password] => 123456
+    [TelephoneNumber] => +201234567890
+    [ProjectName] => main project
+)
+
+
+=== POST 2025-10-31 19:43:47 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+{
+  "Username": "Mahmoud",
+  "Password": "123456",
+  "TelephoneNumber": "+201234567890",
+  "ProjectName": "main project"
+}
+Decoded:
+Array
+(
+    [Username] => Mahmoud
+    [Password] => 123456
+    [TelephoneNumber] => +201234567890
+    [ProjectName] => main project
+)
+
+
+=== GET 2025-11-05 20:04:45 ===
+URI: /robots_api/api/projects
+projectId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-05 20:33:44 ===
+URI: /robots_api/api/notifications
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-05 20:34:18 ===
+URI: /robots_api/api/notifications
+notificationId: null
+RAW:
+{
+  "Username": "Mahmoud",
+  "Password": "123456"
+}
+Decoded:
+Array
+(
+    [Username] => Mahmoud
+    [Password] => 123456
+)
+
+
+=== POST 2025-11-05 20:34:54 ===
+URI: /robots_api/api/notifications
+notificationId: null
+RAW:
+{
+  "projectName": "RoboProject A",
+  "robotId": 3,
+  "message": "Battery level is low (15%)",
+  "type": "alert",
+  "date": "2025-11-05",
+  "time": "14:30:00"
+}
+
+Decoded:
+Array
+(
+    [projectName] => RoboProject A
+    [robotId] => 3
+    [message] => Battery level is low (15%)
+    [type] => alert
+    [date] => 2025-11-05
+    [time] => 14:30:00
+)
+
+
+=== GET 2025-11-05 20:35:11 ===
+URI: /robots_api/api/notifications
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-11-05 20:35:31 ===
+URI: /robots_api/api/notifications
+notificationId: null
+RAW:
+{
+  "projectName": "RoboProject A",
+  "robotId": 3,
+  "message": "Battery level is low (20%)",
+  "type": "alert",
+  "date": "2025-11-05",
+  "time": "14:30:00"
+}
+
+Decoded:
+Array
+(
+    [projectName] => RoboProject A
+    [robotId] => 3
+    [message] => Battery level is low (20%)
+    [type] => alert
+    [date] => 2025-11-05
+    [time] => 14:30:00
+)
+
+
+=== GET 2025-11-05 20:35:34 ===
+URI: /robots_api/api/notifications
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-05 20:36:01 ===
+URI: /robots_api/api/notifications
+notificationId: null
+RAW:
+{
+  "projectName": "RoboProject A",
+  "robotId": 3,
+  "message": "Battery level is low (20%)",
+  "type": "alert",
+  "date": "2025-11-05",
+  "time": "14:30:00"
+}
+
+Decoded:
+Array
+(
+    [projectName] => RoboProject A
+    [robotId] => 3
+    [message] => Battery level is low (20%)
+    [type] => alert
+    [date] => 2025-11-05
+    [time] => 14:30:00
+)
+
+
+=== GET 2025-11-05 20:36:11 ===
+URI: /robots_api/api/notifications/2
+notificationId: 2
+RAW:
+{
+  "projectName": "RoboProject A",
+  "robotId": 3,
+  "message": "Battery level is low (20%)",
+  "type": "alert",
+  "date": "2025-11-05",
+  "time": "14:30:00"
+}
+
+Decoded:
+Array
+(
+    [projectName] => RoboProject A
+    [robotId] => 3
+    [message] => Battery level is low (20%)
+    [type] => alert
+    [date] => 2025-11-05
+    [time] => 14:30:00
+)
+
+
+=== PUT 2025-11-05 20:36:26 ===
+URI: /robots_api/api/notifications/2
+notificationId: 2
+RAW:
+{
+  "projectName": "RoboProject A Update",
+  "robotId": 3,
+  "message": "Battery level is low (20%)",
+  "type": "alert",
+  "date": "2025-11-05",
+  "time": "14:30:00"
+}
+
+Decoded:
+Array
+(
+    [projectName] => RoboProject A Update
+    [robotId] => 3
+    [message] => Battery level is low (20%)
+    [type] => alert
+    [date] => 2025-11-05
+    [time] => 14:30:00
+)
+
+
+=== GET 2025-11-05 20:36:30 ===
+URI: /robots_api/api/notifications
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-11-05 20:37:11 ===
+URI: /robots_api/api/notifications/
+notificationId: null
+RAW:
+{
+  "projectName": "RoboProject A New",
+  "robotId": 3,
+  "message": "Battery level is low (20%)",
+  "type": "alert",
+  "date": "2025-11-05",
+  "time": "14:30:00"
+}
+
+Decoded:
+Array
+(
+    [projectName] => RoboProject A New
+    [robotId] => 3
+    [message] => Battery level is low (20%)
+    [type] => alert
+    [date] => 2025-11-05
+    [time] => 14:30:00
+)
+
+
+=== GET 2025-11-05 20:37:15 ===
+URI: /robots_api/api/notifications
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-05 20:37:23 ===
+URI: /robots_api/api/notifications/
+notificationId: null
+RAW:
+{
+  "projectName": "RoboProject A New",
+  "robotId": 3,
+  "message": "Battery level is low (20%)",
+  "type": "alert",
+  "date": "2025-11-05",
+  "time": "14:30:00"
+}
+
+Decoded:
+Array
+(
+    [projectName] => RoboProject A New
+    [robotId] => 3
+    [message] => Battery level is low (20%)
+    [type] => alert
+    [date] => 2025-11-05
+    [time] => 14:30:00
+)
+
+
+=== DELETE 2025-11-05 20:37:32 ===
+URI: /robots_api/api/notifications/2
+notificationId: 2
+RAW:
+{
+  "projectName": "RoboProject A New",
+  "robotId": 3,
+  "message": "Battery level is low (20%)",
+  "type": "alert",
+  "date": "2025-11-05",
+  "time": "14:30:00"
+}
+
+Decoded:
+Array
+(
+    [projectName] => RoboProject A New
+    [robotId] => 3
+    [message] => Battery level is low (20%)
+    [type] => alert
+    [date] => 2025-11-05
+    [time] => 14:30:00
+)
+
+
+=== GET 2025-11-05 20:37:39 ===
+URI: /robots_api/api/notifications
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== DELETE 2025-11-05 20:37:48 ===
+URI: /robots_api/api/notifications/
+notificationId: null
+RAW:
+{
+  "projectName": "RoboProject A New",
+  "robotId": 3,
+  "message": "Battery level is low (20%)",
+  "type": "alert",
+  "date": "2025-11-05",
+  "time": "14:30:00"
+}
+
+Decoded:
+Array
+(
+    [projectName] => RoboProject A New
+    [robotId] => 3
+    [message] => Battery level is low (20%)
+    [type] => alert
+    [date] => 2025-11-05
+    [time] => 14:30:00
+)
+
+
+=== GET 2025-11-05 20:37:52 ===
+URI: /robots_api/api/notifications
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-05 20:44:01 ===
+URI: /robots_api/api/notifications
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-05 20:44:47 ===
+URI: /robots_api/api/notifications/
+notificationId: null
+RAW:
+{
+  "projectName": "RoboProject A New",
+  "robotId": 3,
+  "message": "Battery level is low (20%)",
+  "type": "alert",
+  "date": "2025-11-05",
+  "time": "14:30:00"
+}
+
+Decoded:
+Array
+(
+    [projectName] => RoboProject A New
+    [robotId] => 3
+    [message] => Battery level is low (20%)
+    [type] => alert
+    [date] => 2025-11-05
+    [time] => 14:30:00
+)
+
+
+=== POST 2025-11-05 20:45:21 ===
+URI: /robots_api/api/notifications/
+notificationId: null
+RAW:
+
+{
+  "projectId": 3,
+  "robotId": 7,
+   "message": "Battery level is low (20%)",
+  "type": "alert",
+  "date": "2025-11-05",
+  "time": "14:25:00"
+}
+
+
+Decoded:
+Array
+(
+    [projectId] => 3
+    [robotId] => 7
+    [message] => Battery level is low (20%)
+    [type] => alert
+    [date] => 2025-11-05
+    [time] => 14:25:00
+)
+
+
+=== POST 2025-11-05 20:45:44 ===
+URI: /robots_api/api/notifications/
+notificationId: null
+RAW:
+
+{
+  "projectId": 6,
+  "robotId": 7,
+   "message": "Battery level is low (20%)",
+  "type": "alert",
+  "date": "2025-11-05",
+  "time": "14:25:00"
+}
+
+
+Decoded:
+Array
+(
+    [projectId] => 6
+    [robotId] => 7
+    [message] => Battery level is low (20%)
+    [type] => alert
+    [date] => 2025-11-05
+    [time] => 14:25:00
+)
+
+
+=== POST 2025-11-05 20:45:49 ===
+URI: /robots_api/api/notifications/
+notificationId: null
+RAW:
+
+{
+  "projectId": 6,
+  "robotId": 20,
+   "message": "Battery level is low (20%)",
+  "type": "alert",
+  "date": "2025-11-05",
+  "time": "14:25:00"
+}
+
+
+Decoded:
+Array
+(
+    [projectId] => 6
+    [robotId] => 20
+    [message] => Battery level is low (20%)
+    [type] => alert
+    [date] => 2025-11-05
+    [time] => 14:25:00
+)
+
+
+=== POST 2025-11-05 20:46:02 ===
+URI: /robots_api/api/notifications/
+notificationId: null
+RAW:
+
+{
+  "projectId": 6,
+  "robotId": 20,
+   "message": "Battery level is low (20%) new",
+  "type": "alert",
+  "date": "2025-11-05",
+  "time": "14:25:00"
+}
+
+
+Decoded:
+Array
+(
+    [projectId] => 6
+    [robotId] => 20
+    [message] => Battery level is low (20%) new
+    [type] => alert
+    [date] => 2025-11-05
+    [time] => 14:25:00
+)
+
+
+=== POST 2025-11-05 20:46:08 ===
+URI: /robots_api/api/notifications/
+notificationId: null
+RAW:
+
+{
+  "projectId": 6,
+  "robotId": 20,
+   "message": "Battery level is low (20%) new 112",
+  "type": "alert",
+  "date": "2025-11-05",
+  "time": "14:25:00"
+}
+
+
+Decoded:
+Array
+(
+    [projectId] => 6
+    [robotId] => 20
+    [message] => Battery level is low (20%) new 112
+    [type] => alert
+    [date] => 2025-11-05
+    [time] => 14:25:00
+)
+
+
+=== PUT 2025-11-05 20:46:29 ===
+URI: /robots_api/api/notifications/
+notificationId: null
+RAW:
+
+{
+  "projectId": 6,
+  "robotId": 20,
+   "message": "Battery level is low (20%) Update",
+  "type": "alert",
+  "date": "2025-11-05",
+  "time": "14:25:00"
+}
+
+
+Decoded:
+Array
+(
+    [projectId] => 6
+    [robotId] => 20
+    [message] => Battery level is low (20%) Update
+    [type] => alert
+    [date] => 2025-11-05
+    [time] => 14:25:00
+)
+
+
+=== PUT 2025-11-05 20:46:57 ===
+URI: /robots_api/api/notifications/1
+notificationId: 1
+RAW:
+
+{
+  "projectId": 6,
+  "robotId": 20,
+   "message": "Battery level is low (20%) Update",
+  "type": "alert",
+  "date": "2025-11-05",
+  "time": "14:25:00"
+}
+
+
+Decoded:
+Array
+(
+    [projectId] => 6
+    [robotId] => 20
+    [message] => Battery level is low (20%) Update
+    [type] => alert
+    [date] => 2025-11-05
+    [time] => 14:25:00
+)
+
+
+=== DELETE 2025-11-05 20:47:10 ===
+URI: /robots_api/api/notifications/1
+notificationId: 1
+RAW:
+
+{
+  "projectId": 6,
+  "robotId": 20,
+   "message": "Battery level is low (20%) Update",
+  "type": "alert",
+  "date": "2025-11-05",
+  "time": "14:25:00"
+}
+
+
+Decoded:
+Array
+(
+    [projectId] => 6
+    [robotId] => 20
+    [message] => Battery level is low (20%) Update
+    [type] => alert
+    [date] => 2025-11-05
+    [time] => 14:25:00
+)
+
+
+=== GET 2025-11-05 20:47:22 ===
+URI: /robots_api/api/notifications/
+notificationId: null
+RAW:
+
+{
+  "projectId": 6,
+  "robotId": 20,
+   "message": "Battery level is low (20%) Update",
+  "type": "alert",
+  "date": "2025-11-05",
+  "time": "14:25:00"
+}
+
+
+Decoded:
+Array
+(
+    [projectId] => 6
+    [robotId] => 20
+    [message] => Battery level is low (20%) Update
+    [type] => alert
+    [date] => 2025-11-05
+    [time] => 14:25:00
+)
+
+
+=== GET 2025-11-05 20:47:28 ===
+URI: /robots_api/api/notifications/2
+notificationId: 2
+RAW:
+
+{
+  "projectId": 6,
+  "robotId": 20,
+   "message": "Battery level is low (20%) Update",
+  "type": "alert",
+  "date": "2025-11-05",
+  "time": "14:25:00"
+}
+
+
+Decoded:
+Array
+(
+    [projectId] => 6
+    [robotId] => 20
+    [message] => Battery level is low (20%) Update
+    [type] => alert
+    [date] => 2025-11-05
+    [time] => 14:25:00
+)
+
+
+=== DELETE 2025-11-05 20:47:35 ===
+URI: /robots_api/api/notifications/
+notificationId: null
+RAW:
+
+{
+  "projectId": 6,
+  "robotId": 20,
+   "message": "Battery level is low (20%) Update",
+  "type": "alert",
+  "date": "2025-11-05",
+  "time": "14:25:00"
+}
+
+
+Decoded:
+Array
+(
+    [projectId] => 6
+    [robotId] => 20
+    [message] => Battery level is low (20%) Update
+    [type] => alert
+    [date] => 2025-11-05
+    [time] => 14:25:00
+)
+
+
+=== POST 2025-11-05 22:40:11 ===
+URI: /robots_api/api/projects/
+projectId: null
+RAW:
+{
+"ProjectName" : "New project",
+"Description" :"ffffffff",
+"Location" : "Cairo",
+"Image" : "uploads/robot.jpg"
+}
+
+Decoded:
+Array
+(
+    [ProjectName] => New project
+    [Description] => ffffffff
+    [Location] => Cairo
+    [Image] => uploads/robot.jpg
+)
+
+
+=== POST 2025-11-05 22:40:27 ===
+URI: /robots_api/api/projects/
+projectId: null
+RAW:
+{
+"ProjectName" : "Main project",
+"Description" :"ffffffff",
+"Location" : "Cairo",
+"Image" : "uploads/robot.jpg"
+}
+
+Decoded:
+Array
+(
+    [ProjectName] => Main project
+    [Description] => ffffffff
+    [Location] => Cairo
+    [Image] => uploads/robot.jpg
+)
+
+
