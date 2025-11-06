@@ -4790,3 +4790,654 @@ Array
 )
 
 
+=== GET 2025-11-05 23:59:37 ===
+URI: /robots_api/api/projects.php
+projectId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-05 23:59:37 ===
+URI: /robots_api/api/projects.php
+projectId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-05 23:59:45 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-05 23:59:45 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-05 23:59:57 ===
+URI: /robots_api/api/projects.php
+projectId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-05 23:59:57 ===
+URI: /robots_api/api/projects.php
+projectId: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-11-06 00:04:43 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+{
+ "Username": "mahmoud",
+ "Password" : 123456,
+ "TelephoneNumber" : 54552588888,
+ "ProjectName" : "Main project"
+}
+
+Decoded:
+Array
+(
+    [Username] => mahmoud
+    [Password] => 123456
+    [TelephoneNumber] => 54552588888
+    [ProjectName] => Main project
+)
+
+
+=== GET 2025-11-06 00:04:53 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:04:53 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:05:21 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:05:40 ===
+URI: /robots_api/api/users.php/18
+ID: 18
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:05:40 ===
+URI: /robots_api/api/users.php/18
+ID: 18
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:05:47 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:05:47 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:05:55 ===
+URI: /robots_api/api/projects.php
+projectId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:05:55 ===
+URI: /robots_api/api/projects.php
+projectId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:07:11 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:07:11 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== OPTIONS 2025-11-06 00:07:47 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:08:24 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:08:24 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:11:39 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+{
+ "Username": "mahmoud",
+ "Password" : 123456,
+ "TelephoneNumber" : 54552588888,
+ "ProjectName" : "Main project"
+}
+
+Decoded:
+Array
+(
+    [Username] => mahmoud
+    [Password] => 123456
+    [TelephoneNumber] => 54552588888
+    [ProjectName] => Main project
+)
+
+
+=== GET 2025-11-06 00:11:54 ===
+URI: /robots_api/api/users/18
+ID: 18
+RAW:
+{
+ "Username": "mahmoud",
+ "Password" : 123456,
+ "TelephoneNumber" : 54552588888,
+ "ProjectName" : "Main project"
+}
+
+Decoded:
+Array
+(
+    [Username] => mahmoud
+    [Password] => 123456
+    [TelephoneNumber] => 54552588888
+    [ProjectName] => Main project
+)
+
+
+=== GET 2025-11-06 00:17:44 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== PUT 2025-11-06 00:18:27 ===
+URI: /robots_api/api/users/18
+ID: 18
+RAW:
+{
+ "Username": "mahmoud mohammed",
+ "Password" : "123456hh",
+ "TelephoneNumber" : 55555555,
+ "ProjectName" : "Main project"
+}
+
+Decoded:
+Array
+(
+    [Username] => mahmoud mohammed
+    [Password] => 123456hh
+    [TelephoneNumber] => 55555555
+    [ProjectName] => Main project
+)
+
+
+=== GET 2025-11-06 00:18:32 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:18:38 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:18:38 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:18:50 ===
+URI: /robots_api/api/users.php/18
+ID: 18
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:18:50 ===
+URI: /robots_api/api/users.php/18
+ID: 18
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:18:52 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:18:52 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-11-06 00:19:35 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+{
+ "Username": "mahmoud mohammed",
+ "Password" : "123456hh",
+ "TelephoneNumber" : 55555555,
+ "ProjectName" : "Main projecthhhhh"
+}
+
+Decoded:
+Array
+(
+    [Username] => mahmoud mohammed
+    [Password] => 123456hh
+    [TelephoneNumber] => 55555555
+    [ProjectName] => Main projecthhhhh
+)
+
+
+=== POST 2025-11-06 00:19:44 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+{
+ "Username": "mahmoud mohammedhyhyyy",
+ "Password" : "123456hh",
+ "TelephoneNumber" : 55555555,
+ "ProjectName" : "Main project"
+}
+
+Decoded:
+Array
+(
+    [Username] => mahmoud mohammedhyhyyy
+    [Password] => 123456hh
+    [TelephoneNumber] => 55555555
+    [ProjectName] => Main project
+)
+
+
+=== GET 2025-11-06 00:19:52 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:19:52 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:20:42 ===
+URI: /robots_api/api/users.php/20
+ID: 20
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:20:42 ===
+URI: /robots_api/api/users.php/20
+ID: 20
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:28:29 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+{
+ "Username": "mahmoud mohammedhyhyyy",
+ "Password" : "123456hh",
+ "TelephoneNumber" : 55555555,
+ "ProjectName" : "Main project"
+}
+
+Decoded:
+Array
+(
+    [Username] => mahmoud mohammedhyhyyy
+    [Password] => 123456hh
+    [TelephoneNumber] => 55555555
+    [ProjectName] => Main project
+)
+
+
+=== DELETE 2025-11-06 00:32:27 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+{
+ "Username": "mahmoud mohammedhyhyyy",
+ "Password" : "123456hh"
+}
+
+Decoded:
+Array
+(
+    [Username] => mahmoud mohammedhyhyyy
+    [Password] => 123456hh
+)
+
+
+=== POST 2025-11-06 00:33:52 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+{
+ "Username": "mahmoud mohammedhyhyyy",
+ "Password" : "123456hh",
+ "TelephoneNumber" : 55555555,
+ "ProjectName" : "Main project"
+}
+
+Decoded:
+Array
+(
+    [Username] => mahmoud mohammedhyhyyy
+    [Password] => 123456hh
+    [TelephoneNumber] => 55555555
+    [ProjectName] => Main project
+)
+
+
+=== POST 2025-11-06 00:35:25 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+  { "Username": "testadmin",
+    "Password": "Secret123!",
+    "TelephoneNumber": "01000000001",
+    "ProjectName": "DemoProject"
+    }
+Decoded:
+Array
+(
+    [Username] => testadmin
+    [Password] => Secret123!
+    [TelephoneNumber] => 01000000001
+    [ProjectName] => DemoProject
+)
+
+
+=== POST 2025-11-06 00:38:11 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+  { "Username": "testadmin",
+    "Password": "Secret123!",
+    "TelephoneNumber": "01000000001",
+    "ProjectName": "DemoProject"
+    }
+Decoded:
+Array
+(
+    [Username] => testadmin
+    [Password] => Secret123!
+    [TelephoneNumber] => 01000000001
+    [ProjectName] => DemoProject
+)
+
+
+=== POST 2025-11-06 00:38:31 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+  { "Username": "testadmin",
+    "Password": "Secret123!",
+    "TelephoneNumber": "01000000001",
+    "ProjectName": "Main projectt"
+    }
+Decoded:
+Array
+(
+    [Username] => testadmin
+    [Password] => Secret123!
+    [TelephoneNumber] => 01000000001
+    [ProjectName] => Main projectt
+)
+
+
+=== POST 2025-11-06 00:38:44 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+  { "Username": "testadmin",
+    "Password": "Secret123!",
+    "TelephoneNumber": "01000000001",
+    "ProjectName": "Main project"
+    }
+Decoded:
+Array
+(
+    [Username] => testadmin
+    [Password] => Secret123!
+    [TelephoneNumber] => 01000000001
+    [ProjectName] => Main project
+)
+
+
+=== GET 2025-11-06 00:38:52 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== PUT 2025-11-06 00:41:57 ===
+URI: /robots_api/api/users/23
+ID: 23
+RAW:
+  { "Username": "testadmin update",
+    "Password": "Secret123!",
+    "TelephoneNumber": "01000000001",
+    "ProjectName": "Main project"
+    }
+Decoded:
+Array
+(
+    [Username] => testadmin update
+    [Password] => Secret123!
+    [TelephoneNumber] => 01000000001
+    [ProjectName] => Main project
+)
+
+
+=== GET 2025-11-06 00:46:11 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:50:26 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:50:26 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:50:33 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:50:33 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:51:44 ===
+URI: /robots_api/api/projects.php
+projectId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:51:44 ===
+URI: /robots_api/api/projects.php
+projectId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:51:51 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:51:51 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:55:45 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+  { "Username": "testadmin update",
+    "Password": "Secret123!",
+    "TelephoneNumber": "01000000001",
+    "ProjectName": "Main project"
+    }
+Decoded:
+Array
+(
+    [Username] => testadmin update
+    [Password] => Secret123!
+    [TelephoneNumber] => 01000000001
+    [ProjectName] => Main project
+)
+
+
+=== GET 2025-11-06 00:59:29 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-06 00:59:29 ===
+URI: /robots_api/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
