@@ -8,21 +8,23 @@ header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 
 $method = $_SERVER['REQUEST_METHOD'];
 $requestUri = $_SERVER['REQUEST_URI'] ?? '';
-$parts = explode('/', trim($requestUri, '/'));
+
+// ✅ استخدم parse_url علشان نتجاهل أي query string زي ?section=main
+$parts = explode('/', trim(parse_url($requestUri, PHP_URL_PATH), '/'));
 $idCandidate = end($parts);
 $id = is_numeric($idCandidate) ? intval($idCandidate) : null;
 
 $input = file_get_contents("php://input");
 $data = json_decode($input, true);
 
-file_put_contents(__DIR__ . "/debug_log.txt", 
-    "=== $method " . date("Y-m-d H:i:s") . " ===\nURI: $requestUri\nID: " . ($id ?? 'null') . 
+file_put_contents(__DIR__ . "/debug_log.txt",
+    "=== $method " . date("Y-m-d H:i:s") . " ===\nURI: $requestUri\nID: " . ($id ?? 'null') .
     "\nRAW:\n$input\nDecoded:\n" . print_r($data, true) . "\n\n", FILE_APPEND);
 
 try {
     switch ($method) {
 
-        //  Get all buttons or get one by BtnID
+        // ✅ GET buttons
         case 'GET':
             if ($id) {
                 $stmt = $pdo->prepare("SELECT * FROM Buttons WHERE BtnID = ?");
@@ -42,7 +44,7 @@ try {
             }
             break;
 
-        //  Create new button
+        // ✅ CREATE button
         case 'POST':
             if (!isset($data['BtnName'], $data['RobotId'], $data['Color'], $data['Operation'])) {
                 http_response_code(400);
@@ -54,15 +56,57 @@ try {
             $robotId = intval($data['RobotId']);
             $color = trim($data['Color']);
             $operation = trim($data['Operation']);
+            $section = $_GET['section'] ?? null;
 
-            $stmt = $pdo->prepare("INSERT INTO Buttons (BtnName, RobotId, Color, Operation) VALUES (?, ?, ?, ?)");
-            $stmt->execute([$btnName, $robotId, $color, $operation]);
+            if (!$section) {
+                http_response_code(400);
+                echo json_encode(['message' => 'Missing section parameter in URL (e.g. ?section=main or ?section=car)']);
+                exit;
+            }
+
+            $stmt = $pdo->prepare("SELECT * FROM Robots WHERE id = ?");
+            $stmt->execute([$robotId]);
+            $robot = $stmt->fetch();
+
+            if (!$robot) {
+                http_response_code(400);
+                echo json_encode(['message' => 'Invalid RobotId: robot not found']);
+                exit;
+            }
+
+            $sections = json_decode($robot['Sections'], true);
+
+            if (!isset($sections[$section]) || empty($sections[$section]) || !is_array($sections[$section])) {
+                http_response_code(400);
+                echo json_encode(['message' => "Section '$section' is not active for this robot"]);
+                exit;
+            }
+
+            $projectId = intval($robot['projectId']);
+            $stmt = $pdo->prepare("INSERT INTO Buttons (BtnName, RobotId, Color, Operation, projectId) VALUES (?, ?, ?, ?, ?)");
+            $stmt->execute([$btnName, $robotId, $color, $operation, $projectId]);
+            $newBtnId = $pdo->lastInsertId();
+
+            if (!isset($sections[$section]['ActiveBtns']) || !is_array($sections[$section]['ActiveBtns'])) {
+                $sections[$section]['ActiveBtns'] = [];
+            }
+
+            $sections[$section]['ActiveBtns'][] = [
+                'Name' => $btnName,
+                'id'   => $newBtnId
+            ];
+
+            $stmt = $pdo->prepare("UPDATE Robots SET Sections = ? WHERE id = ?");
+            $stmt->execute([json_encode($sections), $robotId]);
 
             http_response_code(201);
-            echo json_encode(['message' => 'Button created successfully']);
+            echo json_encode([
+                'message' => "Button added successfully to section '$section'",
+                'BtnID' => $newBtnId
+            ]);
             break;
 
-        //  Update button by BtnID
+        // ✅ UPDATE button
         case 'PUT':
             if (!$id) {
                 http_response_code(400);
@@ -70,54 +114,135 @@ try {
                 exit;
             }
 
-            $stmt = $pdo->prepare("SELECT BtnID FROM Buttons WHERE BtnID = ?");
+            $stmt = $pdo->prepare("SELECT * FROM Buttons WHERE BtnID = ?");
             $stmt->execute([$id]);
-            if ($stmt->rowCount() === 0) {
+            $button = $stmt->fetch();
+
+            if (!$button) {
                 http_response_code(404);
                 echo json_encode(['message' => 'Button not found']);
                 exit;
             }
 
-            $btnName = $data['BtnName'] ?? null;
-            $robotId = isset($data['RobotId']) ? intval($data['RobotId']) : null;
-            $color = $data['Color'] ?? null;
-            $operation = $data['Operation'] ?? null;
+            $btnName = $data['BtnName'] ?? $button['BtnName'];
+            $robotId = isset($data['RobotId']) ? intval($data['RobotId']) : $button['RobotId'];
+            $color = $data['Color'] ?? $button['Color'];
+            $operation = $data['Operation'] ?? $button['Operation'];
+            $section = $_GET['section'] ?? null;
+
+            $stmt = $pdo->prepare("SELECT * FROM Robots WHERE id = ?");
+            $stmt->execute([$robotId]);
+            $robot = $stmt->fetch();
+
+            if (!$robot) {
+                http_response_code(400);
+                echo json_encode(['message' => 'Robot not found.']);
+                exit;
+            }
+
+            $sections = json_decode($robot['Sections'], true);
+
+            if ($section) {
+                if (!isset($sections[$section])) {
+                    http_response_code(400);
+                    echo json_encode(['message' => "Section '$section' does not exist in this robot."]);
+                    exit;
+                }
+
+                $found = false;
+                if (isset($sections[$section]['ActiveBtns']) && is_array($sections[$section]['ActiveBtns'])) {
+                    foreach ($sections[$section]['ActiveBtns'] as &$b) {
+                        if (isset($b['id']) && $b['id'] == $id) {
+                            $b['Name'] = $btnName;
+                            $found = true;
+                        }
+                    }
+                }
+
+                if (!$found) {
+                    http_response_code(400);
+                    echo json_encode(['message' => 'This button is not part of the specified section for this robot.']);
+                    exit;
+                }
+            }
 
             $stmt = $pdo->prepare("
                 UPDATE Buttons
-                SET 
-                    BtnName = COALESCE(?, BtnName),
-                    RobotId = COALESCE(?, RobotId),
-                    Color = COALESCE(?, Color),
-                    Operation = COALESCE(?, Operation)
+                SET BtnName = ?, RobotId = ?, Color = ?, Operation = ?
                 WHERE BtnID = ?
             ");
             $stmt->execute([$btnName, $robotId, $color, $operation, $id]);
 
-            echo json_encode(['message' => 'Button updated successfully']);
+            $stmt = $pdo->prepare("UPDATE Robots SET Sections = ? WHERE id = ?");
+            $stmt->execute([json_encode($sections), $robotId]);
+
+            echo json_encode(['message' => 'Button updated successfully.']);
             break;
 
-        //  Delete one button or all
+        // ✅ DELETE button
         case 'DELETE':
-            if ($id) {
-                //  Delete by ID
-                $stmt = $pdo->prepare("SELECT BtnID FROM Buttons WHERE BtnID = ?");
-                $stmt->execute([$id]);
-                if ($stmt->rowCount() === 0) {
-                    http_response_code(404);
-                    echo json_encode(['message' => 'Button not found']);
-                    exit;
-                }
-
-                $stmt = $pdo->prepare("DELETE FROM Buttons WHERE BtnID = ?");
-                $stmt->execute([$id]);
-
-                echo json_encode(['message' => 'Button deleted successfully']);
-            } else {
-                //  Delete all buttons
-                $stmt = $pdo->query("DELETE FROM Buttons");
-                echo json_encode(['message' => 'All buttons deleted successfully']);
+            if (!$id) {
+                http_response_code(400);
+                echo json_encode(['message' => 'BtnID required for deletion']);
+                exit;
             }
+
+            $stmt = $pdo->prepare("SELECT * FROM Buttons WHERE BtnID = ?");
+            $stmt->execute([$id]);
+            $button = $stmt->fetch();
+
+            if (!$button) {
+                http_response_code(404);
+                echo json_encode(['message' => 'Button not found']);
+                exit;
+            }
+
+            $section = $_GET['section'] ?? null;
+            $robotId = intval($button['RobotId']);
+            $stmt = $pdo->prepare("SELECT * FROM Robots WHERE id = ?");
+            $stmt->execute([$robotId]);
+            $robot = $stmt->fetch();
+
+            if (!$robot) {
+                http_response_code(400);
+                echo json_encode(['message' => 'Robot not found.']);
+                exit;
+            }
+
+            $sections = json_decode($robot['Sections'], true);
+            $found = false;
+
+            if ($section && isset($sections[$section]['ActiveBtns']) && is_array($sections[$section]['ActiveBtns'])) {
+                foreach ($sections[$section]['ActiveBtns'] as $b) {
+                    if (isset($b['id']) && $b['id'] == $id) {
+                        $found = true;
+                        break;
+                    }
+                }
+            }
+
+            if ($section && !$found) {
+                http_response_code(400);
+                echo json_encode(['message' => 'This button is not part of the specified section for this robot.']);
+                exit;
+            }
+
+            $stmt = $pdo->prepare("DELETE FROM Buttons WHERE BtnID = ?");
+            $stmt->execute([$id]);
+
+            foreach ($sections as &$sec) {
+                if (isset($sec['ActiveBtns']) && is_array($sec['ActiveBtns'])) {
+                    $sec['ActiveBtns'] = array_values(array_filter(
+                        $sec['ActiveBtns'],
+                        fn($b) => !isset($b['id']) || $b['id'] != $id
+                    ));
+                }
+            }
+
+            $stmt = $pdo->prepare("UPDATE Robots SET Sections = ? WHERE id = ?");
+            $stmt->execute([json_encode($sections), $robotId]);
+
+            echo json_encode(['message' => 'Button deleted successfully.']);
             break;
 
         default:

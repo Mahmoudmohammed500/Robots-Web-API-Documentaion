@@ -5441,3 +5441,1179 @@ RAW:
 Decoded:
 
 
+=== GET 2025-11-06 21:49:22 ===
+URI: /robots_api/api/buttons?section=car
+ID: null
+RAW:
+  { 
+    	
+  "BtnName" : "Start",
+  "RobotId" : 8,
+  	"Color" : "red",	
+    "Operation": "/start",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => Start
+    [RobotId] => 8
+    [Color] => red
+    [Operation] => /start
+    [projectId] => 10
+)
+
+
+=== POST 2025-11-06 21:49:29 ===
+URI: /robots_api/api/buttons?section=car
+ID: null
+RAW:
+  { 
+    	
+  "BtnName" : "Start",
+  "RobotId" : 8,
+  	"Color" : "red",	
+    "Operation": "/start",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => Start
+    [RobotId] => 8
+    [Color] => red
+    [Operation] => /start
+    [projectId] => 10
+)
+
+
+=== GET 2025-11-06 21:52:05 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-11-06 21:57:10 ===
+URI: /robots_api/api/buttons?section=car
+ID: null
+RAW:
+  { 
+    	
+  "BtnName" : "ُEnd",
+  "RobotId" : 8,
+  	"Color" : "red",	
+    "Operation": "/End",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُEnd
+    [RobotId] => 8
+    [Color] => red
+    [Operation] => /End
+    [projectId] => 10
+)
+
+
+=== GET 2025-11-06 21:58:23 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-11-06 22:02:44 ===
+URI: /robots_api/api/buttons?section=car
+ID: null
+RAW:
+  { 
+    	
+  "BtnName" : "ُstart",
+  "RobotId" : 7,
+  	"Color" : "red",	
+    "Operation": "/start",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُstart
+    [RobotId] => 7
+    [Color] => red
+    [Operation] => /start
+    [projectId] => 10
+)
+
+
+=== GET 2025-11-06 22:58:32 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-11-06 23:27:09 ===
+URI: /robots_api/api/buttons?section=car
+ID: null
+RAW:
+  { 
+    	
+  "BtnName" : "ُstart",
+  "RobotId" : 8,
+  	"Color" : "red",	
+    "Operation": "/start",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُstart
+    [RobotId] => 8
+    [Color] => red
+    [Operation] => /start
+    [projectId] => 10
+)
+
+
+=== POST 2025-11-06 23:27:18 ===
+URI: /robots_api/api/buttons?section=car
+ID: null
+RAW:
+  { 
+    	
+  "BtnName" : "ُstart",
+  "RobotId" : 7,
+  	"Color" : "red",	
+    "Operation": "/start",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُstart
+    [RobotId] => 7
+    [Color] => red
+    [Operation] => /start
+    [projectId] => 10
+)
+
+
+=== GET 2025-11-06 23:28:06 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== PUT 2025-11-06 23:30:36 ===
+URI: /robots_api/api/buttons?section=car
+ID: null
+RAW:
+  { 
+    	
+  "BtnName" : "ُstart-Update",
+  "RobotId" : 7,
+  	"Color" : "black",	
+    "Operation": "/start-Update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُstart-Update
+    [RobotId] => 7
+    [Color] => black
+    [Operation] => /start-Update
+    [projectId] => 10
+)
+
+
+=== PUT 2025-11-06 23:31:04 ===
+URI: /robots_api/api/buttons/19?section=car
+ID: null
+RAW:
+  { 
+    	
+  "BtnName" : "ُstart-Update",
+  "RobotId" : 7,
+  	"Color" : "black",	
+    "Operation": "/start-Update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُstart-Update
+    [RobotId] => 7
+    [Color] => black
+    [Operation] => /start-Update
+    [projectId] => 10
+)
+
+
+=== PUT 2025-11-06 23:31:15 ===
+URI: /robots_api/api/buttons/19/?section=car
+ID: null
+RAW:
+  { 
+    	
+  "BtnName" : "ُstart-Update",
+  "RobotId" : 7,
+  	"Color" : "black",	
+    "Operation": "/start-Update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُstart-Update
+    [RobotId] => 7
+    [Color] => black
+    [Operation] => /start-Update
+    [projectId] => 10
+)
+
+
+=== PUT 2025-11-06 23:35:45 ===
+URI: /robots_api/api/buttons/19/?section=car
+ID: null
+RAW:
+  { 
+    	
+  "BtnName" : "ُstart-Update",
+  "RobotId" : 7,
+  	"Color" : "black",	
+    "Operation": "/start-Update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُstart-Update
+    [RobotId] => 7
+    [Color] => black
+    [Operation] => /start-Update
+    [projectId] => 10
+)
+
+
+=== PUT 2025-11-06 23:35:55 ===
+URI: /robots_api/api/buttons/19?section=car
+ID: 19
+RAW:
+  { 
+    	
+  "BtnName" : "ُstart-Update",
+  "RobotId" : 7,
+  	"Color" : "black",	
+    "Operation": "/start-Update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُstart-Update
+    [RobotId] => 7
+    [Color] => black
+    [Operation] => /start-Update
+    [projectId] => 10
+)
+
+
+=== PUT 2025-11-06 23:37:56 ===
+URI: /robots_api/api/buttons/19?section=car
+ID: 19
+RAW:
+  { 
+    	
+  "BtnName" : "ُstart-Update",
+  "RobotId" : 7,
+  	"Color" : "pffff",	
+    "Operation": "/start-Update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُstart-Update
+    [RobotId] => 7
+    [Color] => pffff
+    [Operation] => /start-Update
+    [projectId] => 10
+)
+
+
+=== GET 2025-11-06 23:38:13 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== PUT 2025-11-06 23:44:03 ===
+URI: /robots_api/api/buttons/19?section=car
+ID: 19
+RAW:
+  { 
+    	
+  "BtnName" : "ُstart-Update cc",
+  "RobotId" : 7,
+  	"Color" : "ccccccf",	
+    "Operation": "/start-Update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُstart-Update cc
+    [RobotId] => 7
+    [Color] => ccccccf
+    [Operation] => /start-Update
+    [projectId] => 10
+)
+
+
+=== GET 2025-11-06 23:45:08 ===
+URI: /robots_api/api/buttons/19
+ID: 19
+RAW:
+  { 
+    	
+  "BtnName" : "ُstart-Update cc",
+  "RobotId" : 7,
+  	"Color" : "ccccccf",	
+    "Operation": "/start-Update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُstart-Update cc
+    [RobotId] => 7
+    [Color] => ccccccf
+    [Operation] => /start-Update
+    [projectId] => 10
+)
+
+
+=== DELETE 2025-11-06 23:45:32 ===
+URI: /robots_api/api/buttons/19?section=car
+ID: 19
+RAW:
+  { 
+    	
+  "BtnName" : "ُstart-Update cc",
+  "RobotId" : 7,
+  	"Color" : "ccccccf",	
+    "Operation": "/start-Update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُstart-Update cc
+    [RobotId] => 7
+    [Color] => ccccccf
+    [Operation] => /start-Update
+    [projectId] => 10
+)
+
+
+=== DELETE 2025-11-06 23:47:04 ===
+URI: /robots_api/api/buttons/1?section=main
+ID: 1
+RAW:
+  { 
+    	
+  "BtnName" : "ُfawrward - Update",
+  "RobotId" : 8,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُfawrward-Update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُfawrward - Update
+    [RobotId] => 8
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُfawrward-Update
+    [projectId] => 10
+)
+
+
+=== POST 2025-11-06 23:48:29 ===
+URI: /robots_api/api/buttons?section=main
+ID: null
+RAW:
+  { 
+    	
+  "BtnName" : "ُstart",
+  "RobotId" : 8,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُstart",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُstart
+    [RobotId] => 8
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُstart
+    [projectId] => 10
+)
+
+
+=== PUT 2025-11-06 23:48:59 ===
+URI: /robots_api/api/buttons/20?section=main
+ID: 20
+RAW:
+  { 
+    	
+  "BtnName" : "ُstart -update",
+  "RobotId" : 8,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُstart-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُstart -update
+    [RobotId] => 8
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُstart-update
+    [projectId] => 10
+)
+
+
+=== GET 2025-11-06 23:49:45 ===
+URI: /robots_api/api/buttons/20
+ID: 20
+RAW:
+  { 
+    	
+  "BtnName" : "ُstart -update",
+  "RobotId" : 8,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُstart-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُstart -update
+    [RobotId] => 8
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُstart-update
+    [projectId] => 10
+)
+
+
+=== DELETE 2025-11-06 23:50:05 ===
+URI: /robots_api/api/buttons/20?section=car
+ID: 20
+RAW:
+  { 
+    	
+  "BtnName" : "ُstart -update",
+  "RobotId" : 8,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُstart-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُstart -update
+    [RobotId] => 8
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُstart-update
+    [projectId] => 10
+)
+
+
+=== PUT 2025-11-06 23:51:20 ===
+URI: /robots_api/api/buttons/18?section=main
+ID: 18
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -update",
+  "RobotId" : 8,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُstart-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -update
+    [RobotId] => 8
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُstart-update
+    [projectId] => 10
+)
+
+
+=== PUT 2025-11-06 23:52:04 ===
+URI: /robots_api/api/buttons/18?section=car
+ID: 18
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -update",
+  "RobotId" : 8,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُstart-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -update
+    [RobotId] => 8
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُstart-update
+    [projectId] => 10
+)
+
+
+=== PUT 2025-11-06 23:52:58 ===
+URI: /robots_api/api/buttons/18?section=main
+ID: 18
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -update",
+  "RobotId" : 7,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُstart-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -update
+    [RobotId] => 7
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُstart-update
+    [projectId] => 10
+)
+
+
+=== PUT 2025-11-06 23:53:08 ===
+URI: /robots_api/api/buttons/18?section=car
+ID: 18
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -update",
+  "RobotId" : 7,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُstart-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -update
+    [RobotId] => 7
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُstart-update
+    [projectId] => 10
+)
+
+
+=== PUT 2025-11-06 23:53:33 ===
+URI: /robots_api/api/buttons/18?section=main
+ID: 18
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -update",
+  "RobotId" :8,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُstart-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -update
+    [RobotId] => 8
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُstart-update
+    [projectId] => 10
+)
+
+
+=== PUT 2025-11-06 23:53:45 ===
+URI: /robots_api/api/buttons/18?section=main
+ID: 18
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -update",
+  "RobotId" :7,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُstart-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -update
+    [RobotId] => 7
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُstart-update
+    [projectId] => 10
+)
+
+
+=== PUT 2025-11-06 23:54:04 ===
+URI: /robots_api/api/buttons/18?section=car
+ID: 18
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -update",
+  "RobotId" :7,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُstart-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -update
+    [RobotId] => 7
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُstart-update
+    [projectId] => 10
+)
+
+
+=== DELETE 2025-11-06 23:54:25 ===
+URI: /robots_api/api/buttons/18?section=main
+ID: 18
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -update",
+  "RobotId" :8,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُstart-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -update
+    [RobotId] => 8
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُstart-update
+    [projectId] => 10
+)
+
+
+=== POST 2025-11-07 00:03:38 ===
+URI: /robots_api/api/buttons/18?section=main
+ID: null
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -new",
+  "RobotId" :8,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُstart-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -new
+    [RobotId] => 8
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُstart-update
+    [projectId] => 10
+)
+
+
+=== PUT 2025-11-07 00:04:23 ===
+URI: /robots_api/api/buttons/18?section=car
+ID: null
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -update",
+  "RobotId" :8,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُend-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -update
+    [RobotId] => 8
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُend-update
+    [projectId] => 10
+)
+
+
+=== PUT 2025-11-07 00:04:35 ===
+URI: /robots_api/api/buttons/21?section=car
+ID: null
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -update",
+  "RobotId" :8,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُend-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -update
+    [RobotId] => 8
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُend-update
+    [projectId] => 10
+)
+
+
+=== PUT 2025-11-07 00:05:02 ===
+URI: /robots_api/api/buttons/21?section=main
+ID: null
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -update",
+  "RobotId" :8,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُend-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -update
+    [RobotId] => 8
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُend-update
+    [projectId] => 10
+)
+
+
+=== GET 2025-11-07 00:05:13 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== PUT 2025-11-07 00:05:33 ===
+URI: /robots_api/api/buttons/21
+ID: 21
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -update",
+  "RobotId" :8,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُend-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -update
+    [RobotId] => 8
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُend-update
+    [projectId] => 10
+)
+
+
+=== GET 2025-11-07 00:05:40 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== PUT 2025-11-07 00:06:27 ===
+URI: /robots_api/api/buttons/21?section=main
+ID: null
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -update",
+  "RobotId" :8,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُend-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -update
+    [RobotId] => 8
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُend-update
+    [projectId] => 10
+)
+
+
+=== DELETE 2025-11-07 00:06:52 ===
+URI: /robots_api/api/buttons/21?section=main
+ID: null
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -update",
+  "RobotId" :8,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُend-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -update
+    [RobotId] => 8
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُend-update
+    [projectId] => 10
+)
+
+
+=== PUT 2025-11-07 00:07:14 ===
+URI: /robots_api/api/buttons/21?section=main
+ID: null
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -update",
+  "RobotId" :8,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُend-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -update
+    [RobotId] => 8
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُend-update
+    [projectId] => 10
+)
+
+
+=== PUT 2025-11-07 00:09:38 ===
+URI: /robots_api/api/buttons/21?section=main
+ID: 21
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -update",
+  "RobotId" :8,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُend-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -update
+    [RobotId] => 8
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُend-update
+    [projectId] => 10
+)
+
+
+=== PUT 2025-11-07 00:10:04 ===
+URI: /robots_api/api/buttons/21?section=car
+ID: 21
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -update",
+  "RobotId" :8,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُend-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -update
+    [RobotId] => 8
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُend-update
+    [projectId] => 10
+)
+
+
+=== PUT 2025-11-07 00:10:17 ===
+URI: /robots_api/api/buttons/21?section=main
+ID: 21
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -update",
+  "RobotId" :7,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُend-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -update
+    [RobotId] => 7
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُend-update
+    [projectId] => 10
+)
+
+
+=== DELETE 2025-11-07 00:10:30 ===
+URI: /robots_api/api/buttons/21?section=main
+ID: 21
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -update",
+  "RobotId" :7,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُend-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -update
+    [RobotId] => 7
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُend-update
+    [projectId] => 10
+)
+
+
+=== POST 2025-11-07 00:11:34 ===
+URI: /robots_api/api/buttons/21?section=car
+ID: 21
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -add",
+  "RobotId" :8,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُend-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -add
+    [RobotId] => 8
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُend-update
+    [projectId] => 10
+)
+
+
+=== POST 2025-11-07 00:11:44 ===
+URI: /robots_api/api/buttons/21?section=car
+ID: 21
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -add",
+  "RobotId" :7,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُend-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -add
+    [RobotId] => 7
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُend-update
+    [projectId] => 10
+)
+
+
+=== GET 2025-11-07 00:11:55 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== PUT 2025-11-07 00:12:10 ===
+URI: /robots_api/api/buttons/22?section=main
+ID: 22
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -add",
+  "RobotId" :7,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُend-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -add
+    [RobotId] => 7
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُend-update
+    [projectId] => 10
+)
+
+
+=== PUT 2025-11-07 00:12:19 ===
+URI: /robots_api/api/buttons/22?section=car
+ID: 22
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -add",
+  "RobotId" :8,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُend-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -add
+    [RobotId] => 8
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُend-update
+    [projectId] => 10
+)
+
+
+=== PUT 2025-11-07 00:12:30 ===
+URI: /robots_api/api/buttons/22?section=car
+ID: 22
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -update",
+  "RobotId" :7,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُend-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -update
+    [RobotId] => 7
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُend-update
+    [projectId] => 10
+)
+
+
+=== GET 2025-11-07 00:12:33 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== DELETE 2025-11-07 00:12:51 ===
+URI: /robots_api/api/buttons/22?section=main
+ID: 22
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -update",
+  "RobotId" :7,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُend-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -update
+    [RobotId] => 7
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُend-update
+    [projectId] => 10
+)
+
+
+=== DELETE 2025-11-07 00:13:13 ===
+URI: /robots_api/api/buttons/22?section=main
+ID: 22
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -update",
+  "RobotId" :8,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُend-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -update
+    [RobotId] => 8
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُend-update
+    [projectId] => 10
+)
+
+
+=== DELETE 2025-11-07 00:13:27 ===
+URI: /robots_api/api/buttons/22?section=car
+ID: 22
+RAW:
+  { 
+    	
+  "BtnName" : "ُend -update",
+  "RobotId" :7,
+  	"Color" : "mmmmmmmmmmmmmm",	
+    "Operation": "/ُend-update",
+    	"projectId": 10
+    }
+Decoded:
+Array
+(
+    [BtnName] => ُend -update
+    [RobotId] => 7
+    [Color] => mmmmmmmmmmmmmm
+    [Operation] => /ُend-update
+    [projectId] => 10
+)
+
+

@@ -358,72 +358,205 @@
       "get": {
         "tags": ["Buttons"],
         "summary": "Get all buttons",
-        "responses": { "200": { "description": "List of all buttons" } }
+        "description": "Retrieve a list of all buttons in the system.",
+        "responses": {
+          "200": {
+            "description": "List of all buttons"
+          }
+        }
       },
       "post": {
         "tags": ["Buttons"],
         "summary": "Create a new button",
+        "description": "Add a new button and automatically link it to a specific robot section if it exists. If the section does not exist in the robot, the button will NOT be added.",
+        "parameters": [
+          {
+            "name": "section",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "main"
+            },
+            "description": "Robot section name to which the button should be added (e.g., main or car)"
+          }
+        ],
         "requestBody": {
           "required": true,
           "content": {
             "application/json": {
-              "schema": { "$ref": "#/components/schemas/Button" }
+              "schema": {
+                "$ref": "#/components/schemas/Button"
+              }
             }
           }
         },
-        "responses": { "201": { "description": "Button created successfully" } }
+        "responses": {
+          "201": {
+            "description": "✅ Button created and linked to robot section successfully",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Button created and linked successfully"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "❌ Section not found in robot",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "This section does not exist for the specified robot"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Missing required parameters"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
       }
     },
     "/buttons/{id}": {
       "get": {
         "tags": ["Buttons"],
-        "summary": "Get a button by ID",
+        "summary": "Get button by ID",
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "required": true,
-            "schema": { "type": "integer" }
+            "schema": {
+              "type": "integer"
+            }
           }
         ],
         "responses": {
-          "200": { "description": "Button details" },
-          "404": { "description": "Button not found" }
+          "200": {
+            "description": "Button details"
+          },
+          "404": {
+            "description": "Button not found"
+          }
         }
       },
       "put": {
         "tags": ["Buttons"],
-        "summary": "Update a button by ID",
+        "summary": "Update button by ID",
+        "description": "Update an existing button if it belongs to the specified robot and section. If the button is not part of that section, the update will NOT be applied.",
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "required": true,
-            "schema": { "type": "integer" }
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "section",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "main"
+            }
           }
         ],
         "requestBody": {
           "required": true,
           "content": {
             "application/json": {
-              "schema": { "$ref": "#/components/schemas/Button" }
+              "schema": {
+                "$ref": "#/components/schemas/Button"
+              }
             }
           }
         },
-        "responses": { "200": { "description": "Button updated successfully" } }
+        "responses": {
+          "200": {
+            "description": "✅ Button updated successfully",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Button updated successfully"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "❌ Button not linked to this robot or section",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "This button was not linked to the specified robot or section"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Missing parameters"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
       },
       "delete": {
         "tags": ["Buttons"],
-        "summary": "Delete a button by ID",
+        "summary": "Delete button by ID",
+        "description": "Delete a button only if it belongs to the specified robot and section. Otherwise, deletion will be rejected.",
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "required": true,
-            "schema": { "type": "integer" }
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "section",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "main"
+            }
           }
         ],
-        "responses": { "200": { "description": "Button deleted successfully" } }
+        "responses": {
+          "200": {
+            "description": "✅ Button deleted successfully",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Button deleted successfully"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "❌ Button not found or not linked to robot section",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "This button is not part of the specified robot or section"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Missing Button ID or section parameter"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
       }
     },
     "/buttons/": {
@@ -431,7 +564,9 @@
         "tags": ["Buttons"],
         "summary": "Delete all buttons",
         "responses": {
-          "200": { "description": "All buttons deleted successfully" }
+          "200": {
+            "description": "All buttons deleted successfully"
+          }
         }
       }
     },
@@ -732,11 +867,14 @@
         "type": "object",
         "properties": {
           "BtnName": { "type": "string", "example": "Start" },
-          "RobotId": { "type": "integer", "example": 1 },
-          "Color": { "type": "string", "example": "#4CAF50" },
-          "Operation": { "type": "string", "example": "/start" }
-        }
+          "RobotId": { "type": "integer", "example": 8 },
+          "Color": { "type": "string", "example": "#FF0000" },
+          "Operation": { "type": "string", "example": "/start" },
+          "projectId": { "type": "integer", "example": 10 }
+        },
+        "required": ["BtnName", "RobotId", "Operation", "projectId"]
       },
+
       "Notification": {
         "type": "object",
         "properties": {
