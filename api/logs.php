@@ -1,24 +1,36 @@
 <?php
 require_once __DIR__ . '/../config/config.php';
 
+// ---------- CORS Headers ----------
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
-header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With, Cache-Control");
+
+// ---------- Handle preflight OPTIONS request ----------
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(200);
+    exit();
+}
 
 $method = $_SERVER['REQUEST_METHOD'];
 $requestUri = $_SERVER['REQUEST_URI'] ?? '';
-$parts = explode('/', trim($requestUri, '/'));
+$parts = explode('/', trim(parse_url($requestUri, PHP_URL_PATH), '/'));
 $idCandidate = end($parts);
 $logId = is_numeric($idCandidate) ? intval($idCandidate) : null;
 
 $input = file_get_contents("php://input");
 $data = json_decode($input, true);
 
+// ---------- Debug log ----------
+file_put_contents(__DIR__ . "/debug_log.txt", 
+    "=== $method " . date("Y-m-d H:i:s") . " ===\nURI: $requestUri\nlogId: " . ($logId ?? 'null') . 
+    "\nRAW:\n$input\nDecoded:\n" . print_r($data, true) . "\n\n", FILE_APPEND);
+
 try {
     switch ($method) {
 
-        // 🟢 GET (كل اللوجات أو لوج واحد)
+        // GET (All logs or single log)
         case 'GET':
             if ($logId) {
                 $stmt = $pdo->prepare("SELECT * FROM logs WHERE logId = ?");
@@ -37,7 +49,7 @@ try {
             }
             break;
 
-        // 🟡 POST (إضافة لوج جديد)
+        // POST (Create new log)
         case 'POST':
             if (!isset($data['projectId'], $data['robotId'], $data['message'], $data['type'], $data['date'], $data['time'])) {
                 http_response_code(400);
@@ -45,7 +57,7 @@ try {
                 exit;
             }
 
-            // تأكد إن المشروع والروبوت موجودين فعلًا
+            // تحقق من وجود المشروع والروبوت
             $stmt = $pdo->prepare("
                 SELECT 
                     (SELECT COUNT(*) FROM projects WHERE projectId = ?) AS project_exists,
@@ -74,7 +86,7 @@ try {
             echo json_encode(['message' => 'Log created successfully']);
             break;
 
-        // 🔵 PUT (تحديث)
+        // PUT (Update log)
         case 'PUT':
             if (!$logId) {
                 http_response_code(400);
@@ -111,19 +123,19 @@ try {
                 WHERE logId = ?
             ");
             $stmt->execute([
-                $data['projectId'],
-                $data['robotId'],
-                $data['message'],
-                $data['type'],
-                $data['date'],
-                $data['time'],
+                intval($data['projectId']),
+                intval($data['robotId']),
+                trim($data['message']),
+                trim($data['type']),
+                trim($data['date']),
+                trim($data['time']),
                 $logId
             ]);
 
             echo json_encode(['message' => 'Log updated successfully']);
             break;
 
-        // 🔴 DELETE
+        // DELETE (Delete single or all logs)
         case 'DELETE':
             if ($logId) {
                 $stmt = $pdo->prepare("SELECT logId FROM logs WHERE logId = ?");

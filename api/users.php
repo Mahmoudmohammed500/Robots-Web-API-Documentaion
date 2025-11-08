@@ -1,13 +1,14 @@
 <?php
+// File: api/users.php
 require_once __DIR__ . '/../config/config.php';
 
-header("Access-Control-Allow-Origin: *");
-header("Content-Type: application/json; charset=UTF-8");
-header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
-header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+// ---------- Handle preflight OPTIONS request ----------
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(200);
+    exit();
+}
 
 $method = $_SERVER['REQUEST_METHOD'];
-
 $requestUri = $_SERVER['REQUEST_URI'] ?? '';
 $parts = explode('/', trim($requestUri, '/'));
 $idCandidate = end($parts);
@@ -16,13 +17,16 @@ $id = is_numeric($idCandidate) ? intval($idCandidate) : null;
 $input = file_get_contents("php://input");
 $data = json_decode($input, true);
 
-// Log Debug
-file_put_contents(__DIR__ . "/debug_log.txt", "=== $method " . date("Y-m-d H:i:s") . " ===\nURI: " . $requestUri . "\nID: " . ($id ?? 'null') . "\nRAW:\n$input\nDecoded:\n" . print_r($data, true) . "\n\n", FILE_APPEND);
+// ---------- Debug log ----------
+file_put_contents(__DIR__ . "/debug_log.txt",
+    "=== $method " . date("Y-m-d H:i:s") . " ===\nURI: $requestUri\nID: " . ($id ?? 'null') .
+    "\nRAW:\n$input\nDecoded:\n" . print_r($data, true) . "\n\n",
+    FILE_APPEND
+);
 
-// encryption key (from config) - expected hex(64) => 32 bytes
+// ---------- Encryption key ----------
 $encKey = hex2bin(APP_ENC_KEY);
 if ($encKey === false || strlen($encKey) !== 32) {
-    // fail safe if key not configured
     file_put_contents(__DIR__ . "/debug_log.txt", "ERROR: Invalid APP_ENC_KEY\n", FILE_APPEND);
     http_response_code(500);
     echo json_encode(['message' => 'Server misconfiguration: encryption key missing']);
@@ -34,7 +38,6 @@ function encrypt_password(string $plaintext, string $key): string {
     $ivlen = openssl_cipher_iv_length($cipher);
     $iv = random_bytes($ivlen);
     $raw = openssl_encrypt($plaintext, $cipher, $key, OPENSSL_RAW_DATA, $iv);
-    // store iv + cipher, base64 encoded
     return base64_encode($iv . $raw);
 }
 
@@ -53,9 +56,9 @@ function decrypt_password(string $b64, string $key): ?string {
 try {
     switch($method) {
 
+        // ---------- GET ----------
         case 'GET':
             if ($id) {
-                // GET by ID - فك تشفير الباسورد قبل الإرسال
                 $stmt = $pdo->prepare("SELECT id, Username, Password, TelephoneNumber, ProjectName FROM Users WHERE id = ?");
                 $stmt->execute([$id]);
                 $user = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -67,7 +70,6 @@ try {
                     echo json_encode(['message' => 'User not found']);
                 }
             } else {
-                // GET all - فك تشفير جميع الباسوردات قبل الإرسال
                 $stmt = $pdo->query("SELECT id, Username, Password, TelephoneNumber, ProjectName FROM Users ORDER BY id DESC");
                 $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 foreach ($users as &$u) {
@@ -77,6 +79,7 @@ try {
             }
             break;
 
+        // ---------- POST ----------
         case 'POST':
             if (!isset($data['Username'], $data['Password'], $data['TelephoneNumber'], $data['ProjectName'])) {
                 http_response_code(400);
@@ -84,18 +87,19 @@ try {
                 exit;
             }
 
-            $username = trim($data['Username']);
-            $encrypted = encrypt_password($data['Password'], $encKey);
-            $telephone = trim($data['TelephoneNumber']);
-            $project = trim($data['ProjectName']);
-
             $stmt = $pdo->prepare("INSERT INTO Users (Username, Password, TelephoneNumber, ProjectName) VALUES (?, ?, ?, ?)");
-            $stmt->execute([$username, $encrypted, $telephone, $project]);
+            $stmt->execute([
+                trim($data['Username']),
+                encrypt_password($data['Password'], $encKey),
+                trim($data['TelephoneNumber']),
+                trim($data['ProjectName'])
+            ]);
 
             http_response_code(201);
             echo json_encode(['message' => 'User created successfully']);
             break;
 
+        // ---------- PUT ----------
         case 'PUT':
             if (!$id) {
                 http_response_code(400);
@@ -116,17 +120,19 @@ try {
                 exit;
             }
 
-            $username = $data['Username'];
-            $encrypted = encrypt_password($data['Password'], $encKey);
-            $telephone = $data['TelephoneNumber'];
-            $project = $data['ProjectName'];
-
             $stmt = $pdo->prepare("UPDATE Users SET Username = ?, Password = ?, TelephoneNumber = ?, ProjectName = ? WHERE id = ?");
-            $stmt->execute([$username, $encrypted, $telephone, $project, $id]);
+            $stmt->execute([
+                $data['Username'],
+                encrypt_password($data['Password'], $encKey),
+                $data['TelephoneNumber'],
+                $data['ProjectName'],
+                $id
+            ]);
 
             echo json_encode(['message' => 'User updated successfully']);
             break;
 
+        // ---------- DELETE ----------
         case 'DELETE':
             if ($id) {
                 $stmt = $pdo->prepare("SELECT id FROM Users WHERE id = ?");
@@ -139,7 +145,6 @@ try {
 
                 $stmt = $pdo->prepare("DELETE FROM Users WHERE id = ?");
                 $stmt->execute([$id]);
-
                 echo json_encode(['message' => 'User deleted successfully']);
             } else {
                 $stmt = $pdo->query("DELETE FROM Users");
@@ -147,6 +152,7 @@ try {
             }
             break;
 
+        // ---------- Default ----------
         default:
             http_response_code(405);
             echo json_encode(['message' => 'Method Not Allowed']);
@@ -157,4 +163,3 @@ try {
     http_response_code(500);
     echo json_encode(['message' => 'Database error: ' . $e->getMessage()]);
 }
-?>

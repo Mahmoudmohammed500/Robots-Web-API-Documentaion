@@ -1,20 +1,29 @@
 <?php
+// File: notifications.php
 require_once __DIR__ . '/../config/config.php';
 
+// ---------- CORS Headers ----------
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
-header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With, Cache-Control");
+
+// ---------- Handle preflight OPTIONS request ----------
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(200);
+    exit();
+}
 
 $method = $_SERVER['REQUEST_METHOD'];
 $requestUri = $_SERVER['REQUEST_URI'] ?? '';
-$parts = explode('/', trim($requestUri, '/'));
+$parts = explode('/', trim(parse_url($requestUri, PHP_URL_PATH), '/'));
 $idCandidate = end($parts);
 $notificationId = is_numeric($idCandidate) ? intval($idCandidate) : null;
 
 $input = file_get_contents("php://input");
 $data = json_decode($input, true);
 
+// ---------- Debug log ----------
 file_put_contents(__DIR__ . "/debug_log.txt", 
     "=== $method " . date("Y-m-d H:i:s") . " ===\nURI: $requestUri\nnotificationId: " . ($notificationId ?? 'null') . 
     "\nRAW:\n$input\nDecoded:\n" . print_r($data, true) . "\n\n", FILE_APPEND);
@@ -49,21 +58,18 @@ try {
                 exit;
             }
 
-            // التحقق من وجود المشروع
-            $checkProject = $pdo->prepare("SELECT projectId FROM projects WHERE projectId = ?");
-            $checkProject->execute([$data['projectId']]);
-            if ($checkProject->rowCount() === 0) {
-                http_response_code(400);
-                echo json_encode(['message' => 'Invalid projectId']);
-                exit;
-            }
+            // تحقق من وجود المشروع والروبوت
+            $stmt = $pdo->prepare("
+                SELECT 
+                    (SELECT COUNT(*) FROM projects WHERE projectId = ?) AS project_exists,
+                    (SELECT COUNT(*) FROM robots WHERE id = ?) AS robot_exists
+            ");
+            $stmt->execute([$data['projectId'], $data['robotId']]);
+            $exists = $stmt->fetch();
 
-            // التحقق من وجود الروبوت
-            $checkRobot = $pdo->prepare("SELECT id FROM robots WHERE id = ?");
-            $checkRobot->execute([$data['robotId']]);
-            if ($checkRobot->rowCount() === 0) {
+            if (!$exists['project_exists'] || !$exists['robot_exists']) {
                 http_response_code(400);
-                echo json_encode(['message' => 'Invalid robotId']);
+                echo json_encode(['message' => 'Invalid projectId or robotId']);
                 exit;
             }
 
@@ -97,41 +103,33 @@ try {
                 exit;
             }
 
-            // التحقق من projectId و robotId قبل التحديث
-            $checkProject = $pdo->prepare("SELECT projectId FROM projects WHERE projectId = ?");
-            $checkProject->execute([$data['projectId']]);
-            if ($checkProject->rowCount() === 0) {
-                http_response_code(400);
-                echo json_encode(['message' => 'Invalid projectId']);
-                exit;
-            }
+            // تحقق من صحة projectId و robotId
+            $stmt = $pdo->prepare("
+                SELECT 
+                    (SELECT COUNT(*) FROM projects WHERE projectId = ?) AS project_exists,
+                    (SELECT COUNT(*) FROM robots WHERE id = ?) AS robot_exists
+            ");
+            $stmt->execute([$data['projectId'], $data['robotId']]);
+            $exists = $stmt->fetch();
 
-            $checkRobot = $pdo->prepare("SELECT id FROM robots WHERE id = ?");
-            $checkRobot->execute([$data['robotId']]);
-            if ($checkRobot->rowCount() === 0) {
+            if (!$exists['project_exists'] || !$exists['robot_exists']) {
                 http_response_code(400);
-                echo json_encode(['message' => 'Invalid robotId']);
+                echo json_encode(['message' => 'Invalid projectId or robotId']);
                 exit;
             }
 
             $stmt = $pdo->prepare("
                 UPDATE notifications 
-                SET 
-                    projectId = ?, 
-                    robotId = ?, 
-                    message = ?, 
-                    type = ?, 
-                    date = ?, 
-                    time = ?
+                SET projectId = ?, robotId = ?, message = ?, type = ?, date = ?, time = ?
                 WHERE notificationId = ?
             ");
             $stmt->execute([
                 intval($data['projectId']),
                 intval($data['robotId']),
-                $data['message'],
-                $data['type'],
-                $data['date'],
-                $data['time'],
+                trim($data['message']),
+                trim($data['type']),
+                trim($data['date']),
+                trim($data['time']),
                 $notificationId
             ]);
 

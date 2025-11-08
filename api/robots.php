@@ -1,24 +1,36 @@
 <?php
 require_once __DIR__ . '/../config/config.php';
 
+// ---------- CORS Headers ----------
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
-header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With, Cache-Control");
+
+// ---------- Handle preflight OPTIONS request ----------
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(200);
+    exit();
+}
 
 $method = $_SERVER['REQUEST_METHOD'];
 $requestUri = $_SERVER['REQUEST_URI'] ?? '';
-$parts = explode('/', trim($requestUri, '/'));
+$parts = explode('/', trim(parse_url($requestUri, PHP_URL_PATH), '/'));
 $idCandidate = end($parts);
 $id = is_numeric($idCandidate) ? intval($idCandidate) : null;
 
 $input = file_get_contents("php://input");
 $data = json_decode($input, true);
 
+// ---------- Debug log ----------
+file_put_contents(__DIR__ . "/debug_log.txt",
+    "=== $method " . date("Y-m-d H:i:s") . " ===\nURI: $requestUri\nID: " . ($id ?? 'null') .
+    "\nRAW:\n$input\nDecoded:\n" . print_r($data, true) . "\n\n", FILE_APPEND);
+
 try {
     switch ($method) {
 
-        // ✅ Get all robots or one by ID
+        // GET all robots or one by ID
         case 'GET':
             if ($id) {
                 $stmt = $pdo->prepare("SELECT * FROM Robots WHERE id = ?");
@@ -44,7 +56,7 @@ try {
             }
             break;
 
-        // ✅ Create new robot
+        // POST create new robot
         case 'POST':
             if (!isset($data['RobotName'], $data['projectId'], $data['mqttUrl'], $data['Sections'])) {
                 http_response_code(400);
@@ -52,7 +64,7 @@ try {
                 exit;
             }
 
-            // 🧱 تحقق من وجود المشروع
+            // تحقق من وجود المشروع
             $stmt = $pdo->prepare("SELECT projectId FROM Projects WHERE projectId = ?");
             $stmt->execute([intval($data['projectId'])]);
             if ($stmt->rowCount() === 0) {
@@ -61,7 +73,7 @@ try {
                 exit;
             }
 
-            // ✅ إدخال الروبوت
+            // إدخال الروبوت
             $stmt = $pdo->prepare("INSERT INTO Robots (RobotName, Image, projectId, mqttUrl, isTrolley, Sections)
                                    VALUES (?, ?, ?, ?, ?, ?)");
             $stmt->execute([
@@ -77,7 +89,7 @@ try {
             echo json_encode(['message' => 'Robot created successfully']);
             break;
 
-        // ✅ Update robot
+        // PUT update robot
         case 'PUT':
             if (!$id) {
                 http_response_code(400);
@@ -85,7 +97,7 @@ try {
                 exit;
             }
 
-            // تحقق من أن الروبوت موجود
+            // تحقق من وجود الروبوت
             $stmt = $pdo->prepare("SELECT id FROM Robots WHERE id = ?");
             $stmt->execute([$id]);
             if ($stmt->rowCount() === 0) {
@@ -94,7 +106,7 @@ try {
                 exit;
             }
 
-            // 🧱 تحقق من المشروع في حال تعديل projectId
+            // تحقق من projectId عند تعديله
             if (isset($data['projectId'])) {
                 $stmt = $pdo->prepare("SELECT projectId FROM Projects WHERE projectId = ?");
                 $stmt->execute([intval($data['projectId'])]);
@@ -105,7 +117,7 @@ try {
                 }
             }
 
-            // ✅ تحديث البيانات
+            // تحديث البيانات
             $stmt = $pdo->prepare("
                 UPDATE Robots 
                 SET 
@@ -130,7 +142,7 @@ try {
             echo json_encode(['message' => 'Robot updated successfully']);
             break;
 
-        // ✅ Delete
+        // DELETE robot
         case 'DELETE':
             if ($id) {
                 $stmt = $pdo->prepare("DELETE FROM Robots WHERE id = ?");
