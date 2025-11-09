@@ -7349,3 +7349,1820 @@ RAW:
 Decoded:
 
 
+=== GET 2025-11-08 20:30:24 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:31:01 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:31:01 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-11-08 20:31:28 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+{"RobotName":"Robot X","Image":"warehousebot.png","projectId":11,"mqttUrl":"mqtt://192.168.1.50:1883","isTrolley":false,"Sections":{"main":{"Voltage":24,"Cycles":500,"Status":"Running","ActiveBtns":[{"Name":"Forward","id":"1"},{"Name":"Left","id":"4"}],"Topic_subscribe":"robot/main/in","Topic_main":"robot/main/out"}}}
+Decoded:
+Array
+(
+    [RobotName] => Robot X
+    [Image] => warehousebot.png
+    [projectId] => 11
+    [mqttUrl] => mqtt://192.168.1.50:1883
+    [isTrolley] => 
+    [Sections] => Array
+        (
+            [main] => Array
+                (
+                    [Voltage] => 24
+                    [Cycles] => 500
+                    [Status] => Running
+                    [ActiveBtns] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [Name] => Forward
+                                    [id] => 1
+                                )
+
+                            [1] => Array
+                                (
+                                    [Name] => Left
+                                    [id] => 4
+                                )
+
+                        )
+
+                    [Topic_subscribe] => robot/main/in
+                    [Topic_main] => robot/main/out
+                )
+
+        )
+
+)
+
+
+=== GET 2025-11-08 20:31:29 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:31:29 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:32:20 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:32:41 ===
+URI: /robots_api/api/robots/9
+ID: 9
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:32:41 ===
+URI: /robots_api/api/robots/9
+ID: 9
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:32:52 ===
+URI: /robots_api/api/robots/9
+ID: 9
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:32:52 ===
+URI: /robots_api/api/robots/9
+ID: 9
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:32:52 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:32:52 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:33:23 ===
+URI: /robots_api/api/robots/9
+ID: 9
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:33:23 ===
+URI: /robots_api/api/robots/9
+ID: 9
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:33:27 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:33:27 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:33:40 ===
+URI: /robots_api/api/robots/9
+ID: 9
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:33:40 ===
+URI: /robots_api/api/robots/9
+ID: 9
+RAW:
+
+Decoded:
+
+
+=== PUT 2025-11-08 20:33:50 ===
+URI: /robots_api/api/robots/9
+ID: 9
+RAW:
+{"data":"{\"id\":9,\"RobotName\":\"Robot X update\",\"Image\":\"warehousebot.png\",\"projectId\":\"11\",\"mqttUrl\":\"mqtt://192.168.1.50:1883\",\"isTrolley\":\"0\",\"Sections\":{\"main\":{\"Voltage\":24,\"Cycles\":500,\"Status\":\"Running\",\"ActiveBtns\":[{\"Name\":\"Forward\",\"id\":\"1\"},{\"Name\":\"Left\",\"id\":\"2\"},{\"Name\":\"Stop\",\"id\":\"3\"}],\"Topic_subscribe\":\"robot/main/in\",\"Topic_main\":\"robot/main/out\"},\"car\":[]}}"}
+Decoded:
+Array
+(
+    [data] => {"id":9,"RobotName":"Robot X update","Image":"warehousebot.png","projectId":"11","mqttUrl":"mqtt://192.168.1.50:1883","isTrolley":"0","Sections":{"main":{"Voltage":24,"Cycles":500,"Status":"Running","ActiveBtns":[{"Name":"Forward","id":"1"},{"Name":"Left","id":"2"},{"Name":"Stop","id":"3"}],"Topic_subscribe":"robot/main/in","Topic_main":"robot/main/out"},"car":[]}}
+)
+
+
+=== GET 2025-11-08 20:33:51 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:33:51 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:34:28 ===
+URI: /robots_api/api/robots/9
+ID: 9
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:34:28 ===
+URI: /robots_api/api/robots/9
+ID: 9
+RAW:
+
+Decoded:
+
+
+=== PUT 2025-11-08 20:34:41 ===
+URI: /robots_api/api/robots/9
+ID: 9
+RAW:
+{"data":"{\"id\":9,\"RobotName\":\"Robot X update\",\"Image\":\"warehousebot.png\",\"projectId\":\"11\",\"mqttUrl\":\"mqtt://192.168.1.50:1883\",\"isTrolley\":\"0\",\"Sections\":{\"main\":{\"Voltage\":24,\"Cycles\":500,\"Status\":\"Running\",\"ActiveBtns\":[{\"Name\":\"Forward\",\"id\":\"1\"},{\"Name\":\"Left\",\"id\":\"2\"},{\"Name\":\"Right\",\"id\":\"3\"}],\"Topic_subscribe\":\"robot/main/in\",\"Topic_main\":\"robot/main/out\"},\"car\":[]}}"}
+Decoded:
+Array
+(
+    [data] => {"id":9,"RobotName":"Robot X update","Image":"warehousebot.png","projectId":"11","mqttUrl":"mqtt://192.168.1.50:1883","isTrolley":"0","Sections":{"main":{"Voltage":24,"Cycles":500,"Status":"Running","ActiveBtns":[{"Name":"Forward","id":"1"},{"Name":"Left","id":"2"},{"Name":"Right","id":"3"}],"Topic_subscribe":"robot/main/in","Topic_main":"robot/main/out"},"car":[]}}
+)
+
+
+=== GET 2025-11-08 20:34:42 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:34:43 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:35:10 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:35:12 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:35:14 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:35:15 ===
+URI: /robots_api/api/robots/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-11-08 20:42:16 ===
+URI: /robots_api/api/robots/9
+ID: 9
+RAW:
+{
+  "id": 9,
+  "RobotName": "Robot X update",
+  "Image": "warehousebot.png",
+  "projectId": "11",
+  "mqttUrl": "mqtt://192.168.1.50:1883",
+  "isTrolley": "0",
+  "Sections": {
+    "main": {
+      "Voltage": 24,
+      "Cycles": 500,
+      "Status": "Running",
+      "ActiveBtns": [
+        { "Name": "Forward", "id": "1" },
+        { "Name": "Left", "id": "2" },
+        { "Name": "Right", "id": "3" }
+      ],
+      "Topic_subscribe": "robot/main/in",
+      "Topic_main": "robot/main/out"
+    },
+    "car": []
+  }
+}
+
+Decoded:
+Array
+(
+    [id] => 9
+    [RobotName] => Robot X update
+    [Image] => warehousebot.png
+    [projectId] => 11
+    [mqttUrl] => mqtt://192.168.1.50:1883
+    [isTrolley] => 0
+    [Sections] => Array
+        (
+            [main] => Array
+                (
+                    [Voltage] => 24
+                    [Cycles] => 500
+                    [Status] => Running
+                    [ActiveBtns] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [Name] => Forward
+                                    [id] => 1
+                                )
+
+                            [1] => Array
+                                (
+                                    [Name] => Left
+                                    [id] => 2
+                                )
+
+                            [2] => Array
+                                (
+                                    [Name] => Right
+                                    [id] => 3
+                                )
+
+                        )
+
+                    [Topic_subscribe] => robot/main/in
+                    [Topic_main] => robot/main/out
+                )
+
+            [car] => Array
+                (
+                )
+
+        )
+
+)
+
+
+=== PUT 2025-11-08 20:42:51 ===
+URI: /robots_api/api/robots/9
+ID: 9
+RAW:
+{
+  "id": 9,
+  "RobotName": "Robot X update",
+  "Image": "warehousebot.png",
+  "projectId": "11",
+  "mqttUrl": "mqtt://192.168.1.50:1883",
+  "isTrolley": "0",
+  "Sections": {
+    "main": {
+      "Voltage": 24,
+      "Cycles": 500,
+      "Status": "Running",
+      "ActiveBtns": [
+        { "Name": "Forward", "id": "1" },
+        { "Name": "Left", "id": "2" },
+        { "Name": "Right", "id": "3" }
+      ],
+      "Topic_subscribe": "robot/main/in",
+      "Topic_main": "robot/main/out"
+    },
+    "car": []
+  }
+}
+
+Decoded:
+Array
+(
+    [id] => 9
+    [RobotName] => Robot X update
+    [Image] => warehousebot.png
+    [projectId] => 11
+    [mqttUrl] => mqtt://192.168.1.50:1883
+    [isTrolley] => 0
+    [Sections] => Array
+        (
+            [main] => Array
+                (
+                    [Voltage] => 24
+                    [Cycles] => 500
+                    [Status] => Running
+                    [ActiveBtns] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [Name] => Forward
+                                    [id] => 1
+                                )
+
+                            [1] => Array
+                                (
+                                    [Name] => Left
+                                    [id] => 2
+                                )
+
+                            [2] => Array
+                                (
+                                    [Name] => Right
+                                    [id] => 3
+                                )
+
+                        )
+
+                    [Topic_subscribe] => robot/main/in
+                    [Topic_main] => robot/main/out
+                )
+
+            [car] => Array
+                (
+                )
+
+        )
+
+)
+
+
+=== DELETE 2025-11-08 20:43:10 ===
+URI: /robots_api/api/robots/10
+ID: 10
+RAW:
+{
+  "id": 9,
+  "RobotName": "Robot X update",
+  "Image": "warehousebot.png",
+  "projectId": "11",
+  "mqttUrl": "mqtt://192.168.1.50:1883",
+  "isTrolley": "0",
+  "Sections": {
+    "main": {
+      "Voltage": 24,
+      "Cycles": 500,
+      "Status": "Running",
+      "ActiveBtns": [
+        { "Name": "Forward", "id": "1" },
+        { "Name": "Left", "id": "2" },
+        { "Name": "Right", "id": "3" }
+      ],
+      "Topic_subscribe": "robot/main/in",
+      "Topic_main": "robot/main/out"
+    },
+    "car": []
+  }
+}
+
+Decoded:
+Array
+(
+    [id] => 9
+    [RobotName] => Robot X update
+    [Image] => warehousebot.png
+    [projectId] => 11
+    [mqttUrl] => mqtt://192.168.1.50:1883
+    [isTrolley] => 0
+    [Sections] => Array
+        (
+            [main] => Array
+                (
+                    [Voltage] => 24
+                    [Cycles] => 500
+                    [Status] => Running
+                    [ActiveBtns] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [Name] => Forward
+                                    [id] => 1
+                                )
+
+                            [1] => Array
+                                (
+                                    [Name] => Left
+                                    [id] => 2
+                                )
+
+                            [2] => Array
+                                (
+                                    [Name] => Right
+                                    [id] => 3
+                                )
+
+                        )
+
+                    [Topic_subscribe] => robot/main/in
+                    [Topic_main] => robot/main/out
+                )
+
+            [car] => Array
+                (
+                )
+
+        )
+
+)
+
+
+=== DELETE 2025-11-08 20:45:56 ===
+URI: /robots_api/api/robots/9
+ID: 9
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:46:04 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:46:04 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:46:09 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:46:09 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:46:15 ===
+URI: /robots_api/api/robots/7
+ID: 7
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:46:15 ===
+URI: /robots_api/api/robots/7
+ID: 7
+RAW:
+
+Decoded:
+
+
+=== PUT 2025-11-08 20:46:25 ===
+URI: /robots_api/api/robots/7
+ID: 7
+RAW:
+{"data":"{\"id\":7,\"RobotName\":\"cccccccccccccccc  Update\",\"Image\":\"warehousebot.png\",\"projectId\":\"10\",\"mqttUrl\":\"mqtt://192.168.1.50:1883\",\"isTrolley\":\"1\",\"Sections\":{\"main\":{\"Voltage\":24,\"Cycles\":500,\"Status\":\"Running\",\"ActiveBtns\":[{\"Name\":\"Forward\",\"id\":\"1\"},{\"Name\":\"stop\",\"id\":\"2\"}],\"Topic_subscribe\":\"robot/main/in\",\"Topic_main\":\"robot/main/out\"},\"car\":{\"Voltage\":24,\"Cycles\":500,\"Status\":\"Running\",\"ActiveBtns\":[\"Forward\",\"Stop\"],\"Topic_subscribe\":\"robot/main/in\",\"Topic_main\":\"robot/main/out\"}}}"}
+Decoded:
+Array
+(
+    [data] => {"id":7,"RobotName":"cccccccccccccccc  Update","Image":"warehousebot.png","projectId":"10","mqttUrl":"mqtt://192.168.1.50:1883","isTrolley":"1","Sections":{"main":{"Voltage":24,"Cycles":500,"Status":"Running","ActiveBtns":[{"Name":"Forward","id":"1"},{"Name":"stop","id":"2"}],"Topic_subscribe":"robot/main/in","Topic_main":"robot/main/out"},"car":{"Voltage":24,"Cycles":500,"Status":"Running","ActiveBtns":["Forward","Stop"],"Topic_subscribe":"robot/main/in","Topic_main":"robot/main/out"}}}
+)
+
+
+=== GET 2025-11-08 20:46:25 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:46:25 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:46:50 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:46:50 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:48:44 ===
+URI: /robots_api/api/robots/7
+ID: 7
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 20:48:44 ===
+URI: /robots_api/api/robots/7
+ID: 7
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:02:38 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:02:38 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:02:55 ===
+URI: /robots_api/api/robots/7
+ID: 7
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:02:55 ===
+URI: /robots_api/api/robots/7
+ID: 7
+RAW:
+
+Decoded:
+
+
+=== PUT 2025-11-08 21:03:12 ===
+URI: /robots_api/api/robots/7
+ID: 7
+RAW:
+{"id":7,"RobotName":"cccccccccccccccc  Update","Image":"warehousebot.png","projectId":"10","mqttUrl":"mqtt://192.168.1.50:1883","isTrolley":"1","Sections":{"main":{"Voltage":24,"Cycles":500,"Status":"Running","ActiveBtns":[{"Name":"Forward","id":"1"},{"Name":"stop","id":"2"},{"Name":"Backward","id":"3"}],"Topic_subscribe":"robot/main/in","Topic_main":"robot/main/out"},"car":{"Voltage":24,"Cycles":500,"Status":"Running","ActiveBtns":["Forward","Stop"],"Topic_subscribe":"robot/main/in","Topic_main":"robot/main/out"}}}
+Decoded:
+Array
+(
+    [id] => 7
+    [RobotName] => cccccccccccccccc  Update
+    [Image] => warehousebot.png
+    [projectId] => 10
+    [mqttUrl] => mqtt://192.168.1.50:1883
+    [isTrolley] => 1
+    [Sections] => Array
+        (
+            [main] => Array
+                (
+                    [Voltage] => 24
+                    [Cycles] => 500
+                    [Status] => Running
+                    [ActiveBtns] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [Name] => Forward
+                                    [id] => 1
+                                )
+
+                            [1] => Array
+                                (
+                                    [Name] => stop
+                                    [id] => 2
+                                )
+
+                            [2] => Array
+                                (
+                                    [Name] => Backward
+                                    [id] => 3
+                                )
+
+                        )
+
+                    [Topic_subscribe] => robot/main/in
+                    [Topic_main] => robot/main/out
+                )
+
+            [car] => Array
+                (
+                    [Voltage] => 24
+                    [Cycles] => 500
+                    [Status] => Running
+                    [ActiveBtns] => Array
+                        (
+                            [0] => Forward
+                            [1] => Stop
+                        )
+
+                    [Topic_subscribe] => robot/main/in
+                    [Topic_main] => robot/main/out
+                )
+
+        )
+
+)
+
+
+=== GET 2025-11-08 21:03:13 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:03:13 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:03:20 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:03:20 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:03:31 ===
+URI: /robots_api/api/robots/8
+ID: 8
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:03:31 ===
+URI: /robots_api/api/robots/8
+ID: 8
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:03:39 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:03:39 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:03:45 ===
+URI: /robots_api/api/robots/8
+ID: 8
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:03:45 ===
+URI: /robots_api/api/robots/8
+ID: 8
+RAW:
+
+Decoded:
+
+
+=== PUT 2025-11-08 21:03:51 ===
+URI: /robots_api/api/robots/8
+ID: 8
+RAW:
+{"id":8,"RobotName":"WarehouseBot-03","Image":"warehousebot.png","projectId":"10","mqttUrl":"mqtt://192.168.1.50:1883","isTrolley":"0","Sections":{"main":{"Voltage":24,"Cycles":500,"Status":"Running","ActiveBtns":[{"Name":"Forward","id":"1"},{"Name":"stop","id":"2"},{"Name":"Backward","id":"3"},{"Name":"Right","id":"4"}],"Topic_subscribe":"robot/main/in","Topic_main":"robot/main/out"},"car":[]}}
+Decoded:
+Array
+(
+    [id] => 8
+    [RobotName] => WarehouseBot-03
+    [Image] => warehousebot.png
+    [projectId] => 10
+    [mqttUrl] => mqtt://192.168.1.50:1883
+    [isTrolley] => 0
+    [Sections] => Array
+        (
+            [main] => Array
+                (
+                    [Voltage] => 24
+                    [Cycles] => 500
+                    [Status] => Running
+                    [ActiveBtns] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [Name] => Forward
+                                    [id] => 1
+                                )
+
+                            [1] => Array
+                                (
+                                    [Name] => stop
+                                    [id] => 2
+                                )
+
+                            [2] => Array
+                                (
+                                    [Name] => Backward
+                                    [id] => 3
+                                )
+
+                            [3] => Array
+                                (
+                                    [Name] => Right
+                                    [id] => 4
+                                )
+
+                        )
+
+                    [Topic_subscribe] => robot/main/in
+                    [Topic_main] => robot/main/out
+                )
+
+            [car] => Array
+                (
+                )
+
+        )
+
+)
+
+
+=== GET 2025-11-08 21:03:51 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:03:51 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== DELETE 2025-11-08 21:05:02 ===
+URI: /robots_api/api/robots/7
+ID: 7
+RAW:
+
+Decoded:
+
+
+=== POST 2025-11-08 21:05:58 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+{"RobotName":"alpha","Image":"","projectId":10,"mqttUrl":"mqtt://192.168.1.50:1883","isTrolley":true,"Sections":{"main":{"Voltage":24,"Cycles":500,"Status":"Running","ActiveBtns":[{"Name":{"Name":"Right","id":1},"id":"1"},{"Name":{"Name":"Left","id":2},"id":"2"}],"Topic_subscribe":"robot/main/in","Topic_main":"robot/main/out"},"car":{"Voltage":24,"Cycles":500,"Status":"Running","ActiveBtns":[],"Topic_subscribe":"robot/car/in","Topic_main":"robot/car/out"}}}
+Decoded:
+Array
+(
+    [RobotName] => alpha
+    [Image] => 
+    [projectId] => 10
+    [mqttUrl] => mqtt://192.168.1.50:1883
+    [isTrolley] => 1
+    [Sections] => Array
+        (
+            [main] => Array
+                (
+                    [Voltage] => 24
+                    [Cycles] => 500
+                    [Status] => Running
+                    [ActiveBtns] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [Name] => Array
+                                        (
+                                            [Name] => Right
+                                            [id] => 1
+                                        )
+
+                                    [id] => 1
+                                )
+
+                            [1] => Array
+                                (
+                                    [Name] => Array
+                                        (
+                                            [Name] => Left
+                                            [id] => 2
+                                        )
+
+                                    [id] => 2
+                                )
+
+                        )
+
+                    [Topic_subscribe] => robot/main/in
+                    [Topic_main] => robot/main/out
+                )
+
+            [car] => Array
+                (
+                    [Voltage] => 24
+                    [Cycles] => 500
+                    [Status] => Running
+                    [ActiveBtns] => Array
+                        (
+                        )
+
+                    [Topic_subscribe] => robot/car/in
+                    [Topic_main] => robot/car/out
+                )
+
+        )
+
+)
+
+
+=== GET 2025-11-08 21:05:59 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:05:59 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:07:16 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:07:16 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:08:32 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:08:32 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:08:39 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:08:39 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:12:10 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:12:10 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-11-08 21:12:20 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+{"RobotName":"vvvvvv","Image":"warehousebot.png","projectId":11,"mqttUrl":"mqtt://192.168.1.50:1883","isTrolley":false,"Sections":{"main":{"Voltage":24,"Cycles":500,"Status":"Running","ActiveBtns":[{"Name":"Forward","id":"1"},{"Name":"stop","id":"2"}],"Topic_subscribe":"robot/main/in","Topic_main":"robot/main/out"}}}
+Decoded:
+Array
+(
+    [RobotName] => vvvvvv
+    [Image] => warehousebot.png
+    [projectId] => 11
+    [mqttUrl] => mqtt://192.168.1.50:1883
+    [isTrolley] => 
+    [Sections] => Array
+        (
+            [main] => Array
+                (
+                    [Voltage] => 24
+                    [Cycles] => 500
+                    [Status] => Running
+                    [ActiveBtns] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [Name] => Forward
+                                    [id] => 1
+                                )
+
+                            [1] => Array
+                                (
+                                    [Name] => stop
+                                    [id] => 2
+                                )
+
+                        )
+
+                    [Topic_subscribe] => robot/main/in
+                    [Topic_main] => robot/main/out
+                )
+
+        )
+
+)
+
+
+=== GET 2025-11-08 21:12:21 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:12:21 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-11-08 21:12:35 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+{"RobotName":"ttttt","Image":"","projectId":11,"mqttUrl":"mqtt://192.168.1.50:1883","isTrolley":true,"Sections":{"main":{"Voltage":24,"Cycles":500,"Status":"Running","ActiveBtns":[],"Topic_subscribe":"robot/main/in","Topic_main":"robot/main/out"},"car":{"Voltage":24,"Cycles":500,"Status":"Running","ActiveBtns":[],"Topic_subscribe":"robot/car/in","Topic_main":"robot/car/out"}}}
+Decoded:
+Array
+(
+    [RobotName] => ttttt
+    [Image] => 
+    [projectId] => 11
+    [mqttUrl] => mqtt://192.168.1.50:1883
+    [isTrolley] => 1
+    [Sections] => Array
+        (
+            [main] => Array
+                (
+                    [Voltage] => 24
+                    [Cycles] => 500
+                    [Status] => Running
+                    [ActiveBtns] => Array
+                        (
+                        )
+
+                    [Topic_subscribe] => robot/main/in
+                    [Topic_main] => robot/main/out
+                )
+
+            [car] => Array
+                (
+                    [Voltage] => 24
+                    [Cycles] => 500
+                    [Status] => Running
+                    [ActiveBtns] => Array
+                        (
+                        )
+
+                    [Topic_subscribe] => robot/car/in
+                    [Topic_main] => robot/car/out
+                )
+
+        )
+
+)
+
+
+=== GET 2025-11-08 21:12:36 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:12:36 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:12:46 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:12:46 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:13:02 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:13:02 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-11-08 21:15:04 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+{"Username":"mahmoud Mohammed","Password":"123456","TelephoneNumber":"111111111111111111","ProjectName":"Cairo Project"}
+Decoded:
+Array
+(
+    [Username] => mahmoud Mohammed
+    [Password] => 123456
+    [TelephoneNumber] => 111111111111111111
+    [ProjectName] => Cairo Project
+)
+
+
+=== GET 2025-11-08 21:15:30 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:15:30 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:16:13 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:16:13 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:16:20 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:16:20 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-11-08 21:16:39 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+{"RobotName":"Robot B","Image":"","projectId":12,"mqttUrl":"mqtt://192.168.1.50:1883","isTrolley":true,"Sections":{"main":{"Voltage":24,"Cycles":500,"Status":"Running","ActiveBtns":[],"Topic_subscribe":"robot/main/in","Topic_main":"robot/main/out"},"car":{"Voltage":24,"Cycles":500,"Status":"Running","ActiveBtns":[],"Topic_subscribe":"robot/car/in","Topic_main":"robot/car/out"}}}
+Decoded:
+Array
+(
+    [RobotName] => Robot B
+    [Image] => 
+    [projectId] => 12
+    [mqttUrl] => mqtt://192.168.1.50:1883
+    [isTrolley] => 1
+    [Sections] => Array
+        (
+            [main] => Array
+                (
+                    [Voltage] => 24
+                    [Cycles] => 500
+                    [Status] => Running
+                    [ActiveBtns] => Array
+                        (
+                        )
+
+                    [Topic_subscribe] => robot/main/in
+                    [Topic_main] => robot/main/out
+                )
+
+            [car] => Array
+                (
+                    [Voltage] => 24
+                    [Cycles] => 500
+                    [Status] => Running
+                    [ActiveBtns] => Array
+                        (
+                        )
+
+                    [Topic_subscribe] => robot/car/in
+                    [Topic_main] => robot/car/out
+                )
+
+        )
+
+)
+
+
+=== GET 2025-11-08 21:16:39 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:16:40 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-11-08 21:17:05 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+{"RobotName":"Robot Alpha","Image":"warehousebot.png","projectId":12,"mqttUrl":"mqtt://192.168.1.50:1883","isTrolley":false,"Sections":{"main":{"Voltage":24,"Cycles":500,"Status":"Running","ActiveBtns":[{"Name":"stop","id":"2"},{"Name":"Forward","id":"1"}],"Topic_subscribe":"robot/main/in","Topic_main":"robot/main/out"}}}
+Decoded:
+Array
+(
+    [RobotName] => Robot Alpha
+    [Image] => warehousebot.png
+    [projectId] => 12
+    [mqttUrl] => mqtt://192.168.1.50:1883
+    [isTrolley] => 
+    [Sections] => Array
+        (
+            [main] => Array
+                (
+                    [Voltage] => 24
+                    [Cycles] => 500
+                    [Status] => Running
+                    [ActiveBtns] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [Name] => stop
+                                    [id] => 2
+                                )
+
+                            [1] => Array
+                                (
+                                    [Name] => Forward
+                                    [id] => 1
+                                )
+
+                        )
+
+                    [Topic_subscribe] => robot/main/in
+                    [Topic_main] => robot/main/out
+                )
+
+        )
+
+)
+
+
+=== GET 2025-11-08 21:17:06 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:17:06 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:17:14 ===
+URI: /robots_api/api/robots/14
+ID: 14
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:17:14 ===
+URI: /robots_api/api/robots/14
+ID: 14
+RAW:
+
+Decoded:
+
+
+=== PUT 2025-11-08 21:17:25 ===
+URI: /robots_api/api/robots/14
+ID: 14
+RAW:
+{"id":14,"RobotName":"Robot Beta","Image":"Robot1.jpeg","projectId":"12","mqttUrl":"mqtt://192.168.1.50:1883","isTrolley":"1","Sections":{"main":{"Voltage":24,"Cycles":500,"Status":"Running","ActiveBtns":[],"Topic_subscribe":"robot/main/in","Topic_main":"robot/main/out"},"car":{"Voltage":24,"Cycles":500,"Status":"Running","ActiveBtns":[],"Topic_subscribe":"robot/car/in","Topic_main":"robot/car/out"}}}
+Decoded:
+Array
+(
+    [id] => 14
+    [RobotName] => Robot Beta
+    [Image] => Robot1.jpeg
+    [projectId] => 12
+    [mqttUrl] => mqtt://192.168.1.50:1883
+    [isTrolley] => 1
+    [Sections] => Array
+        (
+            [main] => Array
+                (
+                    [Voltage] => 24
+                    [Cycles] => 500
+                    [Status] => Running
+                    [ActiveBtns] => Array
+                        (
+                        )
+
+                    [Topic_subscribe] => robot/main/in
+                    [Topic_main] => robot/main/out
+                )
+
+            [car] => Array
+                (
+                    [Voltage] => 24
+                    [Cycles] => 500
+                    [Status] => Running
+                    [ActiveBtns] => Array
+                        (
+                        )
+
+                    [Topic_subscribe] => robot/car/in
+                    [Topic_main] => robot/car/out
+                )
+
+        )
+
+)
+
+
+=== GET 2025-11-08 21:17:27 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:17:27 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:17:41 ===
+URI: /robots_api/api/robots/14
+ID: 14
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:17:42 ===
+URI: /robots_api/api/robots/14
+ID: 14
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:17:50 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:17:50 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-11-08 21:18:01 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+{"RobotName":"ffffff","Image":"warehousebot.png","projectId":12,"mqttUrl":"mqtt://192.168.1.50:1883","isTrolley":false,"Sections":{"main":{"Voltage":24,"Cycles":500,"Status":"Running","ActiveBtns":[{"Name":"Forward","id":"1"},{"Name":"stop","id":"2"}],"Topic_subscribe":"robot/main/in","Topic_main":"robot/main/out"}}}
+Decoded:
+Array
+(
+    [RobotName] => ffffff
+    [Image] => warehousebot.png
+    [projectId] => 12
+    [mqttUrl] => mqtt://192.168.1.50:1883
+    [isTrolley] => 
+    [Sections] => Array
+        (
+            [main] => Array
+                (
+                    [Voltage] => 24
+                    [Cycles] => 500
+                    [Status] => Running
+                    [ActiveBtns] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [Name] => Forward
+                                    [id] => 1
+                                )
+
+                            [1] => Array
+                                (
+                                    [Name] => stop
+                                    [id] => 2
+                                )
+
+                        )
+
+                    [Topic_subscribe] => robot/main/in
+                    [Topic_main] => robot/main/out
+                )
+
+        )
+
+)
+
+
+=== GET 2025-11-08 21:18:03 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:18:03 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== DELETE 2025-11-08 21:18:17 ===
+URI: /robots_api/api/robots/16
+ID: 16
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:18:24 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:18:24 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:19:19 ===
+URI: /robots_api/api/robots/15
+ID: 15
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:19:19 ===
+URI: /robots_api/api/robots/15
+ID: 15
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:19:23 ===
+URI: /robots_api/api/robots/15
+ID: 15
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:19:23 ===
+URI: /robots_api/api/robots/15
+ID: 15
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:19:23 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:19:24 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:19:36 ===
+URI: /robots_api/api/robots/15
+ID: 15
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:19:36 ===
+URI: /robots_api/api/robots/15
+ID: 15
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:19:36 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:19:36 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-11-08 21:21:36 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+{"BtnName":"start","RobotId":15,"Color":"#4CAF50","Operation":"/start"}
+Decoded:
+Array
+(
+    [BtnName] => start
+    [RobotId] => 15
+    [Color] => #4CAF50
+    [Operation] => /start
+)
+
+
+=== GET 2025-11-08 21:21:40 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-11-08 21:22:14 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+{"BtnName":"start","RobotId":15,"Color":"#4CAF50","Operation":"/start"}
+Decoded:
+Array
+(
+    [BtnName] => start
+    [RobotId] => 15
+    [Color] => #4CAF50
+    [Operation] => /start
+)
+
+
+=== POST 2025-11-08 21:23:04 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+{"BtnName":"start","RobotId":15,"Color":"#4CAF50","Operation":"/start"}
+Decoded:
+Array
+(
+    [BtnName] => start
+    [RobotId] => 15
+    [Color] => #4CAF50
+    [Operation] => /start
+)
+
+
+=== GET 2025-11-08 21:30:20 ===
+URI: /robots_api/api/robots/15
+ID: 15
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:30:20 ===
+URI: /robots_api/api/robots/15
+ID: 15
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:30:21 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:30:21 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:35:50 ===
+URI: /robots_api/api/robots/15
+ID: 15
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:35:50 ===
+URI: /robots_api/api/robots/15
+ID: 15
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:35:50 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:35:50 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:35:52 ===
+URI: /robots_api/api/robots/15
+ID: 15
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 21:35:52 ===
+URI: /robots_api/api/robots/15
+ID: 15
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-08 22:50:49 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+

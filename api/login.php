@@ -24,34 +24,65 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 $input = file_get_contents("php://input");
 $data = json_decode($input, true);
 
-// ---------- Normalize keys ----------
+// Accept either Username/Password or username/password keys
 $username = $data['Username'] ?? $data['username'] ?? null;
 $password = $data['Password'] ?? $data['password'] ?? null;
 
-// ---------- Validate ----------
-if (!$username || !$password) {
+if ($username === null || $password === null) {
     http_response_code(400);
     echo json_encode(['message' => 'Username and Password are required']);
     exit();
 }
 
-$username = trim($username);
-$password = trim($password);
+// ---------- Encryption key ----------
+$encKey = hex2bin(APP_ENC_KEY);
+if ($encKey === false || strlen($encKey) !== 32) {
+    http_response_code(500);
+    echo json_encode(['message' => 'Server misconfiguration: encryption key missing']);
+    exit;
+}
+
+// ---------- Decrypt function ----------
+function decrypt_password(string $b64, string $key): ?string {
+    $cipher = 'aes-256-cbc';
+    $raw = base64_decode($b64, true);
+    if ($raw === false) return null;
+    $ivlen = openssl_cipher_iv_length($cipher);
+    if (strlen($raw) <= $ivlen) return null;
+    $iv = substr($raw, 0, $ivlen);
+    $ciphertext = substr($raw, $ivlen);
+    $plain = openssl_decrypt($ciphertext, $cipher, $key, OPENSSL_RAW_DATA, $iv);
+    return $plain === false ? null : $plain;
+}
 
 try {
-    // ---------- Fetch user ----------
-    $stmt = $pdo->prepare("SELECT id, Username, Password, TelephoneNumber, ProjectName FROM Users WHERE Username = ?");
+    // Fetch user by exact Username match (case-sensitive)
+    $stmt = $pdo->prepare(
+        "SELECT id, Username, Password, TelephoneNumber, ProjectName
+         FROM Users
+         WHERE BINARY Username = BINARY ?
+         LIMIT 1"
+    );
     $stmt->execute([$username]);
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    if (!$user || $user['Password'] !== $password) {
+    if (!$user) {
         http_response_code(401);
         echo json_encode(['message' => 'Invalid username or password']);
         exit();
     }
 
-    // ---------- Successful login ----------
-    unset($user['Password']); // لا نرسل الباسورد في الرد
+    // Decrypt password from DB
+    $decryptedPassword = decrypt_password($user['Password'], $encKey);
+
+    if ($decryptedPassword === null || $decryptedPassword !== $password) {
+        http_response_code(401);
+        echo json_encode(['message' => 'Invalid username or password']);
+        exit();
+    }
+
+    // Successful login — don't send the password back
+    unset($user['Password']);
     echo json_encode([
         'message' => 'Login successful',
         'user' => $user
