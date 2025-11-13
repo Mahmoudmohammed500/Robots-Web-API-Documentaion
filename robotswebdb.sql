@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 07, 2025 at 09:37 AM
+-- Generation Time: Nov 13, 2025 at 01:33 AM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.8
 
@@ -41,8 +41,8 @@ CREATE TABLE `buttons` (
 --
 
 INSERT INTO `buttons` (`BtnID`, `BtnName`, `RobotId`, `Color`, `Operation`, `projectId`) VALUES
-(16, 'Start', 8, 'red', '/start', 10),
-(17, 'ُEnd', 8, 'red', '/End', 10);
+(23, 'start', 17, '#1c1c1c', '/start', 11),
+(24, 'finish', 23, '#292929', '/start', 12);
 
 -- --------------------------------------------------------
 
@@ -52,13 +52,24 @@ INSERT INTO `buttons` (`BtnID`, `BtnName`, `RobotId`, `Color`, `Operation`, `pro
 
 CREATE TABLE `logs` (
   `logId` int(11) NOT NULL,
-  `projectId` int(11) NOT NULL,
-  `robotId` int(11) NOT NULL,
+  `topic_main` varchar(255) NOT NULL,
   `message` text NOT NULL,
   `type` enum('alert','notification') NOT NULL DEFAULT 'notification',
   `date` date NOT NULL,
   `time` time NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `logs`
+--
+
+INSERT INTO `logs` (`logId`, `topic_main`, `message`, `type`, `date`, `time`) VALUES
+(5, 'robot/main/out', 'Robot Alpha is completed the assigned task successfully.', 'notification', '2025-11-12', '14:30:00'),
+(6, 'robot/main/out', 'New Log message.', 'notification', '2025-11-12', '15:30:00'),
+(7, 'robot/main/out', 'New Log message1.', 'notification', '2025-11-12', '15:31:00'),
+(8, 'robot/main/out', 'New Log message2.', 'notification', '2025-11-12', '15:35:00'),
+(9, 'robot/main/out', 'New Log message3.', 'notification', '2025-11-12', '15:40:00'),
+(10, 'robot/main/out', 'New Log message 10.', 'notification', '2025-11-12', '16:40:00');
 
 -- --------------------------------------------------------
 
@@ -68,13 +79,36 @@ CREATE TABLE `logs` (
 
 CREATE TABLE `notifications` (
   `notificationId` int(11) NOT NULL,
-  `projectId` int(11) NOT NULL,
-  `robotId` int(11) NOT NULL,
+  `topic_main` varchar(255) NOT NULL,
   `message` text NOT NULL,
   `type` enum('alert','notification') NOT NULL DEFAULT 'notification',
   `date` date NOT NULL,
   `time` time NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `notifications`
+--
+
+INSERT INTO `notifications` (`notificationId`, `topic_main`, `message`, `type`, `date`, `time`) VALUES
+(6, 'robot/car/out', 'Robot Alpha completed the assigned task successfully.', 'notification', '2025-11-12', '14:30:00'),
+(8, 'robot/car/out', 'Robot Alpha completed the assigned task successfully.', 'notification', '2025-11-12', '14:30:00'),
+(9, 'robot/car/out', 'Robot Alpha completed the assigned task successfully.', 'notification', '2025-11-12', '14:30:00'),
+(10, 'robot/car/out', 'Robot Alpha completed the assigned task successfully.', 'notification', '2025-11-12', '14:30:00'),
+(11, 'robot/car/out', 'Robot Alpha completed the assigned task successfully.', 'notification', '2025-11-12', '14:30:00'),
+(12, 'robot/car/out', 'Robot Alpha completed the assigned task successfully.', 'notification', '2025-11-12', '14:30:00'),
+(13, 'robot/car/out', 'Robot Alpha completed the assigned task successfully.', 'notification', '2025-11-12', '14:30:00'),
+(14, 'robot/car/out', 'Robot Alpha completed the assigned task successfully.', 'notification', '2025-11-12', '14:30:00'),
+(15, 'robot/car/out', 'Robot Alpha completed the assigned task successfully.', 'notification', '2025-11-12', '14:30:00'),
+(16, 'robot/car/out', 'Robot Alpha completed the assigned task successfully.', 'notification', '2025-11-12', '14:30:00'),
+(17, 'robot/car/out', 'Robot Alpha completed the assigned task successfully.', 'notification', '2025-11-12', '14:30:00'),
+(18, 'robot/car/out', 'Robot Alpha completed the assigned task successfully.', 'notification', '2025-11-12', '14:30:00'),
+(19, 'robot/car/out', 'Robot Alpha completed the assigned task successfully.', 'notification', '2025-11-12', '14:30:00'),
+(20, 'robot/car/out', 'Robot Alpha completed the assigned task successfully.', 'notification', '2025-11-12', '14:30:00'),
+(21, 'robot/car/out', 'New message Robot Alpha completed the assigned task successfully.', 'notification', '2025-11-12', '14:30:00'),
+(22, 'robot/car/out', 'New messag.', 'notification', '2025-11-12', '14:30:00'),
+(23, 'robot/car/out', 'New messag 11.', 'notification', '2025-11-12', '14:30:00'),
+(24, 'robot/car/out', 'New messag 12.', 'notification', '2025-11-12', '15:30:00');
 
 -- --------------------------------------------------------
 
@@ -95,8 +129,8 @@ CREATE TABLE `projects` (
 --
 
 INSERT INTO `projects` (`projectId`, `ProjectName`, `Description`, `Location`, `Image`) VALUES
-(9, 'New project', 'ffffffff', 'Cairo', 'uploads/robot.jpg'),
-(10, 'Main project', 'ffffffff', 'Cairo', 'uploads/robot.jpg');
+(11, 'Cairo Project', 'Cairo ......................!!!', 'cairo', 'uploads/Robot1.jpeg'),
+(12, 'Saudia Project', 'Saudi Arabia', 'Saudi', 'uploads/Robot1.jpeg');
 
 -- --------------------------------------------------------
 
@@ -119,8 +153,16 @@ CREATE TABLE `robots` (
 --
 
 INSERT INTO `robots` (`id`, `RobotName`, `Image`, `projectId`, `mqttUrl`, `isTrolley`, `Sections`) VALUES
-(7, 'cccccccccccccccc  New', 'warehousebot.png', 10, 'mqtt://192.168.1.50:1883', 1, '{\"main\":{\"Voltage\":24,\"Cycles\":500,\"Status\":\"Running\",\"ActiveBtns\":[{\"Name\":\"Forward\",\"id\":\"1\"},{\"Name\":\"stop\",\"id\":\"2\"}],\"Topic_subscribe\":\"robot\\/main\\/in\",\"Topic_main\":\"robot\\/main\\/out\"},\"car\":{\"Voltage\":24,\"Cycles\":500,\"Status\":\"Running\",\"ActiveBtns\":[\"Forward\",\"Stop\"],\"Topic_subscribe\":\"robot\\/main\\/in\",\"Topic_main\":\"robot\\/main\\/out\"}}'),
-(8, 'WarehouseBot-03', 'warehousebot.png', 10, 'mqtt://192.168.1.50:1883', 0, '{\"main\": {\"Voltage\": 24, \"Cycles\": 500, \"Status\": \"Running\", \"ActiveBtns\": [{\"Name\": \"Forward\", \"id\": \"1\"}, {\"Name\": \"stop\", \"id\": \"2\"}], \"Topic_subscribe\": \"robot\\/main\\/in\", \"Topic_main\": \"robot\\/main\\/out\"}, \"car\": {}}');
+(12, 'vvvvvv', 'warehousebot.png', 11, 'mqtt://192.168.1.50:1883', 0, '{\"main\": {\"Voltage\": 24, \"Cycles\": 500, \"Status\": \"Running\", \"ActiveBtns\": [{\"Name\": \"Forward\", \"id\": \"1\"}, {\"Name\": \"stop\", \"id\": \"2\"}], \"Topic_subscribe\": \"robot\\/main\\/in\", \"Topic_main\": \"robot\\/main\\/out\"}, \"car\": {}}'),
+(13, 'ttttt', '', 11, 'mqtt://192.168.1.50:1883', 1, '{\"main\":{\"Voltage\":24,\"Cycles\":500,\"Status\":\"Running\",\"ActiveBtns\":[],\"Topic_subscribe\":\"robot\\/main\\/in\",\"Topic_main\":\"robot\\/main\\/out\"},\"car\":{\"Voltage\":24,\"Cycles\":500,\"Status\":\"Running\",\"ActiveBtns\":[],\"Topic_subscribe\":\"robot\\/car\\/in\",\"Topic_main\":\"robot\\/car\\/out\"}}'),
+(14, 'Robot Beta', 'Robot1.jpeg', 12, 'mqtt://192.168.1.50:1883', 1, '{\"main\":{\"Voltage\":24,\"Cycles\":500,\"Status\":\"Running\",\"ActiveBtns\":[],\"Topic_subscribe\":\"robot\\/main\\/in\",\"Topic_main\":\"robot\\/main\\/out\"},\"car\":{\"Voltage\":24,\"Cycles\":500,\"Status\":\"Running\",\"ActiveBtns\":[],\"Topic_subscribe\":\"robot\\/car\\/in\",\"Topic_main\":\"robot\\/car\\/out\"}}'),
+(15, 'Robot Alpha', 'warehousebot.png', 12, 'mqtt://192.168.1.50:1883', 0, '{\"main\": {\"Voltage\": 24, \"Cycles\": 500, \"Status\": \"Running\", \"ActiveBtns\": [{\"Name\": \"stop\", \"id\": \"2\"}, {\"Name\": \"Forward\", \"id\": \"1\"}], \"Topic_subscribe\": \"robot\\/main\\/in\", \"Topic_main\": \"robot\\/main\\/out\"}, \"car\": {}}'),
+(17, 'fffffffffffffffff', '', 11, 'mqtt://192.168.1.50:1883', 1, '{\"main\":{\"Voltage\":24,\"Cycles\":500,\"Status\":\"Running\",\"ActiveBtns\":[{\"Name\":\"start\",\"id\":\"23\"}],\"Topic_subscribe\":\"robot\\/main\\/in\",\"Topic_main\":\"robot\\/main\\/out\"},\"car\":{\"Voltage\":24,\"Cycles\":500,\"Status\":\"Running\",\"ActiveBtns\":[],\"Topic_subscribe\":\"robot\\/car\\/in\",\"Topic_main\":\"robot\\/car\\/out\"}}'),
+(18, 'ccccccccccccc', '', 11, 'mqtt://192.168.1.50:1883', 1, '{\"main\":{\"Voltage\":24,\"Cycles\":500,\"Status\":\"Running\",\"ActiveBtns\":[{\"Name\":\"Stop\",\"id\":\"1\",\"section\":\"main\"}],\"Topic_subscribe\":\"robot\\/main\\/in\",\"Topic_main\":\"robot\\/main\\/out\"},\"car\":{\"Voltage\":24,\"Cycles\":500,\"Status\":\"Running\",\"ActiveBtns\":[{\"Name\":\"Forward\",\"id\":\"1\",\"section\":\"car\"},{\"Name\":\"Backward\",\"id\":\"2\",\"section\":\"car\"}],\"Topic_subscribe\":\"robot\\/car\\/in\",\"Topic_main\":\"robot\\/car\\/out\"}}'),
+(19, 'R1', '', 12, 'mqtt://192.168.1.50:1883', 1, '{\"main\":{\"Voltage\":24,\"Cycles\":500,\"Status\":\"Running\",\"ActiveBtns\":[{\"Name\":\"Stop\",\"id\":\"1\",\"section\":\"main\"}],\"Topic_subscribe\":\"robot\\/main\\/in\",\"Topic_main\":\"robot\\/main\\/out\"},\"car\":{\"Voltage\":24,\"Cycles\":20,\"Status\":\"Stopped\",\"ActiveBtns\":[{\"Name\":\"Forward\",\"id\":\"1\",\"section\":\"car\"},{\"Name\":\"Backward\",\"id\":\"2\",\"section\":\"car\"}],\"Topic_subscribe\":\"robot\\/car\\/in\",\"Topic_main\":\"robot\\/car\\/out\"}}'),
+(20, 'bbbb', '', 12, 'mqtt://192.168.1.50:1883', 1, '{\"main\":{\"Voltage\":20,\"Cycles\":30,\"Status\":\"Running\",\"ActiveBtns\":[{\"Name\":\"Forward\",\"id\":\"1\",\"section\":\"main\"},{\"Name\":\"Backward\",\"id\":\"2\",\"section\":\"main\"}],\"Topic_subscribe\":\"robot\\/main\\/in\",\"Topic_main\":\"robot\\/ma\\t\"},\"car\":{\"Voltage\":20,\"Cycles\":40,\"Status\":\"Running\",\"ActiveBtns\":[{\"Name\":\"Stop\",\"id\":\"1\",\"section\":\"car\"}],\"Topic_subscribe\":\"robot\\/car\\/in\",\"Topic_main\":\"robot\\/ca\"}}'),
+(21, 'ttttttttttttt update', '', 12, 'mqtt://192.168.1.50:1883', 1, '{\"main\":{\"Voltage\":20,\"Cycles\":30,\"Status\":\"Running\",\"ActiveBtns\":[{\"Name\":\"start\",\"id\":\"1\",\"section\":\"main\"},{\"Name\":\"Forward\",\"id\":\"1762976016155\",\"section\":\"main\"},{\"Name\":\"Backward\",\"id\":\"1762976016727\",\"section\":\"main\"},{\"Name\":\"status\",\"id\":\"1762976027197\",\"section\":\"main\"},{\"Name\":\"status\",\"id\":\"1762976557635\",\"section\":\"main\"}],\"Topic_subscribe\":\"robot\\/main\\/in\",\"Topic_main\":\"robot\\/main\\/out\"},\"car\":{\"Voltage\":50,\"Cycles\":50,\"Status\":\"Stopped\",\"ActiveBtns\":[{\"Name\":\"status\",\"id\":\"1\",\"section\":\"car\"},{\"Name\":\"Forward\",\"id\":\"1762976035999\",\"section\":\"car\"},{\"Name\":\"Backward\",\"id\":\"1762976036365\",\"section\":\"car\"},{\"Name\":\"Stop\",\"id\":\"1762976391603\",\"section\":\"car\"}],\"Topic_subscribe\":\"robot\\/car\\/in\",\"Topic_main\":\"robot\\/car\\/out\"}}'),
+(23, 'trolleytest update', '', 12, 'ggg/ggg 2', 1, '{\"main\":{\"Voltage\":12,\"Cycles\":12,\"Status\":\"Stopped\",\"Topic_subscribe\":\"gfgg\\/ggg\",\"Topic_main\":\"ggg\\/gg\",\"ActiveBtns\":[{\"Name\":\"finish\",\"id\":\"24\"}]},\"car\":{\"Voltage\":13,\"Cycles\":13,\"Status\":\"Running\",\"Topic_subscribe\":\"rrrr\\/\\/rrr\",\"Topic_main\":\"rrrf\\/f555\"}}');
 
 --
 -- Triggers `robots`
@@ -167,7 +209,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `Username`, `Password`, `TelephoneNumber`, `ProjectName`) VALUES
-(23, 'testadmin update', 's9jRCqXHjwYBZqzFLLoquPmPAau1e3v9doZ+n8RmmMU=', '01000000001', 'Main project');
+(27, 'mahmoud Mohammed', 'GRYPQiMvWWbh0FxVVq65NATZEF4VR2FXIaQvj28yCxU=', '111111111111111111', 'Cairo Project'),
+(28, 'asssssss', 'FG/zPoDkdd8QMy1t1OA6t/lOKn2VmJhP+f72SbWPP6Q=', '144444444444444', 'Cairo Project');
 
 --
 -- Indexes for dumped tables
@@ -184,17 +227,13 @@ ALTER TABLE `buttons`
 -- Indexes for table `logs`
 --
 ALTER TABLE `logs`
-  ADD PRIMARY KEY (`logId`),
-  ADD KEY `projectId` (`projectId`),
-  ADD KEY `robotId` (`robotId`);
+  ADD PRIMARY KEY (`logId`);
 
 --
 -- Indexes for table `notifications`
 --
 ALTER TABLE `notifications`
-  ADD PRIMARY KEY (`notificationId`),
-  ADD KEY `projectId` (`projectId`),
-  ADD KEY `robotId` (`robotId`);
+  ADD PRIMARY KEY (`notificationId`);
 
 --
 -- Indexes for table `projects`
@@ -225,37 +264,37 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `buttons`
 --
 ALTER TABLE `buttons`
-  MODIFY `BtnID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `BtnID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `logs`
 --
 ALTER TABLE `logs`
-  MODIFY `logId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `logId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `notifications`
 --
 ALTER TABLE `notifications`
-  MODIFY `notificationId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `notificationId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `projects`
 --
 ALTER TABLE `projects`
-  MODIFY `projectId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `projectId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `robots`
 --
 ALTER TABLE `robots`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- Constraints for dumped tables
@@ -266,20 +305,6 @@ ALTER TABLE `users`
 --
 ALTER TABLE `buttons`
   ADD CONSTRAINT `buttons_ibfk_1` FOREIGN KEY (`RobotId`) REFERENCES `robots` (`id`) ON DELETE CASCADE;
-
---
--- Constraints for table `logs`
---
-ALTER TABLE `logs`
-  ADD CONSTRAINT `logs_ibfk_1` FOREIGN KEY (`projectId`) REFERENCES `projects` (`projectId`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `logs_ibfk_2` FOREIGN KEY (`robotId`) REFERENCES `robots` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `notifications`
---
-ALTER TABLE `notifications`
-  ADD CONSTRAINT `notifications_ibfk_1` FOREIGN KEY (`projectId`) REFERENCES `projects` (`projectId`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `notifications_ibfk_2` FOREIGN KEY (`robotId`) REFERENCES `robots` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `robots`
