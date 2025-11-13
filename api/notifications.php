@@ -52,31 +52,15 @@ try {
 
         // POST (Create new notification)
         case 'POST':
-            if (!isset($data['projectId'], $data['robotId'], $data['message'], $data['type'], $data['date'], $data['time'])) {
+            if (!isset($data['topic_main'], $data['message'], $data['type'], $data['date'], $data['time'])) {
                 http_response_code(400);
                 echo json_encode(['message' => 'Missing required fields']);
                 exit;
             }
 
-            // تحقق من وجود المشروع والروبوت
-            $stmt = $pdo->prepare("
-                SELECT 
-                    (SELECT COUNT(*) FROM projects WHERE projectId = ?) AS project_exists,
-                    (SELECT COUNT(*) FROM robots WHERE id = ?) AS robot_exists
-            ");
-            $stmt->execute([$data['projectId'], $data['robotId']]);
-            $exists = $stmt->fetch();
-
-            if (!$exists['project_exists'] || !$exists['robot_exists']) {
-                http_response_code(400);
-                echo json_encode(['message' => 'Invalid projectId or robotId']);
-                exit;
-            }
-
-            $stmt = $pdo->prepare("INSERT INTO notifications (projectId, robotId, message, type, date, time) VALUES (?, ?, ?, ?, ?, ?)");
+            $stmt = $pdo->prepare("INSERT INTO notifications (topic_main, message, type, date, time) VALUES (?, ?, ?, ?, ?)");
             $stmt->execute([
-                intval($data['projectId']),
-                intval($data['robotId']),
+                trim($data['topic_main']),
                 trim($data['message']),
                 trim($data['type']),
                 trim($data['date']),
@@ -103,29 +87,13 @@ try {
                 exit;
             }
 
-            // تحقق من صحة projectId و robotId
-            $stmt = $pdo->prepare("
-                SELECT 
-                    (SELECT COUNT(*) FROM projects WHERE projectId = ?) AS project_exists,
-                    (SELECT COUNT(*) FROM robots WHERE id = ?) AS robot_exists
-            ");
-            $stmt->execute([$data['projectId'], $data['robotId']]);
-            $exists = $stmt->fetch();
-
-            if (!$exists['project_exists'] || !$exists['robot_exists']) {
-                http_response_code(400);
-                echo json_encode(['message' => 'Invalid projectId or robotId']);
-                exit;
-            }
-
             $stmt = $pdo->prepare("
                 UPDATE notifications 
-                SET projectId = ?, robotId = ?, message = ?, type = ?, date = ?, time = ?
+                SET topic_main = ?, message = ?, type = ?, date = ?, time = ?
                 WHERE notificationId = ?
             ");
             $stmt->execute([
-                intval($data['projectId']),
-                intval($data['robotId']),
+                trim($data['topic_main']),
                 trim($data['message']),
                 trim($data['type']),
                 trim($data['date']),
