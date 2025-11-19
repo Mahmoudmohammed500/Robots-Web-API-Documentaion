@@ -2,18 +2,6 @@
 // File: api/users.php
 require_once __DIR__ . '/../config/config.php';
 
-// ---------- API Key Protection ----------
-$requiredApiKey = "#bfbff*Amff55rRggfobapi@ssfbf55";
-
-$headers = getallheaders();
-
-// تحقق من وجود المفتاح وصحته
-if (!isset($headers['x-api-key']) || $headers['x-api-key'] !== $requiredApiKey) {
-    http_response_code(401);
-    echo json_encode(["message" => "Unauthorized"]);
-    exit;
-}
-
 // ---------- Handle preflight OPTIONS request ----------
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(200);

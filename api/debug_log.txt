@@ -22960,3 +22960,3126 @@ Array
 )
 
 
+=== GET 2025-11-19 22:35:29 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+{
+  "Username": "test user U",
+  "Password": "123456 U",
+  "TelephoneNumber": "01099988877 U",
+  "Email": "Uuser@test.com",
+  "ProjectName": "Cairo Project"
+}
+
+Decoded:
+Array
+(
+    [Username] => test user U
+    [Password] => 123456 U
+    [TelephoneNumber] => 01099988877 U
+    [Email] => Uuser@test.com
+    [ProjectName] => Cairo Project
+)
+
+
+=== GET 2025-11-19 22:43:17 ===
+URI: /robots_api/api/robots.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 22:43:17 ===
+URI: /robots_api/api/robots.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 22:43:17 ===
+URI: /robots_api/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 22:43:18 ===
+URI: /robots_api/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 22:43:36 ===
+URI: /robots_api/api/robots.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 22:43:36 ===
+URI: /robots_api/api/robots.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 22:43:37 ===
+URI: /robots_api/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 22:43:37 ===
+URI: /robots_api/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 22:57:31 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 22:58:12 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 22:58:12 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:02:03 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:02:03 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:03:28 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:03:28 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:07:53 ===
+URI: /robots_api/api/users/29
+ID: 29
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:07:53 ===
+URI: /robots_api/api/users/29
+ID: 29
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:10:09 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:10:09 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:10:19 ===
+URI: /robots_api/api/users/30
+ID: 30
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:10:19 ===
+URI: /robots_api/api/users/30
+ID: 30
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:10:26 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:10:26 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:10:30 ===
+URI: /robots_api/api/users/29
+ID: 29
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:10:30 ===
+URI: /robots_api/api/users/29
+ID: 29
+RAW:
+
+Decoded:
+
+
+=== PUT 2025-11-19 23:10:46 ===
+URI: /robots_api/api/users/29
+ID: 29
+RAW:
+{"Username":"admin_mah@12345","Email":"admin@gdd.com","Password":"12345","TelephoneNumber":"144444444444444","ProjectName":"Cairo Project"}
+Decoded:
+Array
+(
+    [Username] => admin_mah@12345
+    [Email] => admin@gdd.com
+    [Password] => 12345
+    [TelephoneNumber] => 144444444444444
+    [ProjectName] => Cairo Project
+)
+
+
+=== GET 2025-11-19 23:10:46 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:10:46 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-11-19 23:11:16 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+{"Username":"tttttttttt","Email":"tttttt@tttttt.sss","Password":"5545454","TelephoneNumber":"2144554545454","ProjectName":"Cairo Project"}
+Decoded:
+Array
+(
+    [Username] => tttttttttt
+    [Email] => tttttt@tttttt.sss
+    [Password] => 5545454
+    [TelephoneNumber] => 2144554545454
+    [ProjectName] => Cairo Project
+)
+
+
+=== GET 2025-11-19 23:11:16 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:11:16 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:11:22 ===
+URI: /robots_api/api/robots.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:11:22 ===
+URI: /robots_api/api/robots.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:11:23 ===
+URI: /robots_api/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:11:23 ===
+URI: /robots_api/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:11:27 ===
+URI: /robots_api/api/users/32
+ID: 32
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:11:27 ===
+URI: /robots_api/api/users/32
+ID: 32
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:11:32 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:11:32 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== DELETE 2025-11-19 23:11:35 ===
+URI: /robots_api/api/users/32
+ID: 32
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:11:41 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:11:41 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:11:43 ===
+URI: /robots_api/api/users/30
+ID: 30
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:11:43 ===
+URI: /robots_api/api/users/30
+ID: 30
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:11:45 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:11:45 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:29:09 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:29:09 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:29:55 ===
+URI: /robots_api/api/robots.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:29:55 ===
+URI: /robots_api/api/robots.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:29:55 ===
+URI: /robots_api/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:29:55 ===
+URI: /robots_api/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:30:03 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:30:03 ===
+URI: /robots_api/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:49:03 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:49:03 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:49:20 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:49:20 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:53:13 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:53:13 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:53:13 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:53:13 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:53:13 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:53:13 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:54:44 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:54:44 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:54:44 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:54:44 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:54:45 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:54:45 ===
+URI: /robots_api/api/robots
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:59:25 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:59:25 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-19 23:59:25 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-19 23:59:25 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-19 23:59:26 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-19 23:59:26 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== POST 2025-11-20 00:00:34 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+    [RobotName] => mmmmmmm
+    [mqttUrl] => mmmmm/m/mm
+    [projectId] => 14
+    [isTrolley] => false
+    [Sections] => {"main":{"Voltage":"55","Cycles":"10","Status":"Stopped","ActiveBtns":[],"Topic_subscribe":"mmmmm/mm","Topic_main":"mmm/mmm"}}
+)
+
+FILES:
+Array
+(
+    [Image] => Array
+        (
+            [name] => Robot1 - Copy.jpeg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php9299.tmp
+            [error] => 0
+            [size] => 9765
+        )
+
+)
+
+
+=== GET 2025-11-20 00:00:35 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:00:35 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:00:35 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:00:35 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:00:36 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:00:36 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:01:06 ===
+URI: /robots_api/api/robots.php/24
+ID: 24
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:01:06 ===
+URI: /robots_api/api/robots.php/24
+ID: 24
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:01:34 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:01:34 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:01:34 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:01:34 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:01:35 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:01:35 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== POST 2025-11-20 00:02:26 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+    [RobotName] => vvggg
+    [mqttUrl] => gggg
+    [projectId] => 14
+    [isTrolley] => false
+    [Sections] => {"main":{"Voltage":"20","Cycles":"20","Status":"Running","ActiveBtns":[],"Topic_subscribe":"hhh","Topic_main":"hhh"}}
+)
+
+FILES:
+Array
+(
+    [Image] => Array
+        (
+            [name] => Robot1 - Copy.jpeg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php4972.tmp
+            [error] => 0
+            [size] => 9765
+        )
+
+)
+
+
+=== GET 2025-11-20 00:02:27 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:02:27 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:02:27 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:02:27 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:02:28 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:02:28 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:04:09 ===
+URI: /robots_api/api/robots.php/24
+ID: 24
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:04:10 ===
+URI: /robots_api/api/robots.php/24
+ID: 24
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:04:45 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:04:45 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:04:45 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:04:45 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:04:45 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:04:46 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:12:15 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:12:15 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:12:15 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:12:15 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:12:16 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:12:16 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:21:37 ===
+URI: /robots_api/api/robots/14
+ID: 14
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:21:41 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:21:41 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:21:41 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:21:41 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:21:41 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:21:41 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:22:11 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:22:11 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:22:32 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:22:32 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:22:32 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:22:32 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:22:32 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:22:32 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:22:58 ===
+URI: /robots_api/api/users/
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:23:07 ===
+URI: /robots_api/api/robots/
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:23:21 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:23:21 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:23:53 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:23:53 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:23:53 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:23:53 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:23:54 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:23:54 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:27:58 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:27:58 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:28:17 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:28:17 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:28:17 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:28:17 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:28:19 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:28:19 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:28:41 ===
+URI: /robots_api/api/robots.php/25
+ID: 25
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:28:41 ===
+URI: /robots_api/api/robots.php/25
+ID: 25
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:30:42 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:30:42 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:30:42 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:30:42 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:30:42 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:30:42 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:30:51 ===
+URI: /robots_api/api/robots/15
+ID: 15
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:30:51 ===
+URI: /robots_api/api/robots/15
+ID: 15
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== PUT 2025-11-20 00:31:16 ===
+URI: /robots_api/api/robots/15
+ID: 15
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:31:17 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:31:18 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:31:18 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:31:18 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:31:18 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:31:18 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:31:30 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:31:30 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:31:30 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:31:30 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:31:30 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:31:30 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:31:42 ===
+URI: /robots_api/api/robots/15
+ID: 15
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:31:42 ===
+URI: /robots_api/api/robots/15
+ID: 15
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== PUT 2025-11-20 00:32:06 ===
+URI: /robots_api/api/robots/15
+ID: 15
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:32:07 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:32:08 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:32:08 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:32:08 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:32:09 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:32:09 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:36:20 ===
+URI: /robots_api/api/robots/15
+ID: 15
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:36:20 ===
+URI: /robots_api/api/robots/15
+ID: 15
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:36:30 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:36:30 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:36:30 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:36:30 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:36:31 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:36:31 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:36:35 ===
+URI: /robots_api/api/robots/15
+ID: 15
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:36:35 ===
+URI: /robots_api/api/robots/15
+ID: 15
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== POST 2025-11-20 00:37:03 ===
+URI: /robots_api/api/robots/15
+ID: 15
+POST:
+Array
+(
+    [RobotName] => new robot
+    [mqttUrl] => mqtt://192.168.1.50:1883
+    [projectId] => 12
+    [isTrolley] => 1
+    [Sections] => {"main":{"Voltage":24,"Cycles":500,"Status":"Running","ActiveBtns":[{"Name":"stop","id":"2"},{"Name":"Forward","id":"1"}],"Topic_subscribe":"robot/main/in","Topic_main":"robot/main/out"},"car":[]}
+    [_method] => PUT
+)
+
+FILES:
+Array
+(
+    [Image] => Array
+        (
+            [name] => Robot1 - Copy.jpeg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpF945.tmp
+            [error] => 0
+            [size] => 9765
+        )
+
+)
+
+
+=== GET 2025-11-20 00:37:04 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:37:04 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:37:04 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:37:04 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:37:05 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:37:05 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:37:53 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:37:53 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:37:53 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:37:53 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:37:53 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:37:53 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:38:11 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:38:11 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:38:11 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:38:11 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:38:12 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:38:12 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:39:16 ===
+URI: /robots_api/api/robots/15
+ID: 15
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:39:16 ===
+URI: /robots_api/api/robots/15
+ID: 15
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== POST 2025-11-20 00:39:56 ===
+URI: /robots_api/api/robots/15
+ID: 15
+POST:
+Array
+(
+    [RobotName] => Robot Alpha new
+    [mqttUrl] => mqtt://192.168.1.50:1883
+    [projectId] => 12
+    [isTrolley] => 1
+    [Sections] => {"main":{"Voltage":24,"Cycles":500,"Status":"Running","ActiveBtns":[{"Name":"stop","id":"2"},{"Name":"Forward","id":"1"}],"Topic_subscribe":"robot/main/in","Topic_main":"robot/main/out"},"car":[]}
+    [_method] => PUT
+)
+
+FILES:
+Array
+(
+    [Image] => Array
+        (
+            [name] => Robot1 - Copy.jpeg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php9BE5.tmp
+            [error] => 0
+            [size] => 9765
+        )
+
+)
+
+
+=== GET 2025-11-20 00:39:57 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:39:57 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:39:57 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:39:57 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:39:58 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:39:58 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:41:59 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:41:59 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:42:15 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:42:15 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:42:15 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:42:15 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:42:15 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:42:16 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== POST 2025-11-20 00:42:58 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== POST 2025-11-20 00:45:36 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+    [RobotName] => new robot 2
+    [mqttUrl] => fvfff
+    [projectId] => 15
+    [isTrolley] => 0
+    [Sections] => {"main":{"Voltage":"55","Cycles":"20","Status":"Running","ActiveBtns":[],"Topic_subscribe":"dd","Topic_main":"dd"}}
+)
+
+FILES:
+Array
+(
+    [Image] => Array
+        (
+            [name] => Robot1 - Copy.jpeg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpCBB8.tmp
+            [error] => 0
+            [size] => 9765
+        )
+
+)
+
+
+=== GET 2025-11-20 00:45:37 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:45:37 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:45:37 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:45:37 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:45:38 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:45:38 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:45:57 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:45:57 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:45:57 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:45:57 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:45:58 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:45:58 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== POST 2025-11-20 00:47:11 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== POST 2025-11-20 00:51:19 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+    [RobotName] => new trolley
+    [mqttUrl] => ffff
+    [projectId] => 15
+    [isTrolley] => 1
+    [Sections] => {"main":{"Voltage":"44","Cycles":"20","Status":"Stopped","ActiveBtns":[],"Topic_subscribe":"tt","Topic_main":"ttt"},"car":{"Voltage":"55","Cycles":"44","Status":"Running","ActiveBtns":[],"Topic_subscribe":"kjuju","Topic_main":"ffff"}}
+)
+
+FILES:
+Array
+(
+    [Image] => Array
+        (
+            [name] => Robot1 - Copy.jpeg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php7C0.tmp
+            [error] => 0
+            [size] => 9765
+        )
+
+)
+
+
+=== GET 2025-11-20 00:51:19 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:51:20 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:51:20 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:51:20 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:51:20 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:51:21 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:51:49 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:51:49 ===
+URI: /robots_api/api/robots.php/28
+ID: 28
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:51:49 ===
+URI: /robots_api/api/robots.php/28
+ID: 28
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:51:49 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:51:49 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:51:50 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:51:51 ===
+URI: /robots_api/api/robots/28
+ID: 28
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:51:51 ===
+URI: /robots_api/api/robots/28
+ID: 28
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:51:53 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:51:53 ===
+URI: /robots_api/api/robots.php/28
+ID: 28
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:51:53 ===
+URI: /robots_api/api/robots.php/28
+ID: 28
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:51:53 ===
+URI: /robots_api/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:51:54 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:51:54 ===
+URI: /robots_api/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-11-20 00:53:53 ===
+URI: /robots_api/api/robots.php/28
+ID: 28
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:53:56 ===
+URI: /robots_api/api/robots.php/28
+ID: 28
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:54:06 ===
+URI: /robots_api/api/robots.php/28
+ID: 28
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:54:16 ===
+URI: /robots_api/api/robots.php/28
+ID: 28
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:54:26 ===
+URI: /robots_api/api/robots.php/28
+ID: 28
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:54:36 ===
+URI: /robots_api/api/robots.php/28
+ID: 28
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-11-20 00:54:59 ===
+URI: /robots_api/api/robots.php/28
+ID: 28
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
