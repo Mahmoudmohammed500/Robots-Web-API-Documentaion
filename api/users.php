@@ -2,6 +2,18 @@
 // File: api/users.php
 require_once __DIR__ . '/../config/config.php';
 
+// ---------- API Key Protection ----------
+$requiredApiKey = "#bfbff*Amff55rRggfobapi@ssfbf55";
+
+$headers = getallheaders();
+
+// تحقق من وجود المفتاح وصحته
+if (!isset($headers['x-api-key']) || $headers['x-api-key'] !== $requiredApiKey) {
+    http_response_code(401);
+    echo json_encode(["message" => "Unauthorized"]);
+    exit;
+}
+
 // ---------- Handle preflight OPTIONS request ----------
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(200);
@@ -59,7 +71,7 @@ try {
         // ---------- GET ----------
         case 'GET':
             if ($id) {
-                $stmt = $pdo->prepare("SELECT id, Username, Password, TelephoneNumber, ProjectName FROM Users WHERE id = ?");
+                $stmt = $pdo->prepare("SELECT id, Username, Password, TelephoneNumber, Email, ProjectName FROM Users WHERE id = ?");
                 $stmt->execute([$id]);
                 $user = $stmt->fetch(PDO::FETCH_ASSOC);
                 if ($user) {
@@ -70,7 +82,7 @@ try {
                     echo json_encode(['message' => 'User not found']);
                 }
             } else {
-                $stmt = $pdo->query("SELECT id, Username, Password, TelephoneNumber, ProjectName FROM Users ORDER BY id DESC");
+                $stmt = $pdo->query("SELECT id, Username, Password, TelephoneNumber, Email, ProjectName FROM Users ORDER BY id DESC");
                 $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 foreach ($users as &$u) {
                     $u['Password'] = decrypt_password($u['Password'], $encKey);
@@ -81,17 +93,18 @@ try {
 
         // ---------- POST ----------
         case 'POST':
-            if (!isset($data['Username'], $data['Password'], $data['TelephoneNumber'], $data['ProjectName'])) {
+            if (!isset($data['Username'], $data['Password'], $data['TelephoneNumber'], $data['ProjectName'], $data['Email'])) {
                 http_response_code(400);
                 echo json_encode(['message' => 'Missing required fields']);
                 exit;
             }
 
-            $stmt = $pdo->prepare("INSERT INTO Users (Username, Password, TelephoneNumber, ProjectName) VALUES (?, ?, ?, ?)");
+            $stmt = $pdo->prepare("INSERT INTO Users (Username, Password, TelephoneNumber, Email, ProjectName) VALUES (?, ?, ?, ?, ?)");
             $stmt->execute([
                 trim($data['Username']),
                 encrypt_password($data['Password'], $encKey),
                 trim($data['TelephoneNumber']),
+                trim($data['Email']),
                 trim($data['ProjectName'])
             ]);
 
@@ -106,7 +119,7 @@ try {
                 echo json_encode(['message' => 'ID required for update']);
                 exit;
             }
-            if (!isset($data['Username'], $data['Password'], $data['TelephoneNumber'], $data['ProjectName'])) {
+            if (!isset($data['Username'], $data['Password'], $data['TelephoneNumber'], $data['ProjectName'], $data['Email'])) {
                 http_response_code(400);
                 echo json_encode(['message' => 'Missing required fields']);
                 exit;
@@ -120,11 +133,14 @@ try {
                 exit;
             }
 
-            $stmt = $pdo->prepare("UPDATE Users SET Username = ?, Password = ?, TelephoneNumber = ?, ProjectName = ? WHERE id = ?");
+            $stmt = $pdo->prepare("UPDATE Users 
+                SET Username = ?, Password = ?, TelephoneNumber = ?, Email = ?, ProjectName = ? 
+                WHERE id = ?");
             $stmt->execute([
                 $data['Username'],
                 encrypt_password($data['Password'], $encKey),
                 $data['TelephoneNumber'],
+                $data['Email'],
                 $data['ProjectName'],
                 $id
             ]);
