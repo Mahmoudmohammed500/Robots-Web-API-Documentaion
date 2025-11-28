@@ -1,0 +1,7 @@
+{
+  "name": "robots/api",
+  "description": "Robots REST API",
+  "require": {
+    "phpmailer/phpmailer": "^7.0"
+  }
+}

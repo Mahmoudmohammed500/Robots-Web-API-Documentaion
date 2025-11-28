@@ -1,0 +1,890 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Robots API Documentation",
+    "version": "1.0.0",
+    "description": "API documentation for managing Users, Projects, Robots, Buttons, Notifications, Logs, and Authentication in the Robots system."
+  },
+  "servers": [
+    {
+      "url": "http://localhost/robotsapis/api/",
+      "description": "Local API server"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Authentication",
+      "description": "User login and authentication endpoints"
+    },
+    { "name": "Users", "description": "Endpoints for managing users" },
+    { "name": "Projects", "description": "Endpoints for managing projects" },
+    { "name": "Robots", "description": "Endpoints for managing robots" },
+    {
+      "name": "Buttons",
+      "description": "Endpoints for managing buttons assigned to robots"
+    },
+    {
+      "name": "Notifications",
+      "description": "Endpoints for managing notifications between robots and projects"
+    },
+    {
+      "name": "Logs",
+      "description": "Endpoints for managing logs related to robot and project activities"
+    },
+    {
+      "name": "SendEmail",
+      "description": "Email Sending & Alerts Endpoint"
+    }
+  ],
+  "paths": {
+    "/sendEmail": {
+      "post": {
+        "tags": ["SendEmail"],
+        "summary": "Send email alert notification",
+        "description": "Endpoint used to send automated alerts to operator email.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "example": "mahmoudmohammed123555@gmail.com"
+                  },
+                  "message": {
+                    "type": "string",
+                    "example": "Alert ::: Volt is less than 15"
+                  }
+                },
+                "required": ["email", "message"]
+              },
+              "example": {
+                "email": "mahmoudmohammed123555@gmail.com",
+                "message": "Alert ::: Volt is less than 15"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Email sent successfully" },
+          "400": { "description": "Invalid request format" },
+          "500": { "description": "Server error while sending email" }
+        }
+      }
+    },
+
+    "/login": {
+      "post": {
+        "tags": ["Authentication"],
+        "summary": "Authenticate user login",
+        "description": "Validates a user's credentials (Username & Password) and returns user details on success.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Username": { "type": "string", "example": "mahmoud" },
+                  "Password": { "type": "string", "example": "123456" }
+                },
+                "required": ["Username", "Password"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Login successful",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Login successful"
+                    },
+                    "user": {
+                      "type": "object",
+                      "properties": {
+                        "id": { "type": "integer", "example": 1 },
+                        "Username": { "type": "string", "example": "mahmoud" },
+                        "TelephoneNumber": {
+                          "type": "string",
+                          "example": "+201234567890"
+                        },
+                        "ProjectName": {
+                          "type": "string",
+                          "example": "AI Robot"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Missing Username or Password" },
+          "401": { "description": "Invalid username or password" },
+          "500": { "description": "Database error" }
+        }
+      }
+    },
+
+    "/users": {
+      "get": {
+        "tags": ["Users"],
+        "summary": "Get all users",
+        "responses": { "200": { "description": "List of all users" } }
+      },
+      "post": {
+        "tags": ["Users"],
+        "summary": "Create a new user",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/User" }
+            }
+          }
+        },
+        "responses": { "201": { "description": "User created successfully" } }
+      }
+    },
+    "/users/{id}": {
+      "get": {
+        "tags": ["Users"],
+        "summary": "Get a user by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "User details" },
+          "404": { "description": "User not found" }
+        }
+      },
+      "put": {
+        "tags": ["Users"],
+        "summary": "Update a user by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/User" }
+            }
+          }
+        },
+        "responses": { "200": { "description": "User updated successfully" } }
+      },
+      "delete": {
+        "tags": ["Users"],
+        "summary": "Delete a user by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": { "200": { "description": "User deleted successfully" } }
+      }
+    },
+    "/users/": {
+      "delete": {
+        "tags": ["Users"],
+        "summary": "Delete all users",
+        "responses": {
+          "200": { "description": "All users deleted successfully" }
+        }
+      }
+    },
+
+    "/projects": {
+      "get": {
+        "tags": ["Projects"],
+        "summary": "Get all projects",
+        "responses": { "200": { "description": "List of all projects" } }
+      },
+      "post": {
+        "tags": ["Projects"],
+        "summary": "Create a new project",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Project" }
+            }
+          }
+        },
+        "responses": {
+          "201": { "description": "Project created successfully" }
+        }
+      }
+    },
+    "/projects/{id}": {
+      "get": {
+        "tags": ["Projects"],
+        "summary": "Get a project by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Project details" },
+          "404": { "description": "Project not found" }
+        }
+      },
+      "put": {
+        "tags": ["Projects"],
+        "summary": "Update a project by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Project" }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Project updated successfully" }
+        }
+      },
+      "delete": {
+        "tags": ["Projects"],
+        "summary": "Delete a project by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Project deleted successfully" }
+        }
+      }
+    },
+    "/projects/": {
+      "delete": {
+        "tags": ["Projects"],
+        "summary": "Delete all projects",
+        "responses": {
+          "200": { "description": "All projects deleted successfully" }
+        }
+      }
+    },
+
+    "/robots": {
+      "get": {
+        "tags": ["Robots"],
+        "summary": "Get all robots",
+        "responses": {
+          "200": { "description": "List of all robots" }
+        }
+      },
+      "post": {
+        "tags": ["Robots"],
+        "summary": "Create a new robot",
+        "description": "⚠️ Logic Note: If `isTrolley` = `false`, then the `car` object should be empty `{}` and system will do it automoticaly by sql and js.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Robot" }
+            }
+          }
+        },
+        "responses": {
+          "201": { "description": "Robot created successfully" }
+        }
+      }
+    },
+    "/robots/{id}": {
+      "get": {
+        "tags": ["Robots"],
+        "summary": "Get a robot by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Robot details" },
+          "404": { "description": "Robot not found" }
+        }
+      },
+      "put": {
+        "tags": ["Robots"],
+        "summary": "Update a robot by ID",
+        "description": "⚠️ Logic Note : If `isTrolley` = `false`, then the `car` object should be empty `{}` and system will do it automoticaly by sql and js.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Robot" }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Robot updated successfully" }
+        }
+      },
+      "delete": {
+        "tags": ["Robots"],
+        "summary": "Delete a robot by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Robot deleted successfully" }
+        }
+      }
+    },
+    "/robots/": {
+      "delete": {
+        "tags": ["Robots"],
+        "summary": "Delete all robots",
+        "responses": {
+          "200": { "description": "All robots deleted successfully" }
+        }
+      }
+    },
+
+    "/buttons": {
+      "get": {
+        "tags": ["Buttons"],
+        "summary": "Get all buttons",
+        "description": "Retrieve a list of all buttons in the system.",
+        "responses": {
+          "200": {
+            "description": "List of all buttons"
+          }
+        }
+      },
+      "post": {
+        "tags": ["Buttons"],
+        "summary": "Create a new button",
+        "description": "Add a new button and automatically link it to a specific robot section if it exists. If the section does not exist in the robot, the button will NOT be added.",
+        "parameters": [
+          {
+            "name": "section",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "main"
+            },
+            "description": "Robot section name to which the button should be added (e.g., main or car)"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Button"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "✅ Button created and linked to robot section successfully",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Button created and linked successfully"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "❌ Section not found in robot",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "This section does not exist for the specified robot"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Missing required parameters"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/buttons/{id}": {
+      "get": {
+        "tags": ["Buttons"],
+        "summary": "Get button by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Button details"
+          },
+          "404": {
+            "description": "Button not found"
+          }
+        }
+      },
+      "put": {
+        "tags": ["Buttons"],
+        "summary": "Update button by ID",
+        "description": "Update an existing button if it belongs to the specified robot and section. If the button is not part of that section, the update will NOT be applied.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "section",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "main"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Button"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "✅ Button updated successfully",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Button updated successfully"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "❌ Button not linked to this robot or section",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "This button was not linked to the specified robot or section"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Missing parameters"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "delete": {
+        "tags": ["Buttons"],
+        "summary": "Delete button by ID",
+        "description": "Delete a button only if it belongs to the specified robot and section. Otherwise, deletion will be rejected.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "section",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "main"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "✅ Button deleted successfully",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Button deleted successfully"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "❌ Button not found or not linked to robot section",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "This button is not part of the specified robot or section"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Missing Button ID or section parameter"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/buttons/": {
+      "delete": {
+        "tags": ["Buttons"],
+        "summary": "Delete all buttons",
+        "responses": {
+          "200": {
+            "description": "All buttons deleted successfully"
+          }
+        }
+      }
+    },
+
+    "/notifications": {
+      "get": {
+        "tags": ["Notifications"],
+        "summary": "Get all notifications",
+        "responses": { "200": { "description": "List of all notifications" } }
+      },
+      "post": {
+        "tags": ["Notifications"],
+        "summary": "Create a new notification",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Notification" }
+            }
+          }
+        },
+        "responses": {
+          "201": { "description": "Notification created successfully" }
+        }
+      }
+    },
+    "/notifications/{id}": {
+      "get": {
+        "tags": ["Notifications"],
+        "summary": "Get a notification by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Notification details" },
+          "404": { "description": "Notification not found" }
+        }
+      },
+      "put": {
+        "tags": ["Notifications"],
+        "summary": "Update a notification by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Notification" }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Notification updated successfully" }
+        }
+      },
+      "delete": {
+        "tags": ["Notifications"],
+        "summary": "Delete a notification by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Notification deleted successfully" }
+        }
+      }
+    },
+
+    "/logs": {
+      "get": {
+        "tags": ["Logs"],
+        "summary": "Get all logs",
+        "responses": { "200": { "description": "List of all logs" } }
+      },
+      "post": {
+        "tags": ["Logs"],
+        "summary": "Create a new log",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Log" }
+            }
+          }
+        },
+        "responses": { "201": { "description": "Log created successfully" } }
+      }
+    },
+    "/logs/{id}": {
+      "get": {
+        "tags": ["Logs"],
+        "summary": "Get a log by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Log details" },
+          "404": { "description": "Log not found" }
+        }
+      },
+      "put": {
+        "tags": ["Logs"],
+        "summary": "Update a log by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Log" }
+            }
+          }
+        },
+        "responses": { "200": { "description": "Log updated successfully" } }
+      },
+      "delete": {
+        "tags": ["Logs"],
+        "summary": "Delete a log by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": { "200": { "description": "Log deleted successfully" } }
+      }
+    }
+  },
+
+  "components": {
+    "schemas": {
+      "User": {
+        "type": "object",
+        "properties": {
+          "Username": { "type": "string", "example": "Ahmed" },
+          "Password": { "type": "string", "example": "123456" },
+          "TelephoneNumber": { "type": "string", "example": "+201234567890" },
+          "ProjectName": { "type": "string", "example": "AI Robot" }
+        }
+      },
+      "Project": {
+        "type": "object",
+        "properties": {
+          "ProjectName": { "type": "string", "example": "Airport Bot" },
+          "Description": {
+            "type": "string",
+            "example": "Smart robot for airport security"
+          },
+          "Location": { "type": "string", "example": "Saudi Arabia" },
+          "Image": { "type": "string", "example": "uploads/robot.jpg" }
+        }
+      },
+      "Robot": {
+        "type": "object",
+        "properties": {
+          "RobotName": { "type": "string", "example": "betaaaaa Update" },
+          "Image": {
+            "type": "string",
+            "example": "UUUUU_robot_69241fab05ba86.27314663.jpeg"
+          },
+          "projectId": { "type": "string", "example": "18" },
+          "isTrolley": { "type": "string", "example": "1" },
+          "Sections": {
+            "type": "object",
+            "properties": {
+              "main": {
+                "type": "object",
+                "properties": {
+                  "Voltage": { "type": "string", "example": "15" },
+                  "Cycles": { "type": "string", "example": "15" },
+                  "Status": { "type": "string", "example": "ggggggu" },
+                  "ActiveBtns": {
+                    "type": "array",
+                    "items": { "type": "string" },
+                    "example": []
+                  },
+                  "Topic_subscribe": {
+                    "type": "string",
+                    "example": "dff/fffu"
+                  },
+                  "Topic_main": { "type": "string", "example": "fff/ffu" },
+                  "mqttUrl": {
+                    "type": "string",
+                    "example": "dfdsdddsd/ddduuU"
+                  },
+                  "mqttUsername": {
+                    "type": "string",
+                    "example": "fffffffffuuU"
+                  },
+                  "mqttPassword": { "type": "string", "example": "d554445uuU" }
+                }
+              },
+              "car": {
+                "type": "object",
+                "example": {
+                  "Voltage": "15",
+                  "Cycles": "15",
+                  "Status": "vvvvvvvvvuuuu",
+                  "ActiveBtns": [],
+                  "Topic_subscribe": "xdddd/ddduuu",
+                  "Topic_main": "ddd/d/ddduuuU",
+                  "mqttUrl": "dfdsdddsd/ddduuuU",
+                  "mqttUsername": "fffffffffuuU",
+                  "mqttPassword": "d554445uuuuU"
+                }
+              }
+            }
+          }
+        },
+        "required": ["RobotName", "projectId", "isTrolley", "Sections"]
+      },
+      "Button": {
+        "type": "object",
+        "properties": {
+          "BtnName": { "type": "string", "example": "Start" },
+          "RobotId": { "type": "integer", "example": 8 },
+          "Color": { "type": "string", "example": "#FF0000" },
+          "Operation": { "type": "string", "example": "/start" },
+          "projectId": { "type": "integer", "example": 10 }
+        },
+        "required": ["BtnName", "RobotId", "Operation", "projectId"]
+      },
+
+      "Notification": {
+        "type": "object",
+        "properties": {
+          "projectId": { "type": "integer", "example": 5 },
+          "robotId": { "type": "integer", "example": 3 },
+          "message": { "type": "string", "example": "Battery level low" },
+          "type": { "type": "string", "example": "alert" },
+          "date": { "type": "string", "example": "2025-11-05" },
+          "time": { "type": "string", "example": "14:25:00" }
+        }
+      },
+      "Log": {
+        "type": "object",
+        "properties": {
+          "projectId": { "type": "integer", "example": 5 },
+          "robotId": { "type": "integer", "example": 3 },
+          "message": {
+            "type": "string",
+            "example": "Robot connected successfully"
+          },
+          "type": { "type": "string", "example": "info" },
+          "date": { "type": "string", "example": "2025-11-05" },
+          "time": { "type": "string", "example": "14:26:30" }
+        }
+      }
+    }
+  }
+}
