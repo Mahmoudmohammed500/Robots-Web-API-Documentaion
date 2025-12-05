@@ -12,7 +12,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit();
 }
 
-$method = $_SERVER['REQUEST_METHOD'];
+// ---------- Override method for FormData ----------
+$method = $_POST['_method'] ?? $_SERVER['REQUEST_METHOD'];
+
 $requestUri = $_SERVER['REQUEST_URI'] ?? '';
 $parts = explode('/', trim(parse_url($requestUri, PHP_URL_PATH), '/'));
 $idCandidate = end($parts);
@@ -36,10 +38,9 @@ function handleImageUpload($fileField) {
     return null;
 }
 
-// ---------- INPUT HANDLING ----------
+// ---------- POST / JSON INPUT ----------
 $rawInput = file_get_contents("php://input");
 $jsonInput = json_decode($rawInput, true);
-
 $data = !empty($_POST) ? $_POST : $jsonInput;
 
 // Decode Sections if string (from FormData)
@@ -47,10 +48,9 @@ if (isset($data['Sections']) && is_string($data['Sections'])) {
     $data['Sections'] = json_decode($data['Sections'], true);
 }
 
-// ---------- Debug log ----------
+// Debug log (optional)
 file_put_contents(__DIR__ . "/debug_log.txt",
     "=== $method " . date("Y-m-d H:i:s") . " ===\nURI: $requestUri\nID: " . ($id ?? 'null') .
-    "\nRAW:\n" . $rawInput .
     "\nPOST:\n" . print_r($_POST, true) .
     "\nFILES:\n" . print_r($_FILES, true) .
     "\n\n", FILE_APPEND);
@@ -82,27 +82,32 @@ try {
             }
             break;
 
-        // ================== POST ==================
+        // ================== CREATE (POST) ==================
         case 'POST':
+            // If this POST is actually update
+            if (isset($_POST['_method']) && $_POST['_method'] === 'PUT') {
+                goto updateRobot;
+            }
+
             if (!isset($data['RobotName'], $data['projectId'], $data['Sections'])) {
                 http_response_code(400);
                 echo json_encode(['message' => 'Missing required fields']);
                 exit;
             }
 
-            // Check Project exists
+            // Validate project
             $stmt = $pdo->prepare("SELECT projectId FROM Projects WHERE projectId = ?");
             $stmt->execute([intval($data['projectId'])]);
             if ($stmt->rowCount() === 0) {
                 http_response_code(400);
-                echo json_encode(['message' => 'Invalid projectId: project not found']);
+                echo json_encode(['message' => 'Invalid projectId']);
                 exit;
             }
 
-            // Handle Image
+            // Upload Image
             $imageName = handleImageUpload('Image') ?? trim($data['Image'] ?? '');
 
-            // Insert Robot
+            // Insert
             $stmt = $pdo->prepare("INSERT INTO Robots (RobotName, Image, projectId, isTrolley, Sections)
                                    VALUES (?, ?, ?, ?, ?)");
             $stmt->execute([
@@ -117,7 +122,8 @@ try {
             echo json_encode(['message' => 'Robot created successfully']);
             break;
 
-        // ================== PUT ==================
+        // ================== UPDATE (PUT via POST) ==================
+        updateRobot:
         case 'PUT':
             if (!$id) {
                 http_response_code(400);
@@ -125,52 +131,42 @@ try {
                 exit;
             }
 
-            // Fetch existing
+            // Get existing robot
             $stmt = $pdo->prepare("SELECT * FROM Robots WHERE id = ?");
             $stmt->execute([$id]);
-            $existingRobot = $stmt->fetch();
-            if (!$existingRobot) {
+            $existing = $stmt->fetch();
+
+            if (!$existing) {
                 http_response_code(404);
                 echo json_encode(['message' => 'Robot not found']);
                 exit;
             }
 
-            // Image handling
+            // Handle image
             if (!empty($_FILES['Image'])) {
                 $imageName = handleImageUpload('Image');
             } else {
-                $imageName = $data['Image'] ?? $existingRobot['Image'];
+                $imageName = $existing['Image'];
             }
 
-            // Validate project if updating
-            if (isset($data['projectId'])) {
-                $stmt = $pdo->prepare("SELECT projectId FROM Projects WHERE projectId = ?");
-                $stmt->execute([intval($data['projectId'])]);
-                if ($stmt->rowCount() === 0) {
-                    http_response_code(400);
-                    echo json_encode(['message' => 'Invalid projectId: project not found']);
-                    exit;
-                }
-            }
-
-            // Update DB
+            // Update
             $stmt = $pdo->prepare("
                 UPDATE Robots 
                 SET 
-                    RobotName = COALESCE(?, RobotName),
-                    Image = COALESCE(?, Image),
-                    projectId = COALESCE(?, projectId),
-                    isTrolley = COALESCE(?, isTrolley),
-                    Sections = COALESCE(?, Sections)
+                    RobotName = ?,
+                    Image = ?,
+                    projectId = ?,
+                    isTrolley = ?,
+                    Sections = ?
                 WHERE id = ?
             ");
 
             $stmt->execute([
-                $data['RobotName'] ?? $existingRobot['RobotName'],
+                $data['RobotName'] ?? $existing['RobotName'],
                 $imageName,
-                isset($data['projectId']) ? intval($data['projectId']) : $existingRobot['projectId'],
-                isset($data['isTrolley']) ? (int)$data['isTrolley'] : $existingRobot['isTrolley'],
-                isset($data['Sections']) ? json_encode($data['Sections']) : $existingRobot['Sections'],
+                intval($data['projectId'] ?? $existing['projectId']),
+                isset($data['isTrolley']) ? intval($data['isTrolley']) : $existing['isTrolley'],
+                isset($data['Sections']) ? json_encode($data['Sections']) : $existing['Sections'],
                 $id
             ]);
 
@@ -192,7 +188,6 @@ try {
         default:
             http_response_code(405);
             echo json_encode(['message' => 'Method Not Allowed']);
-            break;
     }
 
 } catch (PDOException $e) {

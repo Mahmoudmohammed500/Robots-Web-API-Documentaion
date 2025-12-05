@@ -14,7 +14,7 @@ $parts = explode('/', trim($requestUri, '/'));
 $idCandidate = end($parts);
 $projectId = is_numeric($idCandidate) ? intval($idCandidate) : null;
 
-// Determine if request has JSON body (PUT via fetch) or multipart/form-data (POST with image)
+// Read JSON body for PUT and POST (if sent as JSON)
 $input = file_get_contents("php://input");
 $data = json_decode($input, true);
 
@@ -42,10 +42,9 @@ try {
 
         // ---------- POST (Create new project with optional image) ----------
         case 'POST':
-            // Use $_POST for form-data
-            $projectName = $_POST['ProjectName'] ?? null;
-            $location = $_POST['Location'] ?? null;
-            $description = $_POST['Description'] ?? null;
+            $projectName = $_POST['ProjectName'] ?? ($data['ProjectName'] ?? null);
+            $location = $_POST['Location'] ?? ($data['Location'] ?? null);
+            $description = $_POST['Description'] ?? ($data['Description'] ?? null);
 
             if (!$projectName || !$location || !$description) {
                 http_response_code(400);
@@ -54,11 +53,17 @@ try {
             }
 
             $imageName = null;
+            // Handle uploaded image
             if (isset($_FILES['Image']) && $_FILES['Image']['error'] === UPLOAD_ERR_OK) {
                 $uploadDir = __DIR__ . '/../uploads/';
                 if (!is_dir($uploadDir)) mkdir($uploadDir, 0777, true);
                 $imageName = time() . '-' . basename($_FILES['Image']['name']);
                 move_uploaded_file($_FILES['Image']['tmp_name'], $uploadDir . $imageName);
+            } elseif (isset($data['ImageBase64'])) {
+                // Image sent as Base64 string
+                $imageData = $data['ImageBase64'];
+                $imageName = time() . '-project.png';
+                file_put_contents(__DIR__ . '/../uploads/' . $imageName, base64_decode($imageData));
             }
 
             $stmt = $pdo->prepare("INSERT INTO projects (ProjectName, Description, Location, Image) VALUES (?, ?, ?, ?)");
@@ -68,7 +73,7 @@ try {
             echo json_encode(['message' => 'Project created successfully']);
             break;
 
-        // ---------- PUT (Update project by ID with optional new image) ----------
+        // ---------- PUT (Update project by ID) ----------
         case 'PUT':
             if (!$projectId) {
                 http_response_code(400);
@@ -86,24 +91,31 @@ try {
                 exit;
             }
 
-            // Handle PUT data (assume JSON)
+            // Get updated data from JSON
             $projectName = $data['ProjectName'] ?? $existingProject['ProjectName'];
             $location = $data['Location'] ?? $existingProject['Location'];
             $description = $data['Description'] ?? $existingProject['Description'];
-            $imageName = $existingProject['Image']; // keep old image by default
+            $imageName = $existingProject['Image'];
 
-            // Optional: handle new uploaded image (if sending multipart/form-data via PUT)
-            if (isset($_FILES['Image']) && $_FILES['Image']['error'] === UPLOAD_ERR_OK) {
+            // Optional: update image if Base64 sent
+            if (!empty($data['ImageBase64'])) {
+                $imageData = $data['ImageBase64'];
+                $imageName = time() . '-project.png';
                 $uploadDir = __DIR__ . '/../uploads/';
                 if (!is_dir($uploadDir)) mkdir($uploadDir, 0777, true);
-                $imageName = time() . '-' . basename($_FILES['Image']['name']);
-                move_uploaded_file($_FILES['Image']['tmp_name'], $uploadDir . $imageName);
+                file_put_contents($uploadDir . $imageName, base64_decode($imageData));
             }
 
+            // Update project
             $stmt = $pdo->prepare("UPDATE projects SET ProjectName = ?, Description = ?, Location = ?, Image = ? WHERE projectId = ?");
             $stmt->execute([$projectName, $description, $location, $imageName, $projectId]);
 
-            echo json_encode(['message' => 'Project updated successfully']);
+            // Return updated project
+            $stmt = $pdo->prepare("SELECT * FROM projects WHERE projectId = ?");
+            $stmt->execute([$projectId]);
+            $updatedProject = $stmt->fetch();
+
+            echo json_encode(['message' => 'Project updated successfully', 'data' => $updatedProject]);
             break;
 
         // ---------- DELETE (Delete one or all) ----------

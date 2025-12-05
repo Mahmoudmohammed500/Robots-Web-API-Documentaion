@@ -45052,3 +45052,2090 @@ Array
 )
 
 
+=== GET 2025-12-05 14:04:18 ===
+URI: /robotsapis/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:18:44 ===
+URI: /robotsapis/api/users
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:18:49 ===
+URI: /robotsapis/api/robots.php
+ID: null
+RAW:
+
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:18:49 ===
+URI: /robotsapis/api/robots.php
+ID: null
+RAW:
+
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:18:49 ===
+URI: /robotsapis/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:18:50 ===
+URI: /robotsapis/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:19:16 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:19:16 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:19:46 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:20:18 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:20:46 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:21:16 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:21:46 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:22:14 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:22:14 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:22:14 ===
+URI: /robotsapis/api/robots
+ID: null
+RAW:
+
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:22:14 ===
+URI: /robotsapis/api/robots
+ID: null
+RAW:
+
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:22:16 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:22:46 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:23:05 ===
+URI: /robotsapis/api/robots.php
+ID: null
+RAW:
+
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:23:06 ===
+URI: /robotsapis/api/robots.php
+ID: null
+RAW:
+
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:23:11 ===
+URI: /robotsapis/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:23:13 ===
+URI: /robotsapis/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:23:16 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:23:17 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:23:24 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:23:24 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:23:24 ===
+URI: /robotsapis/api/robots
+ID: null
+RAW:
+
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:23:24 ===
+URI: /robotsapis/api/robots
+ID: null
+RAW:
+
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:24:10 ===
+URI: /robotsapis/api/robots.php
+ID: null
+RAW:
+
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:24:13 ===
+URI: /robotsapis/api/robots.php
+ID: null
+RAW:
+
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:24:15 ===
+URI: /robotsapis/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:24:16 ===
+URI: /robotsapis/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:24:21 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:24:21 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:24:23 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:24:23 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:24:23 ===
+URI: /robotsapis/api/robots
+ID: null
+RAW:
+
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:24:23 ===
+URI: /robotsapis/api/robots
+ID: null
+RAW:
+
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:24:51 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:25:21 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:26:02 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:26:22 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:26:51 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:27:21 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:28:34 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:29:21 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:29:51 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:30:22 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:30:30 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:30:30 ===
+URI: /robotsapis/api/robots
+ID: null
+RAW:
+
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:30:30 ===
+URI: /robotsapis/api/robots
+ID: null
+RAW:
+
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:30:30 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:30:51 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:31:21 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-12-05 14:31:23 ===
+URI: /robotsapis/api/robots
+ID: null
+RAW:
+
+POST:
+Array
+(
+    [RobotName] => Omega Robot
+    [projectId] => 19
+    [isTrolley] => 0
+    [Sections] => {"main":{"Voltage":"0","Cycles":"0","Status":"stopped","ActiveBtns":[],"Topic_subscribe":"fdfdfdffd","Topic_main":"dffdffdfd","mqttUrl":"cdffdfdfdfdfd","mqttUsername":"ffdfd","mqttPassword":"fddf"}}
+)
+
+FILES:
+Array
+(
+    [Image] => Array
+        (
+            [name] => Robot1 - Copy.jpeg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php99D4.tmp
+            [error] => 0
+            [size] => 9765
+        )
+
+)
+
+
+=== GET 2025-12-05 14:31:24 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:31:24 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:31:24 ===
+URI: /robotsapis/api/robots
+ID: null
+RAW:
+
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:31:24 ===
+URI: /robotsapis/api/robots
+ID: null
+RAW:
+
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:31:34 ===
+URI: /robotsapis/api/robots.php/53
+ID: 53
+RAW:
+
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:31:34 ===
+URI: /robotsapis/api/robots.php/53
+ID: 53
+RAW:
+
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:31:51 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-12-05 14:32:06 ===
+URI: /robotsapis/api/robots.php/53
+ID: 53
+RAW:
+
+POST:
+Array
+(
+    [RobotName] => Omega Robot Update
+    [isTrolley] => false
+    [Topic_subscribe] => fdfdfdffd
+    [Topic_main] => dffdffdfd
+    [mqttUrl] => cdffdfdfdfdfd
+    [mqttUsername] => ffdfd
+    [mqttPassword] => fddf
+)
+
+FILES:
+Array
+(
+    [Image] => Array
+        (
+            [name] => th.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php4298.tmp
+            [error] => 0
+            [size] => 15420
+        )
+
+)
+
+
+=== GET 2025-12-05 14:32:21 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:32:51 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:33:21 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:33:51 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:34:21 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:35:36 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:35:58 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== PUT 2025-12-05 14:36:03 ===
+URI: /robotsapis/api/robots.php/53
+ID: 53
+RAW:
+------WebKitFormBoundaryAXZXGBFIBB6vWSI6
+Content-Disposition: form-data; name="RobotName"
+
+Omega Robot Update
+------WebKitFormBoundaryAXZXGBFIBB6vWSI6
+Content-Disposition: form-data; name="isTrolley"
+
+false
+------WebKitFormBoundaryAXZXGBFIBB6vWSI6
+Content-Disposition: form-data; name="Topic_subscribe"
+
+fdfdfdffd
+------WebKitFormBoundaryAXZXGBFIBB6vWSI6
+Content-Disposition: form-data; name="Topic_main"
+
+dffdffdfd
+------WebKitFormBoundaryAXZXGBFIBB6vWSI6
+Content-Disposition: form-data; name="mqttUrl"
+
+cdffdfdfdfdfd
+------WebKitFormBoundaryAXZXGBFIBB6vWSI6
+Content-Disposition: form-data; name="mqttUsername"
+
+ffdfd
+------WebKitFormBoundaryAXZXGBFIBB6vWSI6
+Content-Disposition: form-data; name="mqttPassword"
+
+fddf
+------WebKitFormBoundaryAXZXGBFIBB6vWSI6
+Content-Disposition: form-data; name="Image"; filename="th.jpg"
+Content-Type: image/jpeg
+
+ÿØÿà JFIF  ` `  ÿÛ C 
+	
+		
+$ &%# #"(-90(*6+"#2D26;=@@@&0FKE>J9?@=ÿÛ C=)#)==================================================ÿÀ  Üƒ" ÿÄ           	
+ÿÄ µ   } !1AQa"q2‘¡#B±ÁRÑð$3br‚	
+%&'()*456789:CDEFGHIJSTUVWXYZcdefghijstuvwxyzƒ„…†‡ˆ‰Š’“”•–—˜™š¢£¤¥¦§¨©ª²³´µ¶·¸¹ºÂÃÄÅÆÇÈÉÊÒÓÔÕÖ×ØÙÚáâãäåæçèéêñòóôõö÷øùúÿÄ        	
+ÿÄ µ  w !1AQaq"2B‘¡±Á	#3RðbrÑ
+$4á%ñ&'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz‚ƒ„…†‡ˆ‰Š’“”•–—˜™š¢£¤¥¦§¨©ª²³´µ¶·¸¹ºÂÃÄÅÆÇÈÉÊÒÓÔÕÖ×ØÙÚâãäåæçèéêòóôõö÷øùúÿÚ   ? ò>TäU«9Zk„‡ûÆ«ôëV´˜¤›Rmá’fÁÈK=xíï@“G¼%ä8AÇ½B±A{tù—¡«w6Âæ-¹Á¢²³Já˜sž:`P#54ý—­1*FjY-má ÊÁAèXÖ‡‘!½2°6íëS ¬¼m#­ 6Ñ£khÄ,
+(ÀÁ¤ÿ IBNb”vl?Ÿ4ÙŠTóLLy¼T‘,q$žaÏ`_å@tÆ™¾Òg]²yœÂ¬\@—1„“8{Š"™ešm‡pF‘Ï8¨åá¿‘9€‚ªN?­ \$óU Ûö«ïä~T–É<.òÈß)tzTKhÒ_M3»"ƒ„ÚpsŽ´jS8Ý,LÃçIÒ¼Ò«ÆcU·<ç×šX"ºiÕ‰Ë*,_9üºÔ²†FŽPcuê­Á… fj—³ÚODÃfÜ•#©Í_î…²06œþT×1!+Ð±U+íJ1Gg,:@}•/aNÖ$ÔðXÇk’Ìî>cÖªér#/l
+½5¢ÜÎ¯ Š¸ ôÍ GöãºŠem¸~‡¿Ò¬Ü\¥´^d¹Ú8àTKd‹r%,îWî†</Ò¦’EA~…‚ð3É (ï") î*{Uòá…AÈP2éåŽÝÚ@8–È²À;¶ŒŽô§Ú™®ÕÛî#n?Ÿ­nî àõÆqíU4èÂ[o#É?‡j°¨'˜¼¾6d}zcë@w¶_éeÔà1Ý‚=ëFðn´˜z©-Õ¤‘°Iãxä\®¤})’€Ñ•'†â€0ÞÂA6î Î1[1/]ªéM(]¹È©éÏ4šyvq(=²~¹¨L$®qÎM>ÖXÅº†•,ëOŒ×1$sÖ€"HZ;ÈÎ>A÷È§Ï‘Ô0ùpsSíŽqÈÍW¸r¬:äƒ@à.Ê8ÅQ†ö‚†áØ’3À
+#¾²·×*qwj~o1>¤s@ac´cœRÊëeä8P9â©Ë¨Bìª„•S–~€U™nÑæI£YP¼LQž´ è¦Y¢%{b“£ã¾*í³1=€Å8>eSÓ9â€ˆ~ÐX²ÃÔzRO1R±¯2?è;š|²¬[wœnm¢’T†ÇÌ´ íá@ éOj¤Òc’p*gº„¡* àÎhndh­äuûÀqè*ŒWÒRÈ{»¯G:H6’6žô Å
+`E‡ø
+ !ŒrIîOzbÄ<é¹4ø_znÚTg€iÜÐ¼v¬ï±l¸nã9¦¼¡0ŽA6Ñ!BŸ@zTRŽ„u ×Š”F1E gijË©"¿ ƒÔ{We¡Iimvïs7ÙÀØT…;I	Î:àg ñ\Õ¤AnÕ†ÁþUzI’†C´3múÐ1ÑÊò¼í ù¼çÎAýi&„Í$L¯–ûŽQŽ•&H£­psPÚ[‹hÙç.HèAùT)y¿T’ßøBñõÏµMs0‚ÚI3ÊŽ>´›w7™räÚ*[X>ÔæÍ1@p>e‰=ÅkéMºÝ_ŸúP«kn§Ê…Œl9"7 Ÿ­X‰|¸ÂnfÇv95·‡íhl	1ÄÔ¨é*†ƒ)î(¡‚·$ŠÌ#ÜK.îúT·¶Û9î*Ô•ï¾ÍåÛŠîÝéíNÔÉ„ÿ ´(æ…<1ÝB÷Wï
+mpÌ$ÁäŽp}©þ ŠÏRÕn.!Û"É·ó…½aZY¶ÌƒËSÇûGü+FêàÛÅû¸Ùß¢¨\õ ÷ÓSíB Nvn#ñª÷ö¢Ñ¡œ¾G5gLYä²LN¬1žkBi ˆ¯žÈ¹éº‘ÛZÅHÊ€9PIÉëŠš`ÍGÌTÏ|qJ2S•# ŠR@RN0I4j±ŽÓ8Ê.Y»U;Cíw3'@9AíÐÕ‰£K»b»W?CY¶0µ½Àf`pÔ¢æQyR<¢¤·äz~të”2[È€ÅN=êJ†•žI‘å›múŠ -–Ò!+ÛrsÚŸ¤ÜxggtO?qeê«»¨÷¡7“c!Xmÿ [4Ý-JéÑ‚;Ÿç@^!½ûV¥j¶¬’[GFpq#ïrx#ó5•rp±òÒ¨þ¦›È{™`<<g§¨¨n£·[JX˜ÁÛîŸþ½ \”3!ÛXôlgK¯ùú_ûö)×R46²H‡G_Æ²Ž§pN<ÁÏ I5¢$‘WçÆxõ­;x¼‹xâ'%ÕbvÛ·°Î­DÛ7­ 637˜Þ`Œ'ðí'&0y»ÉŸjli0•™åVŒýÕÓñ§¹”w?Ê€3õX¦–T1FÌò@÷«&Î-‡åÅ-Åê[H¨êÄ°ÈÛSgä'Ú€1§µ1[î\Ÿjèµ¹íotk8mîšgI7±}Ûù@>bxÎF08éYó&è ÆyøÐÎ‚8á•Œ®è3Z1I€˜Ù[HªocçÝ;n!	æ¯,k{P`Â€WTŒ» éŸZdWQLûQŽï¥RºŠâàïteEè¾‚Ÿf¡fP(nâH¢38éži–æ'£‡¦ß¯™
+†äoÓ#}} 7Q…¤hYK6Ãþ:¶û Ÿ ©ÙøÕ=Aò/_˜ÿ J –+Øå!FìŸn*YeXci;W®:Õ ˜õ«—0°#Š ÛMJÎo	ýœNÍ;*þîEl®œÁqøÖò§S´î\õäTŠ0ƒù
+lR&6O@Â‘‰êÿ ÷Ñ¢¦òÇ÷›ó¢€ H®,f@•pxSƒO‘¥Õc¬
++rîÙü…;S¸TtŒ˜dŸj»É
+àgŸ­ËIa)›Š­A®X+ùQGFü6Ö[Ùg,ÛL ãcò­
+ §k¦¬R™åÞ• ]¡…äÑº6‰ŒBñ	®ä7.Ê«´Sîtè®\¹p6«3“Š • ´“;#±×h–Aµ´Œc gŽh‚¬àÙÂŽIî}ë.úæ[§ÀŽE‰~èÚ3@û:jW%šVW#ž3Ò­K,ÚU´iIc`Aû«¥œÞñýÓZØtP}hnØ]ý¤ß¸¶;UÛÉî¦ˆE$1€Øl¦MG¢³0#½ky`¨3@YÈËQ˜d$ 	ã­úÔyêÇÎòvöÙŸëUõa#@g`?6?J ºÊ7îî?
+®ÑAxÄM&3·æãò¨´‡‘­˜I]ß.}*Ò‘çÊ;¹ü¨‹¤´ù
+Ÿ,'ê*Ä€<,á—ŸÊ³µ0L HeÀÀëZÄ'Ù¥ cÚßIgFÉæ*žz
+×‘ÆÏ´nÛœûâ²`S';N8Ç®ÿ ê›áþ” Ëy¶ÑÈx, þ5µŒv²3£HKÆiÿ œ¦­É$ÌsŸùîGõ 	$Ž+†d•ÈÇâ+6úY-np»¤{AÚ§Wm6‰nU²‡%·­TÔ#ó/:¸;}hº]Â«ÎóÈl·SÖµUÖD„2žõ‡-³*‚;Ö¥‡üxÅ×¡þt ég€,ˆÎ›À#×ÒZ[€‘ÀëŠÊ¸RÚ³áóy­¶Ñ”ä8ô +±‘ò²ŸJËº¹¸²›ÊY2˜Êü£¥h[ÛÇl¥cÎ	É,sP/—w|%ÆDcåÍ Y¶ó|„3Þ–ã§µV½”ÙÊ'	¼0Úrzb­>ì|€‘œúw¤š5š"Ž¹hœq½û¥Ä©±à y<ÕâT`dôÔ`ÈíÆR{W›Rw•€Œ}Ð:Ÿ¥ _?($…"Žçò£ çµ2)<Î3@,ÑÀv
+	àzÓƒ ¯ ÷ª·6=Ìru `J´«±vöÜ¾TåÎxëŒU®vH<´.W­_Ÿ1Á¥HÐ 
+ é@‡’æ20žœæ e”6Ý‡wµZS1lªÄ©Û$äÓ²À’ÄsÐÔ [‡X€—0iÏD–e_ri»ù÷(#c&6cœŒŒPGÙÁhÿ xUvšY|Å›ÀÁÉ4õ{2ÿ »XË³ÿ 
+’8Â(\6U<–I«ÔNpß…Iœ¯áÅ oï~”T")°?Òò¢€*&•u É¾ÌÜþ•¯j²Ç¤ûK Æå9È©_qË`±#"«\5ßÙ™R4.xÜÐ},ˆ2YU}IÀ¦…ò„‘†‘ºÖ$bQ4qÌ®¨ÌÈã­ocbb5/s@kˆÃºgãùÔÖYÞ^ˆ$¼H#Îò°à ;z“Tne+nÌö¯¿ ¿\Š<)w¦ZêñI¨€¡CfMÊ”‘ìh×ZiÍòÇ"LÚ) šhö÷2AéPÏáè™áŽó$s™cóD]Fxõõyu2hd3\ùË%¬hûã!¤!‰9¸æŸu­éË{l[P–)¥n#e…0 t(Ÿ¶ðÝº±–=E]Í¨?uÈN	'?•XÔtí-îäûG›ök…„ƒæÊƒœçŽ½)²jZp€¤®åÓn\>vôÿ ëUÝbâ5ðþ¡<$«5ê?Ì†< `nôë@½Äl‘fòù*o˜Ä:Ç~Ç;ìœŽKu¨ínÌP¥AÈÁ4®QÈ&h¶õý*ËÎ±.e!>½) œ\Ï“Øcæüê¦©p<“’Hãa¯S¹V™û*ƒøÖmÜÍ{#m2yœ¸½êæ›r³ÄP‘¾>>£µO¬pÉ#Æ9‘²}½¨é"É¤äu`Õ]RäÁÅSûÏ—waê*Kk‘<Ó…ûˆBSOž¸‰£~AïÜP>Ê{í°À©l€ñ¸d€@$¤G5^ã{ÂñÃ³y%@kbËQµ²Ð¦²XdÈŒ…—9#n{ñŽžõÎ\ÜmIŸ‘”+ý=hÄL¶°EÒ"°\g=~”ãm'0Ç“ê¢–HÒm…—;rŸz­¨Ü˜¢Ø§çqÎ;
+ "ºµœ«*#`€ŽœÔŸÚ¿óØ~F©éád„£¹yúŠ±ŸHìC¥	gŠr6ÝŽ¸™üVéå:É¹Iè)±2¾ R?¸ŠA#¹©.£†³“×ojS‘ÃNÓà…gÈÈ«rê6æ	»ne ¸¢X£Î¯€ýjµŽéÄ’}Ô<SÚ€4­ÕÒY›.8§ØY5Ô—?fAòŸsÉÁ;W=N8¤,7$n`HÎ­éwözUÛÜ\Á#»•“o@*sØä=(9e–r¢,}éÉúJ™È-ß‰ uH"£Û2Ÿ–UqØ:ãõZ[£ktãk<‘åS-ý»—ÛìA¨Ñ¼É)99éQ\,ì7£|Ý6ŠZŠæ;’èŠÉ# þ5·¸Œ†R€ŽÙªÉäœD™†¯ÚÎÓÆYÔ)P!Û/Âàú¯"žIP÷nµ^êòH®„K¶@99«0¶@5¥›\ÜÅôŒ;…Þü*ûšél|=kô	RúÖXæP07¨ê=ºâ¹Ë„j¶òÝól¬¢D<©ç#½vkv&Xÿ âbŽSíx”(eÂ 1ø¥ aÿ Â&‚$–-OÍq$I2Æ¹E/Ž‡¹©gð¤"D‹ûPnw–0<žK É—ZÒþÖÒá²Hb½Aýœ¤^QXRdã“ÆMG±¥›Ø$I°]ÜÈÌUº8;ONôÁ—Ãë2Ê×m˜l–ð,rI#oÓŽµoíÇÞr> ×ms=µÆy:4ŒF–ˆ¨Pœî#9è+…x¡aB±õ¨a}}ÆfÊi¶ò$–ÊçŒÕthb|1åÙ5:$ºŽHëŠ Y·oáONµ!uTÎåw4æl)$ðiˆé2go³
+ ®·Ä(ÈÉÇ4Tÿ f‹ûƒò¢€.ºÉÉŽM§Ñ—"œNÄÜä`˜â«Ü,ào)¸ çPMi=ÀÄ³³L`~T®—,òO´ñ2/ÈèçQTìôõ‰ÙæÊŸ—#§½_¬NÖSŽ¸9Å *’To réT­P\ffÚTŠ·#G÷dd öbj•œ‚MCìÐ…
+ÌB¨àf—Ôæ›$!Ëg#Þ®O j¸A`{MŠ†/êbpÒ¸dÁÊùùæ£ÚC¹~Ê}ŒÛÈã¹äã“RÏ­Ýß"Çyy,è§!]²«—¾¾š,%»Éƒ’bpä÷s“øU/ôkXNUqógÐŽ¹§F[âãº%¸?èòÿ ¸•WÒOüKÓêUµº{«çóIØTü‡ ®‚ÛÂZ½üKö¾È§•i[ËSørJ%8ÃY;a)|(ÏòdûH\>ÏùçÚ¢ÔeXípØË”è×áÎ½äe¯­d“Ñgaùµ‡{ O£]cV·•%sû¶›æVì·CS°ŸÂÇ*rŽèÈ±’1x›>RÇZ7Ò4vR88ÇçS[•¹¹Kx
+<ÎáAIÀ­k¿k×˜Ö=Òšr©|L#	Kds:1ýÜÇ=H©¥¼X/Är6#t'±É®|­¨!-íG°¸QPÝxZd-.˜³ã¼S#7áÎi*Ôÿ ˜=œÖèçì®¾Òfa¡ÀQíŠ¥¨Œß¨ÿ dT·–Óio$A¦ùãuÃîtQ|.ñmÑŽâKH_r‚7] àŒŽþõNqŽ­“fdZödÏ'™tL—²s†Åv’|-ñ~Õòa1ÛíiŠt
+¼N ´ÖV¯#K¥É©öÔÿ ™Ìä BŒŒ½A«w.ÑÛHè~`8®¤|2ñ0 6¨¹Oñªzo¼C®YÇ{cm¶2–_žeRJ±ß¨4*ÔßP³9«¼³ŸQVg3m@=÷×V¿|Nƒ‹+Qÿ oKPÏðãÅa—c úøB?/oOù(·ÐæeExˆ“ìimÆØù®‚ïÀ"†Îin4ôÅ‘È
+2Nç§Jâmä¹—q7ªƒ9ÝW	Æ¸8µ¹¨×6ë)"/=Gµ,ñˆ3Œô8«ZW€õ­r$žÏNa‚Dó7–­î3ÉúâµŸáWŠbO’âÑ€è«rAýEK­N.ÎHj{#›ŠÒ4ˆÝÃuÞZš0ÊçÞ}H¢Õ|=«è2¦A=±cÃ”sìÃŒÕgÜ£Ü³vÆjÔ“WLN-;4NeWÔ)ÉHÀ'ß4NÝr;VÀðŽ£m!3£˜Ö ¾Òn´õI.£@•R®‘RªÁ»&S§$®Ñ…4a%•nÀþíþ´²[Äì^I6àtÈ¨ì,.õÑi§JW‚–Ú0O&©»jÉI½Ë²ï8çh§Eq¶UÏC[màíP(7BÌ2f¬KKk9Ú6Ç"cr†Èäf¦5#-©Ê;¢Îz“Ðu5VÊçÎó3ýíÃèj+8nnnJÒÎqÄj	ãßÿ ¯ZËá{œ‡Y!·8åC’@E9N1Ý„iÊ["Ü›!Çv8¨íe*O&´äðõÚ§Í¶p='ò8ªb%Êùa<‚¼Š#%-˜¥	GtXžöîæÐZËy;Z…ånÂàtU!XÀ	À©EK9
+£¹£†ëéTI]§T$ä$wÅ7Ì’ ö53ã;{‘ÏµF¶êOV49\zŠD@£Š\ 9éïHê~ñØã4<ÄÄ(¤ò#þår“zù¾^~lnÇµCfÌÐ)×‚EK¦érê:îÌPü (*ÌÌ	Æ0;¤ö C²IàMQÓ¤Ípÿ ÄÄúÔºƒ²G5º+™$:óÍUÒÃÄÒ«£‚@##Š M\fxøþëMÐÀÕ·ûÂ—SÌ³¨Ucµpx©ô«`Ômæb…wç“IìTw;æ4™àTg¦æ?95‡âí*çR²Ó”K,‘´¢@APJíê~µäÂ*R³v=iÉÅ]+›¹ €Fex¶Á5"M@/úm˜¤™b$›Ô©#®2ARh–“Øé0Átá¥\ç8çš³©a´[Õf KÂ=Ëº€ëùS‹p©hŠiN‘›àÝ!†=Jí7ÜH3
+·H××¦»»V,p2MdÄaTaW€aX5Yìt«K;y>Ö]¥*q•\ ¹ú“Y¾lE[\µËBÏEò¤©R¤}qM»‚ë9-/ Ií¥xß¡ÿ èG"¼'Ã×·VzÄ2Z]ý•ÆIc–»GÞÏLWº98ûÊc¨Í:øyP´“Ñ¯tÑäš†ˆþñ½…°v’Ý®b–	«!q×ÜrÓÞ½M®ãõ®gÇ1$‘è×~òF4SìÜ‘ù¨­w—æ58‰:±„˜P‡³”¢i$çnã€¾¤V¢”ñœsÐƒÖ¼ûÆZö¾lZÀÄ|ˆÝ\<¡NKduö­oh÷úŸ,7÷
+æI$hÛ„|sÏ¿·¥g*T¹ùµìTj9TäåÓ¹«ãCâ/ÜË°}¾Î–@ùˆQ–B{‚3Cõ5ÙéroÒí+ÌŸ¼?º+{Ø¬t«ë©ÛCm#±?îœÄà~5ó‡› ÇÎß™­°ôeˆ§ÊÞÇ&Ôç¢>´ž˜?CšPI8 ×ð•Éð±$“çËÔÿ µZž>r<­H?gêûK\®•ªû;õ±fçP¹3€3ê+™ølAðE®:y÷ú9ëÅô½"ËQÐ¥‘ZñîV	$y·Ž7ª ~÷kÝ¼†ð–ŸÇü³íõ®Ú˜OeNÉÞí©]›m“ÀÕv‰éúÔ:þ½¡]é“K$)p›L‘ýåÁ#ò®_‚úiß³V¿\ìÛßo÷»óŸÒ¹ã†RW”­ò-I­ŽÃÄ ÇáÍUŽ,æç#û†¼Çáo‚a¿¶Þ©™n°8ù\¯FÀ<ê	¨|kðÂè7ú­¾­q"@P,™‚à¶}ý+Ôô[Xìt->Ö„†Ú5÷È­\•
+OÙÊ÷e%Ï-Qtäžäš‰Š³²++2ýåV¨Ç|WñÖ…á˜¡±‘¢šþCJ§¨XØœù×†Ú_\Ù]¥Í¬òC:6å‘‚*7ZíŽUy]¤u(b¹µ’ãIaq†G+Ä¼_áÅðþ¨‚ßq³¸`Ð–ä®Êíü«×´Qµ¿Øê. Iqg `n6?k“øƒn²øy¥aóA<n§Ó'iþ¥,5IS­ÈöØë©Î7SFôbúúèr^<bºmŽ	™úöEu×ƒuìÄt.Oë\Ä—L°ÿ ®Ïÿ  Š¬7ñQu¿„qYÏZé¾¨o®{[LGýó\®êî¼¤?\³º):\ÛN ¢‚zŽqŸPkÒ«ð?CÏ¦ýõêvF¼óX°—Uñ¬–PöåÈá ,ÇØ Mz×Zæì‘G‰µé±óˆ ‰O `	ÿ ÐEyøyr¹KÈïÄG™%æIoio§Û‹{4)êOÞsýæ=Ïè)üàžÃ©è)ädë^¯jSßêS#3br‘Çž ~f®”W«"¥EJ:#½ïÅV¿Ó–ú,€ë÷×ØúÖ‚ï%’iìerÑZhþ\d@F+©RN”´b‹XêŽ1Ð‡CI•1ô©õäUÔn"@rX7æ¬¸ÖT¸b~ãZôSº¹æÉYØ˜ü®Ù<“š|LkÄÒ¨*@=Faž?™J¶;t¦!o"’m‚<`œÒ,R®ß4î¦;V¬zsË¢6¤%_€ñl?&N ÝÓ=ÈìªX€}M J:õè¦ŽM ¶g*þÄU»maô{¹!Žbè ‡$cknqÒ£DXÔíGSšÉ¼¹W¸b§*8Ö2He•¤`v,@÷æ£Ú|Íû›q··Ö’CˆçN1ô¨,/ÔXoõ‹×Ž¾â€{+ÀÉ°!-ýêÐ·È¹€ùè¿ÌVVªÇt g<ôJÕ¶½·²§þ„)KfTwGbËÉ¨¤xaÎž·r<ÙUr?ZÖBÇ÷oÿ |šáþ"FRêÁH9ò›øyT¡Ï>SÖ«>Hónn\kZ]¤e¦¿¿Ø‰¼Æ?€ãó5Çë~'—Rž­`HˆO,Ã»óŠÁ ’ &§6W
+¥Ú&
+:“ÅwRÃÆû³‚¦"SVØõëIRêçˆæ9T:ŸcU¼Iá£â=6(â‘cº·fhKýÖR{t^½xå|â6²O±ßÖŠ~I&"{cºÿ *ôÝ;Ë»‡Íµ‘&Œÿ M¸õ¿óªBxzœÈô)ÎŠvg›ø{ÀÚÝ¾³—VÑAå]Ú@ÙR0ví9Î	Á¯Q••¾ê…P¡UAè ÀþU2ÀøÎÓùW7â/éšN‚D»½è°DÙ ÿ ¶Ã öëDªÔÄ4¬T)SÃ§+˜Þ8¿D½Ñ4Õ9–KÄ¹qýÕjþyoÈVÛŸ˜óÞ¼®ë­_ÅV··¾i®£$ÿ À† ‚½]à1Ìn{©ªÄRöq„Lðõ=¤¥"!4i4p´¨&‘K,düÌ£©­;c^wãË™ôýgJž)4P–Sï¼×qáÝF=kMŠòÝH‡AüÜ‡µcRƒ55ÔÒe)¸>‡ñ3_ÔþÒtf„[XH
+œ›‘Ù‰ô?/b;×ž×½x—Âð•hÍl©¶ò,½´„toîŸféìpkÂçµšÞæH&‰£–6(èÃXkÒÁN2¦”U¬yØ¨¸Ôww=ßá'üˆ6ßõÞ_ý
+´üÿ "µÿ ^ãÿ BZÎøIÂoÁÿ _/þ…ZQ—áö´HÇîþ†µçM?¬üÇpñ?ÄÖVº<6ÏÇ¼°åÙ—þ,w>õí¿¯ã¾ðFŸ4Jê¸eÃc9V þ¢¾nŠ#’WØWÐ	”ÿ Â¼°ü²L?ò#W¡ŽmSMw0ÓkzÍ¶ƒ£ÜêW¢Sº‚â5Ër@S\Îñ?FÖÒÊÓS“ËÛ½ŒHç¡ûÕgâx#áÆ¯žéÿ È‹_9–
+ëXái*°ržá'cÖ~"üCÑuMSÑmÓ]<ˆ¡š0*àžsìk¹ðŽ©·áM:ö6´*’ü.£kÌ*ùº8¾L‘É®¯À~8—Â²A*´úlä¢Só!é½=ýGqZb0‰Ó´;Ü¨Ô×SÖ¼wáOøKt²Å"Çuù°3ýÒq‚§Ðßé^Kcð¯Ä—â‹5´‹vydRª=@-íý+ÜôcO×íVãJ»ŠåÉ
+~eú¯QøÕÆû!ü«†ž&­ò[ï5åŒÌ(4èt­&ÞÂÛ>M´kg©¹÷<ŸÆ¸/‰—©k¢CjHó.¦S·¸EäŸÏ‘®ËÅ+Ñü9ýºå$¹vÖ#|}ÑîkÂ|A®Ýø‡U’úï‚ß*"ýØÔtQZahJ¥Ok-êWŒiò.§°\¦ndÇ÷s~2Ðïµ«+H´øD­ŒÌ…À c­v_c’EW¹ ô>•$VRþ­¿\ôêJœîº²¦§VÏ> ñú
+ÿ ßäÿ ë4tÕ ñ&›­a¨h®e$Ý½„!Or t®óÈq‘´Ö±§‹<6œ·ÚÆ1×÷b»>µ:‰Å®ò9ž´“þ®Iv95ÉÛ]¤^5Õ,œ€×PÆcÏwUˆ-øâ»+¨\7(Ãê+Ê|^òÛøÂy#fISËeaÁRy©ÂÃÊ>CÄË–*^glÃœŠäu]I$ö(²$§qMÁJžý{VÖ“âKMR%[™Þóø•¸G>ªz¡­‘	Æq{úÓ‹)(ÖF†´y4˜î&¹Ûö™ÓÊ
+§>ZdÉþñÀÃ>µ´‹’sO0•]Ì6¨êÌpãXš®¹ÂÖöm¹›‡”tÑÆ©)V›bês­^y(¶¸J‡Aêj	nj #æ [™î0>˜ÅzIYXó»¹zW1FX‘ÐS!wlïŸJzÈ“&A£ÒŽéïLEù5§þÇ];ÈŒ P¾`'vnéÓ©5›ž*	.Üí9½LÐ"Æê*2ŠA5Ìâ9¤vq–«aA€2+?~Æ½AÈ­˜ÜJŠëÑ†hQ  ÀÆi]wŒ•KR¸ò‘OÌNãôqK¸èÀ8p 64ØIÉÉ4Ó2‹•ƒ¹MÙ§±¬ÍÑFM;‰âP²¾ÃŠá£iBË1G ±æ«é’4;7RA©nm|ùCp1Í+ »µŠ4Ü‘Œ¯9ïR¼à†ƒÔi.$[»7@0)ò7—63´f˜ŠëmD„g°5RæYl§I-e– å£r§ô«êË*SzV~¢>hþ†•†™<ºŽ£<!.u¹W‰'fÎ©¦§­Y
+%„Ñ…G0ôéBI¶Æ4 öÁõØÞ}Ì¯,Ž™cVœ*.æ8†:¸'b•ÆâÀ–cÇRsORê	V`:œQt0ÃéRmÂdð æ®÷îA),˜öcLÉÉÜÄ±9$œ“š”'.0zTH7d÷Ï4’Hwl‘]Ðpì³Jdy>_1ÊãXâ’@V>‚œ‹“øQddd• a¹ô¥‘¤Xø‘À b)ì#j‚;äÑ4`ÆIíÍ1Ò9RG+Ü$TBHýGåVp	=ª?51ÔãéBI ‘Èy"š69;pH5<û¤úRb8É9_z Š#,ã‘Ñ€ÈebüG5zmwT’0“j·Íãk\¹ÎªDD’1 À§¼*ØÜ:t¤âŸ@»+´@œãž¤úÑ£p}LÅw=…#)*2}3LRtL3ÇÞaNó¦ï4¿÷Ù¨ñ'tÀõÝJçb–ê.UØ|Ï¸#Ì3ºY	Ïq¨žYL¹2>W¡Ür*`9¨˜~ôÑdeò½$‡êæ¡To´1b[#‚Ç&§aµK€f•@e§ ô4$6Þã@ò«xöË´\É=•Êÿ *‹oÎ>”­"E0€N3CI‚vØî[‚GÚä“Ùœ·ó©âåp~osUŒÑ¸?•MÈ4ím„Ý÷'ÈÈf‚3PË˜ÊqÐTÃ§Ò€+Må,¸9W#9žœI>æ›rÞôÌÒ€,¨RpUN}E6âÜ<xä ÿ ¨ÖOCV ö"€)‹9?ç©ü¨«¿…FâÖ+b¡™Ý8Î8¤Šñ¡Â"¨ONMG&ù³œ“ÜÓ1‚	äP›ZÇ+´’üìzz
+™HÀP0:
+l-º% Ô‚…›5Ø¸yH|çh=©×[¤‰£Œõ&¦.•IåŽEuÂ‡ü W´F¶fUù‹ã­t:jG C}q1d$#£8ã=k™yºõ­¡¨ÞO§Ekq&b@¸L1Óž§ƒ@¤´ûA{»(èªp)­+\@ÛTa²¹&¢¾»<ÃKtf^ÞÕ-’µPx9=h;xd·ržÞ”—4î¥†Õµ!ÁÎµ5X:S•#ŠV‚Ž%ÛžG#<SÊã“Uí"ó™‡Ëœ÷©ç˜BœÎ~è€"¹`Á¢ îÆi!}ŠÏ=³EºÌI%Ï'5+m\’8 f€ žÔÜº°mª8<sR“nx#šFE3÷Þqû¾_¿Z ½k£Âþº¼-2Í
+³&Jì!H@êÝy=– Sóã“ŒÕéuK«}&K4›î
+”Ú9ÉŒã=…fÛrë’Oã@˜Ã)SÎzÓR0®àgŒR]åÇÉ8}I
+€§œä÷ K°˜§íN¹LÄNO§ÂO>µÇú†ü? àA<ì£ EZaÛ8¨ü§ÏúÖü… 2•v¨ÈSŠ…-÷HÛ‡ztLVBXä1Á5dð	<@•~PNàxÎ¶4]Û[iRçí
+SY
+…RAêOSÇ
+=ë&"ZrÇ¸ãéWí5K9\[Ïå+O òý‰ Ñn‘âEÎ~¼T›¹3ïQ°…v”e-‘Æüþ•eå 
+Ø}Å[n}¨kfçs¿L°bùËg“Jü)æ€+¥±Œ`?ËéL–Ü¡Þ	lžA«RœFÇÐRãpö Ê—R1Ãjxš,®r¹è{U¿j@½O­ DIVsNx<Â7cÚ›»t¹÷ÅNÝ ?JÒá¼Ô<©¼ï(!oÝ•\rK7
+9þC½Gr±éš•Ý£;0ŠBŠHä€zš[É,®XËœ‚„•ÎG^üv¨î‹Os%Ä§t³9gcÜž¦€$¯ÏåH&.ÅBàzš6…<S‚÷ Ö œA¨¤Lx~†¤vÚÂ•[‘@ˆ¾ÂÃ•—ó,*ñ.Ù0Gb*FÎÜníž”ÁçžÅlÐ1ûÇ½]§Ã¸u¢€y’û“îÒ ‚žMªBñÔŠÑ1©;8Ü9ÛÞˆ¡òß þ” Göe)¹Ÿ<ô«
+rF	ìi¯"Ä…Ü¢£Y–Ef0K‘Ù—úP!$¾·…Ê»Ã®jGQ<8åuàÖT–ò»±p±dçhäÔö‘m “Z ‚XnU¥8
+pr+L\FÃ;‰ü@ÖèÜÍO 1@
+'Œô'îÕx®ÞÌH%ÏáSÆSþñþtõ\ÐŸ\s@ñÁq+ÌÕÃ)ÏÎ0Höh•·„€ª1š”JŽìŠà°ê*É–6Ïq@ŠCä©*Ê  nÏáJ$Þp`u8â¥™7!õ"í@j ªÍ‰÷rr¸À§HþZ–~1Ú¥Xñ3ÊªêO…XÇÔÐ¨ŽcŽy¦¤Áçxºçê(E>J€Hã­Dè )ÜÄ¹äÐ2;ø˜€ã$tÇ¡¢Þ‹isÏ¥Y¶&[Tfä‘“N2GœÔ­pD‚5èwƒú•qåJ‚éÕ®axjÊ3@Â	®]ÁÊqƒŠ–\K@y<þµ"¨Q€03QÈq,Žhb3‘Ï5·_Fÿ ¾6x¡Û}©Z%Ž2{( d-6ð¹<TòÈÀ’*8æXaQ&x=@÷«,B©' ô E%Ìr«?‚	« ‡\ŽEC$¢b¡Î{Õ€ŠWœ¢#(n£Žj[sº!õ¤2¹ôëIî@T‘ê G$“%ÆýÙ *ÃðMebNFáõæ£]Îî° à@N¥áp½JñL·b"
+øV`špFcøqÖ‡Qp2æO´Fè2‹ÁùëSN-Úœ3CF	ÈÆ{Ð(ÃÆÊ{ýáÒ¯7CJ*¾Já\®ÓØP»À#¯=8¨î7¤/ Ó¶°pÅ²;t§2+>¢€Ùd‰—pù”Ò™oæGÉl}ÓíA‰£´ŽÃÐJ(;‰
+²­ŽçQ™eÇ­YŒüµ›9ÏZ  …m§×Ò£òå™É…8«8sQ4;²{Ð¸^åsô¢¡óXöPý3J7÷Í¶Ó3!Þ60 sÍ5G¾b§€Hàýw–ÓEv–3¥ÏÛ2·+çì
+[äè¥E,Î¶Çxbó£–Ôˆ#_’ X‚y'M pòEæ®Í­ž£å=ºÓÂ¿B§¦zžµèê_¶@»Wº¹ˆŒ¸ àVuÓJlnÀ Ä9¾c@}{.ÉØtÆ:Ó´æ/æ1)Æ	jX­Qä2ÉûÆ'ÜÕ‚Êr €h]ËÇròåV"€e¥³À‡9-¹‰,F3ïN[hËyŒÆVê¥º éR…îy4 ÈsƒÁûÇùÒÛ–1ÙÎãüø¨¤d–çÈ.ÙÛ’ã>Õ1+ ¨vŽGJ OÝ#%÷$ÖuõÚJêå‚ÿ èOµZû"I+É0ã9ç°ª#÷—+³…Ï€5`s,üå‡9¤’eŠH‘ºÈHsF€Mm pìP“Žœ98ÇAÖ«øšÖ;Ì°ÄÉe<´ÇO© ÖLòîÛo85«÷•¹ ôÈ¦Go*/âzš Û# ¦C0¸„>0t±n3´?Ó1
+0ª0  ÄPª/AÒ3ò¥‹îj£Ì1òXœv 
+W9k¸ß d~u,Í…Œ©ÁßúT­’UfÙ“‘Ïô RÍ6îŠ’ƒæ)Ç Ó`o8.»>}Ô1ló<ÉvnÛ»'¦{P*r£ÔTS·*ºšÖñ%œ67¶Éo€¼[JŒ†#€yíøõïY³DÔZéÑÉÇL:µ0ýÓýEéƒÐÓäf
+wcoz ­j33‚1³m¶ôr1îi¨èq»¾:Ô!“0î*q“@Ë§Ð÷¦$xÚ¤
+1éUäß+ò 	Æá÷°}Å!îpv¨äãøÒ lÇô®ÇM,|9ä\4Ha+Çn‹÷”ËF'ø²x€9=NÒçK½û,Ñ“ËY–K §jÍ339,Ð2^1ë^£’Åªž8­ÝáB@Ý$ÎSîg P*œr46)d—lÑŒ«ü¿—¥ pÑdÅ÷þù?…
+á¤’>CÆpAà×yq#ýs’ÎídÌ}Ná\‰#Y|G©0È-3{ö 
+H&MëÓ$S–Ò¶pXuõ¤·cù{ËÜT„/˜Ñ¸÷Ç4 ŒßwƒÖšÂ9•#2®3Þ†QŒŽ¢€+˜bU%#±Å1dõàûÕ²B®N09¨%’	xóîÜ š"
+SZtY6çéÅ6+]¹ç®i²FmÀÝH îÔy‚½t/aü!ÍvÖ‹øVY†K0.W$ôí÷{uïX€IúÐ/µîš*îÅ?Â?*(z_j‡C²nÚküCtéT%×u©bU¹»]‹³åò”ò§*zuÏçŠƒ._@Qß<ŸÂ£¸F™v)ÚsÖ€5añ þ\‚áwÇ#È–¿}†ôïšÑ›Ävöþž'¹¹šåí„*ª#ùJæaƒìÈØ$ç“Lž»ÚìŒsÁå¿Â€§I#BARQOÊ}M\ÎáÐþ"«Å.Ý±Dƒ
+8éR³0À
+	=x B¡ÚÅ ÂœŽÞÔ“;$LÈ2ÀqJd…œ€ É¨í®>Ñò»NHÁ f^YHÎsZðÊ&‰d^ýG¡¬ëÈDReyÐåVìch-ñ(
+Å‰Çqõ _Ï„ò”òyoaUìÔ3ƒïROšåÏðqÍ>pà& hÄ—-fžrFÁçÞ™,qó>âÌFY›&¥*ÁÁÏ5Î"dÝÕØ@‰ÇÍ²y¹Ü6zb¤
+ÌMÓÂG
+Sý(/[e£’qØ}imn>Ñoâ0÷¨¯á.Æ~^ßÖgn!9Éa’}h4²,3·E*ƒ4’K#}æÁ¥ÕIòãP~V$ŸÂ¤³‹ÊŒ1à° çÎóc¹ŽÕ`ÃøÒNK¨úšŽVfŒˆ»¼{P"¶™óOeÀ|#ž;TPùª?‰¾cRn@~òäñÖ€*_M/ÛQ¥‘Ü7 »ß=ýÿ Y‘KFÀw¨¯¢ó!Þ6ðïSrÖ2H¨HÏJ°H“Œ{ÔK/˜Œ6œä¯&œNõ)ÁÁæ€®#Qwc°¦[6åÝýãºœˆ™1‘Ô})¶±¼Å<(?)ö E†8üñQ\©1duCšy“i8R}Å*°eèG± b+n@Tõ»g®ê0iéeçb5FŒƒ9SïŠ¡ù@ªò¹àzS·‘ƒš Ö_ê‘¹)r›iâ5þÛÒ«¶·¨ Bˆä‹Zý×9aøšÏ ¹ÛÐÒ³°lmÏ¾h¡Òµý­#jW³Æª±ª¬0©«ØžÞ™ÖÞ º†±y2)Q,¥ÕOP;S0XsÀô¨d¶Ë¬‘œ:ŸÎ€''Š†9—Ž‹ÅJ°û¥G¹¤*°e?Î€Ù— }j'¹Œ¨Ù'Òœÿ 3 Ê09ÎjµRwGò7èhÙb àŽÃ½GçHOú‰1þ4Å‹ì)´úRn4 ‘©ã¡§nÃãëLA°6rsÍ3í![lªcôbrã@Ë4¾PÎ“ËòÏqÛùTY¢PÅ2§#Û½F Í KE&M—öëŸùï'ýôh·'þ[Éÿ }TcOHåÔm’h¥š6•CÇßq‘•_sÐP°>¡vì–ææg
+Y–0X…IÇaQË Ë÷«Ü­´k5žòÚÂÓM¸[këWŠÊMíÕ•däƒ(êqÇ=ê-/Â:÷öjÜhVv†;˜ÓìÅ÷ÜymŸôŒnb7ÔtäPˆ‰Ãn¸>¹§Ëž3<‡>c^·k¥xTÓ­qáë+w»Ò>ÖZ6rP¤ê€žáŽOSXž9ÐtÍ?ÃÚÌövPÃ,^!û4lƒ•‹ÈÝ´{gš óÃw9ë+Ÿ© ]ÎÎ¦j*(O´K¿˜Û½sOûmÉÿ –òßU7Ûn?ç¼Ÿ÷Õòás‰¤ë†¨h 	þÝsÿ =äÿ ¾©q+¸v‘‹/BO"£¢€&kË†3ÈGûÆš.f>käwÍGE Jnç?òÚOûê”^\4˜ÿ z¡¢€${™¤Æù]±Ó&œ/n ÇŸ&?Þ¨h ¼Ò9Ë;êM<^\À™ñéº¡¢€&ûmÇüö“þú¦ä8ùÛƒ‘Í2Š ˜ÞÜAžBûTË€0&÷ª(Qu8$‰_'“Íêe$‰\ß5/ÚçÈ>sät;¨{©ä]¯+‘èMEE J·S ÂÊãèh7S·Þ•Èõ(»œt™Çü
+—í—óÚOûê¡¢€ÓÊÇ-#“îiVâUé#Æ£¢€&ûmÇü÷“þú£í—óÚOûê¡¢€%s3ÿ ßT‚æ`Ùó_?ZŽŠ —ísÿ ÏgüèSçýkþu PÆêr1ç9ühûLÿ óÕÿ :ÓþÑÒ^\É¥’~Yv“Áü1ÏaéNšóIIbÖ;¶Èù?0)Œ`ô»÷ ¯´Ïÿ =Ÿó¤k‰YpÒ¹¨&´ŸQÓÚðËýž¯Í»'p9ùxqÇãš|ºÅ‹SK‚2³´¹OLäpF:Œg&€2RybIG 4†yIÏ˜ÙúÕÝNúÚè"ZÙÇ«3 nlœ€qØ
+Ï 	>Ó0ÿ –¯ùÑQÑ@XÓ¯eÓukÛ|yÖò¬±î”‚3ùTw#¸•î«•@j: ï%ø­¨1¸X´­.ÜLÓ3yq°;¥\;›’zóR‹ú¢]‹„Òô±1‘&‘Ö7I
+nc»žé^E uv~>¾´‚Þ­íTCbÖä1Â4÷uêÞÕÐüAñF—©øPYZßXÝß\j_l”ØÚI`Êå·’KG?áÏ™Ñ@Q@Q@Q@fŒÐEPEPE£4 QE QE QE QE QFhÍ QE QE Qš3@Q@Q@khšÒi8}:Ò÷Îh\ùdg•üÿ JÉ¢€:¨üi<lÞÒ\"àƒß<|ÇßïßGÐT6~*ŠÎÖ8g&¼ŒÄî—,­ƒŽÙQÇN:zótPWŒmšâ1u¢Ø‹A.÷Ž8,3’¹=#Ø1ÇAU`ñDp)¤YHXÈNáÁ/‚N=±¡Ç½sÔP¾µ¯ÿ lE}†ÖØÆÄ†…6’cùVEPE¢€?ÿÙ
+------WebKitFormBoundaryAXZXGBFIBB6vWSI6--
+
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:36:03 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:36:04 ===
+URI: /robotsapis/api/robots
+ID: null
+RAW:
+
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:36:04 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:36:04 ===
+URI: /robotsapis/api/robots
+ID: null
+RAW:
+
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:36:21 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:36:51 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:36:58 ===
+URI: /robotsapis/api/robots.php/53
+ID: 53
+RAW:
+
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:36:58 ===
+URI: /robotsapis/api/robots.php/53
+ID: 53
+RAW:
+
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:37:21 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== PUT 2025-12-05 14:37:29 ===
+URI: /robotsapis/api/robots.php/53
+ID: 53
+RAW:
+------WebKitFormBoundaryHWpTds0tmuLQWj30
+Content-Disposition: form-data; name="RobotName"
+
+Omega Robot Update
+------WebKitFormBoundaryHWpTds0tmuLQWj30
+Content-Disposition: form-data; name="isTrolley"
+
+false
+------WebKitFormBoundaryHWpTds0tmuLQWj30
+Content-Disposition: form-data; name="Topic_subscribe"
+
+fdfdfdffd
+------WebKitFormBoundaryHWpTds0tmuLQWj30
+Content-Disposition: form-data; name="Topic_main"
+
+dffdffdfd
+------WebKitFormBoundaryHWpTds0tmuLQWj30
+Content-Disposition: form-data; name="mqttUrl"
+
+cdffdfdfdfdfd
+------WebKitFormBoundaryHWpTds0tmuLQWj30
+Content-Disposition: form-data; name="mqttUsername"
+
+ffdfd
+------WebKitFormBoundaryHWpTds0tmuLQWj30
+Content-Disposition: form-data; name="mqttPassword"
+
+fddf
+------WebKitFormBoundaryHWpTds0tmuLQWj30
+Content-Disposition: form-data; name="Image"; filename="th.jpg"
+Content-Type: image/jpeg
+
+ÿØÿà JFIF  ` `  ÿÛ C 
+	
+		
+$ &%# #"(-90(*6+"#2D26;=@@@&0FKE>J9?@=ÿÛ C=)#)==================================================ÿÀ  Üƒ" ÿÄ           	
+ÿÄ µ   } !1AQa"q2‘¡#B±ÁRÑð$3br‚	
+%&'()*456789:CDEFGHIJSTUVWXYZcdefghijstuvwxyzƒ„…†‡ˆ‰Š’“”•–—˜™š¢£¤¥¦§¨©ª²³´µ¶·¸¹ºÂÃÄÅÆÇÈÉÊÒÓÔÕÖ×ØÙÚáâãäåæçèéêñòóôõö÷øùúÿÄ        	
+ÿÄ µ  w !1AQaq"2B‘¡±Á	#3RðbrÑ
+$4á%ñ&'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz‚ƒ„…†‡ˆ‰Š’“”•–—˜™š¢£¤¥¦§¨©ª²³´µ¶·¸¹ºÂÃÄÅÆÇÈÉÊÒÓÔÕÖ×ØÙÚâãäåæçèéêòóôõö÷øùúÿÚ   ? ò>TäU«9Zk„‡ûÆ«ôëV´˜¤›Rmá’fÁÈK=xíï@“G¼%ä8AÇ½B±A{tù—¡«w6Âæ-¹Á¢²³Já˜sž:`P#54ý—­1*FjY-má ÊÁAèXÖ‡‘!½2°6íëS ¬¼m#­ 6Ñ£khÄ,
+(ÀÁ¤ÿ IBNb”vl?Ÿ4ÙŠTóLLy¼T‘,q$žaÏ`_å@tÆ™¾Òg]²yœÂ¬\@—1„“8{Š"™ešm‡pF‘Ï8¨åá¿‘9€‚ªN?­ \$óU Ûö«ïä~T–É<.òÈß)tzTKhÒ_M3»"ƒ„ÚpsŽ´jS8Ý,LÃçIÒ¼Ò«ÆcU·<ç×šX"ºiÕ‰Ë*,_9üºÔ²†FŽPcuê­Á… fj—³ÚODÃfÜ•#©Í_î…²06œþT×1!+Ð±U+íJ1Gg,:@}•/aNÖ$ÔðXÇk’Ìî>cÖªér#/l
+½5¢ÜÎ¯ Š¸ ôÍ GöãºŠem¸~‡¿Ò¬Ü\¥´^d¹Ú8àTKd‹r%,îWî†</Ò¦’EA~…‚ð3É (ï") î*{Uòá…AÈP2éåŽÝÚ@8–È²À;¶ŒŽô§Ú™®ÕÛî#n?Ÿ­nî àõÆqíU4èÂ[o#É?‡j°¨'˜¼¾6d}zcë@w¶_éeÔà1Ý‚=ëFðn´˜z©-Õ¤‘°Iãxä\®¤})’€Ñ•'†â€0ÞÂA6î Î1[1/]ªéM(]¹È©éÏ4šyvq(=²~¹¨L$®qÎM>ÖXÅº†•,ëOŒ×1$sÖ€"HZ;ÈÎ>A÷È§Ï‘Ô0ùpsSíŽqÈÍW¸r¬:äƒ@à.Ê8ÅQ†ö‚†áØ’3À
+#¾²·×*qwj~o1>¤s@ac´cœRÊëeä8P9â©Ë¨Bìª„•S–~€U™nÑæI£YP¼LQž´ è¦Y¢%{b“£ã¾*í³1=€Å8>eSÓ9â€ˆ~ÐX²ÃÔzRO1R±¯2?è;š|²¬[wœnm¢’T†ÇÌ´ íá@ éOj¤Òc’p*gº„¡* àÎhndh­äuûÀqè*ŒWÒRÈ{»¯G:H6’6žô Å
+`E‡ø
+ !ŒrIîOzbÄ<é¹4ø_znÚTg€iÜÐ¼v¬ï±l¸nã9¦¼¡0ŽA6Ñ!BŸ@zTRŽ„u ×Š”F1E gijË©"¿ ƒÔ{We¡Iimvïs7ÙÀØT…;I	Î:àg ñ\Õ¤AnÕ†ÁþUzI’†C´3múÐ1ÑÊò¼í ù¼çÎAýi&„Í$L¯–ûŽQŽ•&H£­psPÚ[‹hÙç.HèAùT)y¿T’ßøBñõÏµMs0‚ÚI3ÊŽ>´›w7™räÚ*[X>ÔæÍ1@p>e‰=ÅkéMºÝ_ŸúP«kn§Ê…Œl9"7 Ÿ­X‰|¸ÂnfÇv95·‡íhl	1ÄÔ¨é*†ƒ)î(¡‚·$ŠÌ#ÜK.îúT·¶Û9î*Ô•ï¾ÍåÛŠîÝéíNÔÉ„ÿ ´(æ…<1ÝB÷Wï
+mpÌ$ÁäŽp}©þ ŠÏRÕn.!Û"É·ó…½aZY¶ÌƒËSÇûGü+FêàÛÅû¸Ùß¢¨\õ ÷ÓSíB Nvn#ñª÷ö¢Ñ¡œ¾G5gLYä²LN¬1žkBi ˆ¯žÈ¹éº‘ÛZÅHÊ€9PIÉëŠš`ÍGÌTÏ|qJ2S•# ŠR@RN0I4j±ŽÓ8Ê.Y»U;Cíw3'@9AíÐÕ‰£K»b»W?CY¶0µ½Àf`pÔ¢æQyR<¢¤·äz~të”2[È€ÅN=êJ†•žI‘å›múŠ -–Ò!+ÛrsÚŸ¤ÜxggtO?qeê«»¨÷¡7“c!Xmÿ [4Ý-JéÑ‚;Ÿç@^!½ûV¥j¶¬’[GFpq#ïrx#ó5•rp±òÒ¨þ¦›È{™`<<g§¨¨n£·[JX˜ÁÛîŸþ½ \”3!ÛXôlgK¯ùú_ûö)×R46²H‡G_Æ²Ž§pN<ÁÏ I5¢$‘WçÆxõ­;x¼‹xâ'%ÕbvÛ·°Î­DÛ7­ 637˜Þ`Œ'ðí'&0y»ÉŸjli0•™åVŒýÕÓñ§¹”w?Ê€3õX¦–T1FÌò@÷«&Î-‡åÅ-Åê[H¨êÄ°ÈÛSgä'Ú€1§µ1[î\Ÿjèµ¹íotk8mîšgI7±}Ûù@>bxÎF08éYó&è ÆyøÐÎ‚8á•Œ®è3Z1I€˜Ù[HªocçÝ;n!	æ¯,k{P`Â€WTŒ» éŸZdWQLûQŽï¥RºŠâàïteEè¾‚Ÿf¡fP(nâH¢38éži–æ'£‡¦ß¯™
+†äoÓ#}} 7Q…¤hYK6Ãþ:¶û Ÿ ©ÙøÕ=Aò/_˜ÿ J –+Øå!FìŸn*YeXci;W®:Õ ˜õ«—0°#Š ÛMJÎo	ýœNÍ;*þîEl®œÁqøÖò§S´î\õäTŠ0ƒù
+lR&6O@Â‘‰êÿ ÷Ñ¢¦òÇ÷›ó¢€ H®,f@•pxSƒO‘¥Õc¬
++rîÙü…;S¸TtŒ˜dŸj»É
+àgŸ­ËIa)›Š­A®X+ùQGFü6Ö[Ùg,ÛL ãcò­
+ §k¦¬R™åÞ• ]¡…äÑº6‰ŒBñ	®ä7.Ê«´Sîtè®\¹p6«3“Š • ´“;#±×h–Aµ´Œc gŽh‚¬àÙÂŽIî}ë.úæ[§ÀŽE‰~èÚ3@û:jW%šVW#ž3Ò­K,ÚU´iIc`Aû«¥œÞñýÓZØtP}hnØ]ý¤ß¸¶;UÛÉî¦ˆE$1€Øl¦MG¢³0#½ky`¨3@YÈËQ˜d$ 	ã­úÔyêÇÎòvöÙŸëUõa#@g`?6?J ºÊ7îî?
+®ÑAxÄM&3·æãò¨´‡‘­˜I]ß.}*Ò‘çÊ;¹ü¨‹¤´ù
+Ÿ,'ê*Ä€<,á—ŸÊ³µ0L HeÀÀëZÄ'Ù¥ cÚßIgFÉæ*žz
+×‘ÆÏ´nÛœûâ²`S';N8Ç®ÿ ê›áþ” Ëy¶ÑÈx, þ5µŒv²3£HKÆiÿ œ¦­É$ÌsŸùîGõ 	$Ž+†d•ÈÇâ+6úY-np»¤{AÚ§Wm6‰nU²‡%·­TÔ#ó/:¸;}hº]Â«ÎóÈl·SÖµUÖD„2žõ‡-³*‚;Ö¥‡üxÅ×¡þt ég€,ˆÎ›À#×ÒZ[€‘ÀëŠÊ¸RÚ³áóy­¶Ñ”ä8ô +±‘ò²ŸJËº¹¸²›ÊY2˜Êü£¥h[ÛÇl¥cÎ	É,sP/—w|%ÆDcåÍ Y¶ó|„3Þ–ã§µV½”ÙÊ'	¼0Úrzb­>ì|€‘œúw¤š5š"Ž¹hœq½û¥Ä©±à y<ÕâT`dôÔ`ÈíÆR{W›Rw•€Œ}Ð:Ÿ¥ _?($…"Žçò£ çµ2)<Î3@,ÑÀv
+	àzÓƒ ¯ ÷ª·6=Ìru `J´«±vöÜ¾TåÎxëŒU®vH<´.W­_Ÿ1Á¥HÐ 
+ é@‡’æ20žœæ e”6Ý‡wµZS1lªÄ©Û$äÓ²À’ÄsÐÔ [‡X€—0iÏD–e_ri»ù÷(#c&6cœŒŒPGÙÁhÿ xUvšY|Å›ÀÁÉ4õ{2ÿ »XË³ÿ 
+’8Â(\6U<–I«ÔNpß…Iœ¯áÅ oï~”T")°?Òò¢€*&•u É¾ÌÜþ•¯j²Ç¤ûK Æå9È©_qË`±#"«\5ßÙ™R4.xÜÐ},ˆ2YU}IÀ¦…ò„‘†‘ºÖ$bQ4qÌ®¨ÌÈã­ocbb5/s@kˆÃºgãùÔÖYÞ^ˆ$¼H#Îò°à ;z“Tne+nÌö¯¿ ¿\Š<)w¦ZêñI¨€¡CfMÊ”‘ìh×ZiÍòÇ"LÚ) šhö÷2AéPÏáè™áŽó$s™cóD]Fxõõyu2hd3\ùË%¬hûã!¤!‰9¸æŸu­éË{l[P–)¥n#e…0 t(Ÿ¶ðÝº±–=E]Í¨?uÈN	'?•XÔtí-îäûG›ök…„ƒæÊƒœçŽ½)²jZp€¤®åÓn\>vôÿ ëUÝbâ5ðþ¡<$«5ê?Ì†< `nôë@½Äl‘fòù*o˜Ä:Ç~Ç;ìœŽKu¨ínÌP¥AÈÁ4®QÈ&h¶õý*ËÎ±.e!>½) œ\Ï“Øcæüê¦©p<“’Hãa¯S¹V™û*ƒøÖmÜÍ{#m2yœ¸½êæ›r³ÄP‘¾>>£µO¬pÉ#Æ9‘²}½¨é"É¤äu`Õ]RäÁÅSûÏ—waê*Kk‘<Ó…ûˆBSOž¸‰£~AïÜP>Ê{í°À©l€ñ¸d€@$¤G5^ã{ÂñÃ³y%@kbËQµ²Ð¦²XdÈŒ…—9#n{ñŽžõÎ\ÜmIŸ‘”+ý=hÄL¶°EÒ"°\g=~”ãm'0Ç“ê¢–HÒm…—;rŸz­¨Ü˜¢Ø§çqÎ;
+ "ºµœ«*#`€ŽœÔŸÚ¿óØ~F©éád„£¹yúŠ±ŸHìC¥	gŠr6ÝŽ¸™üVéå:É¹Iè)±2¾ R?¸ŠA#¹©.£†³“×ojS‘ÃNÓà…gÈÈ«rê6æ	»ne ¸¢X£Î¯€ýjµŽéÄ’}Ô<SÚ€4­ÕÒY›.8§ØY5Ô—?fAòŸsÉÁ;W=N8¤,7$n`HÎ­éwözUÛÜ\Á#»•“o@*sØä=(9e–r¢,}éÉúJ™È-ß‰ uH"£Û2Ÿ–UqØ:ãõZ[£ktãk<‘åS-ý»—ÛìA¨Ñ¼É)99éQ\,ì7£|Ý6ŠZŠæ;’èŠÉ# þ5·¸Œ†R€ŽÙªÉäœD™†¯ÚÎÓÆYÔ)P!Û/Âàú¯"žIP÷nµ^êòH®„K¶@99«0¶@5¥›\ÜÅôŒ;…Þü*ûšél|=kô	RúÖXæP07¨ê=ºâ¹Ë„j¶òÝól¬¢D<©ç#½vkv&Xÿ âbŽSíx”(eÂ 1ø¥ aÿ Â&‚$–-OÍq$I2Æ¹E/Ž‡¹©gð¤"D‹ûPnw–0<žK É—ZÒþÖÒá²Hb½Aýœ¤^QXRdã“ÆMG±¥›Ø$I°]ÜÈÌUº8;ONôÁ—Ãë2Ê×m˜l–ð,rI#oÓŽµoíÇÞr> ×ms=µÆy:4ŒF–ˆ¨Pœî#9è+…x¡aB±õ¨a}}ÆfÊi¶ò$–ÊçŒÕthb|1åÙ5:$ºŽHëŠ Y·oáONµ!uTÎåw4æl)$ðiˆé2go³
+ ®·Ä(ÈÉÇ4Tÿ f‹ûƒò¢€.ºÉÉŽM§Ñ—"œNÄÜä`˜â«Ü,ào)¸ çPMi=ÀÄ³³L`~T®—,òO´ñ2/ÈèçQTìôõ‰ÙæÊŸ—#§½_¬NÖSŽ¸9Å *’To réT­P\ffÚTŠ·#G÷dd öbj•œ‚MCìÐ…
+ÌB¨àf—Ôæ›$!Ëg#Þ®O j¸A`{MŠ†/êbpÒ¸dÁÊùùæ£ÚC¹~Ê}ŒÛÈã¹äã“RÏ­Ýß"Çyy,è§!]²«—¾¾š,%»Éƒ’bpä÷s“øU/ôkXNUqógÐŽ¹§F[âãº%¸?èòÿ ¸•WÒOüKÓêUµº{«çóIØTü‡ ®‚ÛÂZ½üKö¾È§•i[ËSørJ%8ÃY;a)|(ÏòdûH\>ÏùçÚ¢ÔeXípØË”è×áÎ½äe¯­d“Ñgaùµ‡{ O£]cV·•%sû¶›æVì·CS°ŸÂÇ*rŽèÈ±’1x›>RÇZ7Ò4vR88ÇçS[•¹¹Kx
+<ÎáAIÀ­k¿k×˜Ö=Òšr©|L#	Kds:1ýÜÇ=H©¥¼X/Är6#t'±É®|­¨!-íG°¸QPÝxZd-.˜³ã¼S#7áÎi*Ôÿ ˜=œÖèçì®¾Òfa¡ÀQíŠ¥¨Œß¨ÿ dT·–Óio$A¦ùãuÃîtQ|.ñmÑŽâKH_r‚7] àŒŽþõNqŽ­“fdZödÏ'™tL—²s†Åv’|-ñ~Õòa1ÛíiŠt
+¼N ´ÖV¯#K¥É©öÔÿ ™Ìä BŒŒ½A«w.ÑÛHè~`8®¤|2ñ0 6¨¹Oñªzo¼C®YÇ{cm¶2–_žeRJ±ß¨4*ÔßP³9«¼³ŸQVg3m@=÷×V¿|Nƒ‹+Qÿ oKPÏðãÅa—c úøB?/oOù(·ÐæeExˆ“ìimÆØù®‚ïÀ"†Îin4ôÅ‘È
+2Nç§Jâmä¹—q7ªƒ9ÝW	Æ¸8µ¹¨×6ë)"/=Gµ,ñˆ3Œô8«ZW€õ­r$žÏNa‚Dó7–­î3ÉúâµŸáWŠbO’âÑ€è«rAýEK­N.ÎHj{#›ŠÒ4ˆÝÃuÞZš0ÊçÞ}H¢Õ|=«è2¦A=±cÃ”sìÃŒÕgÜ£Ü³vÆjÔ“WLN-;4NeWÔ)ÉHÀ'ß4NÝr;VÀðŽ£m!3£˜Ö ¾Òn´õI.£@•R®‘RªÁ»&S§$®Ñ…4a%•nÀþíþ´²[Äì^I6àtÈ¨ì,.õÑi§JW‚–Ú0O&©»jÉI½Ë²ï8çh§Eq¶UÏC[màíP(7BÌ2f¬KKk9Ú6Ç"cr†Èäf¦5#-©Ê;¢Îz“Ðu5VÊçÎó3ýíÃèj+8nnnJÒÎqÄj	ãßÿ ¯ZËá{œ‡Y!·8åC’@E9N1Ý„iÊ["Ü›!Çv8¨íe*O&´äðõÚ§Í¶p='ò8ªb%Êùa<‚¼Š#%-˜¥	GtXžöîæÐZËy;Z…ånÂàtU!XÀ	À©EK9
+£¹£†ëéTI]§T$ä$wÅ7Ì’ ö53ã;{‘ÏµF¶êOV49\zŠD@£Š\ 9éïHê~ñØã4<ÄÄ(¤ò#þår“zù¾^~lnÇµCfÌÐ)×‚EK¦érê:îÌPü (*ÌÌ	Æ0;¤ö C²IàMQÓ¤Ípÿ ÄÄúÔºƒ²G5º+™$:óÍUÒÃÄÒ«£‚@##Š M\fxøþëMÐÀÕ·ûÂ—SÌ³¨Ucµpx©ô«`Ômæb…wç“IìTw;æ4™àTg¦æ?95‡âí*çR²Ó”K,‘´¢@APJíê~µäÂ*R³v=iÉÅ]+›¹ €Fex¶Á5"M@/úm˜¤™b$›Ô©#®2ARh–“Øé0Átá¥\ç8çš³©a´[Õf KÂ=Ëº€ëùS‹p©hŠiN‘›àÝ!†=Jí7ÜH3
+·H××¦»»V,p2MdÄaTaW€aX5Yìt«K;y>Ö]¥*q•\ ¹ú“Y¾lE[\µËBÏEò¤©R¤}qM»‚ë9-/ Ií¥xß¡ÿ èG"¼'Ã×·VzÄ2Z]ý•ÆIc–»GÞÏLWº98ûÊc¨Í:øyP´“Ñ¯tÑäš†ˆþñ½…°v’Ý®b–	«!q×ÜrÓÞ½M®ãõ®gÇ1$‘è×~òF4SìÜ‘ù¨­w—æ58‰:±„˜P‡³”¢i$çnã€¾¤V¢”ñœsÐƒÖ¼ûÆZö¾lZÀÄ|ˆÝ\<¡NKduö­oh÷úŸ,7÷
+æI$hÛ„|sÏ¿·¥g*T¹ùµìTj9TäåÓ¹«ãCâ/ÜË°}¾Î–@ùˆQ–B{‚3Cõ5ÙéroÒí+ÌŸ¼?º+{Ø¬t«ë©ÛCm#±?îœÄà~5ó‡› ÇÎß™­°ôeˆ§ÊÞÇ&Ôç¢>´ž˜?CšPI8 ×ð•Éð±$“çËÔÿ µZž>r<­H?gêûK\®•ªû;õ±fçP¹3€3ê+™ølAðE®:y÷ú9ëÅô½"ËQÐ¥‘ZñîV	$y·Ž7ª ~÷kÝ¼†ð–ŸÇü³íõ®Ú˜OeNÉÞí©]›m“ÀÕv‰éúÔ:þ½¡]é“K$)p›L‘ýåÁ#ò®_‚úiß³V¿\ìÛßo÷»óŸÒ¹ã†RW”­ò-I­ŽÃÄ ÇáÍUŽ,æç#û†¼Çáo‚a¿¶Þ©™n°8ù\¯FÀ<ê	¨|kðÂè7ú­¾­q"@P,™‚à¶}ý+Ôô[Xìt->Ö„†Ú5÷È­\•
+OÙÊ÷e%Ï-Qtäžäš‰Š³²++2ýåV¨Ç|WñÖ…á˜¡±‘¢šþCJ§¨XØœù×†Ú_\Ù]¥Í¬òC:6å‘‚*7ZíŽUy]¤u(b¹µ’ãIaq†G+Ä¼_áÅðþ¨‚ßq³¸`Ð–ä®Êíü«×´Qµ¿Øê. Iqg `n6?k“øƒn²øy¥aóA<n§Ó'iþ¥,5IS­ÈöØë©Î7SFôbúúèr^<bºmŽ	™úöEu×ƒuìÄt.Oë\Ä—L°ÿ ®Ïÿ  Š¬7ñQu¿„qYÏZé¾¨o®{[LGýó\®êî¼¤?\³º):\ÛN ¢‚zŽqŸPkÒ«ð?CÏ¦ýõêvF¼óX°—Uñ¬–PöåÈá ,ÇØ Mz×Zæì‘G‰µé±óˆ ‰O `	ÿ ÐEyøyr¹KÈïÄG™%æIoio§Û‹{4)êOÞsýæ=Ïè)üàžÃ©è)ädë^¯jSßêS#3br‘Çž ~f®”W«"¥EJ:#½ïÅV¿Ó–ú,€ë÷×ØúÖ‚ï%’iìerÑZhþ\d@F+©RN”´b‹XêŽ1Ð‡CI•1ô©õäUÔn"@rX7æ¬¸ÖT¸b~ãZôSº¹æÉYØ˜ü®Ù<“š|LkÄÒ¨*@=Faž?™J¶;t¦!o"’m‚<`œÒ,R®ß4î¦;V¬zsË¢6¤%_€ñl?&N ÝÓ=ÈìªX€}M J:õè¦ŽM ¶g*þÄU»maô{¹!Žbè ‡$cknqÒ£DXÔíGSšÉ¼¹W¸b§*8Ö2He•¤`v,@÷æ£Ú|Íû›q··Ö’CˆçN1ô¨,/ÔXoõ‹×Ž¾â€{+ÀÉ°!-ýêÐ·È¹€ùè¿ÌVVªÇt g<ôJÕ¶½·²§þ„)KfTwGbËÉ¨¤xaÎž·r<ÙUr?ZÖBÇ÷oÿ |šáþ"FRêÁH9ò›øyT¡Ï>SÖ«>Hónn\kZ]¤e¦¿¿Ø‰¼Æ?€ãó5Çë~'—Rž­`HˆO,Ã»óŠÁ ’ &§6W
+¥Ú&
+:“ÅwRÃÆû³‚¦"SVØõëIRêçˆæ9T:ŸcU¼Iá£â=6(â‘cº·fhKýÖR{t^½xå|â6²O±ßÖŠ~I&"{cºÿ *ôÝ;Ë»‡Íµ‘&Œÿ M¸õ¿óªBxzœÈô)ÎŠvg›ø{ÀÚÝ¾³—VÑAå]Ú@ÙR0ví9Î	Á¯Q••¾ê…P¡UAè ÀþU2ÀøÎÓùW7â/éšN‚D»½è°DÙ ÿ ¶Ã öëDªÔÄ4¬T)SÃ§+˜Þ8¿D½Ñ4Õ9–KÄ¹qýÕjþyoÈVÛŸ˜óÞ¼®ë­_ÅV··¾i®£$ÿ À† ‚½]à1Ìn{©ªÄRöq„Lðõ=¤¥"!4i4p´¨&‘K,düÌ£©­;c^wãË™ôýgJž)4P–Sï¼×qáÝF=kMŠòÝH‡AüÜ‡µcRƒ55ÔÒe)¸>‡ñ3_ÔþÒtf„[XH
+œ›‘Ù‰ô?/b;×ž×½x—Âð•hÍl©¶ò,½´„toîŸféìpkÂçµšÞæH&‰£–6(èÃXkÒÁN2¦”U¬yØ¨¸Ôww=ßá'üˆ6ßõÞ_ý
+´üÿ "µÿ ^ãÿ BZÎøIÂoÁÿ _/þ…ZQ—áö´HÇîþ†µçM?¬üÇpñ?ÄÖVº<6ÏÇ¼°åÙ—þ,w>õí¿¯ã¾ðFŸ4Jê¸eÃc9V þ¢¾nŠ#’WØWÐ	”ÿ Â¼°ü²L?ò#W¡ŽmSMw0ÓkzÍ¶ƒ£ÜêW¢Sº‚â5Ër@S\Îñ?FÖÒÊÓS“ËÛ½ŒHç¡ûÕgâx#áÆ¯žéÿ È‹_9–
+ëXái*°ržá'cÖ~"üCÑuMSÑmÓ]<ˆ¡š0*àžsìk¹ðŽ©·áM:ö6´*’ü.£kÌ*ùº8¾L‘É®¯À~8—Â²A*´úlä¢Só!é½=ýGqZb0‰Ó´;Ü¨Ô×SÖ¼wáOøKt²Å"Çuù°3ýÒq‚§Ðßé^Kcð¯Ä—â‹5´‹vydRª=@-íý+ÜôcO×íVãJ»ŠåÉ
+~eú¯QøÕÆû!ü«†ž&­ò[ï5åŒÌ(4èt­&ÞÂÛ>M´kg©¹÷<ŸÆ¸/‰—©k¢CjHó.¦S·¸EäŸÏ‘®ËÅ+Ñü9ýºå$¹vÖ#|}ÑîkÂ|A®Ýø‡U’úï‚ß*"ýØÔtQZahJ¥Ok-êWŒiò.§°\¦ndÇ÷s~2Ðïµ«+H´øD­ŒÌ…À c­v_c’EW¹ ô>•$VRþ­¿\ôêJœîº²¦§VÏ> ñú
+ÿ ßäÿ ë4tÕ ñ&›­a¨h®e$Ý½„!Or t®óÈq‘´Ö±§‹<6œ·ÚÆ1×÷b»>µ:‰Å®ò9ž´“þ®Iv95ÉÛ]¤^5Õ,œ€×PÆcÏwUˆ-øâ»+¨\7(Ãê+Ê|^òÛøÂy#fISËeaÁRy©ÂÃÊ>CÄË–*^glÃœŠäu]I$ö(²$§qMÁJžý{VÖ“âKMR%[™Þóø•¸G>ªz¡­‘	Æq{úÓ‹)(ÖF†´y4˜î&¹Ûö™ÓÊ
+§>ZdÉþñÀÃ>µ´‹’sO0•]Ì6¨êÌpãXš®¹ÂÖöm¹›‡”tÑÆ©)V›bês­^y(¶¸J‡Aêj	nj #æ [™î0>˜ÅzIYXó»¹zW1FX‘ÐS!wlïŸJzÈ“&A£ÒŽéïLEù5§þÇ];ÈŒ P¾`'vnéÓ©5›ž*	.Üí9½LÐ"Æê*2ŠA5Ìâ9¤vq–«aA€2+?~Æ½AÈ­˜ÜJŠëÑ†hQ  ÀÆi]wŒ•KR¸ò‘OÌNãôqK¸èÀ8p 64ØIÉÉ4Ó2‹•ƒ¹MÙ§±¬ÍÑFM;‰âP²¾ÃŠá£iBË1G ±æ«é’4;7RA©nm|ùCp1Í+ »µŠ4Ü‘Œ¯9ïR¼à†ƒÔi.$[»7@0)ò7—63´f˜ŠëmD„g°5RæYl§I-e– å£r§ô«êË*SzV~¢>hþ†•†™<ºŽ£<!.u¹W‰'fÎ©¦§­Y
+%„Ñ…G0ôéBI¶Æ4 öÁõØÞ}Ì¯,Ž™cVœ*.æ8†:¸'b•ÆâÀ–cÇRsORê	V`:œQt0ÃéRmÂdð æ®÷îA),˜öcLÉÉÜÄ±9$œ“š”'.0zTH7d÷Ï4’Hwl‘]Ðpì³Jdy>_1ÊãXâ’@V>‚œ‹“øQddd• a¹ô¥‘¤Xø‘À b)ì#j‚;äÑ4`ÆIíÍ1Ò9RG+Ü$TBHýGåVp	=ª?51ÔãéBI ‘Èy"š69;pH5<û¤úRb8É9_z Š#,ã‘Ñ€ÈebüG5zmwT’0“j·Íãk\¹ÎªDD’1 À§¼*ØÜ:t¤âŸ@»+´@œãž¤úÑ£p}LÅw=…#)*2}3LRtL3ÇÞaNó¦ï4¿÷Ù¨ñ'tÀõÝJçb–ê.UØ|Ï¸#Ì3ºY	Ïq¨žYL¹2>W¡Ür*`9¨˜~ôÑdeò½$‡êæ¡To´1b[#‚Ç&§aµK€f•@e§ ô4$6Þã@ò«xöË´\É=•Êÿ *‹oÎ>”­"E0€N3CI‚vØî[‚GÚä“Ùœ·ó©âåp~osUŒÑ¸?•MÈ4ím„Ý÷'ÈÈf‚3PË˜ÊqÐTÃ§Ò€+Må,¸9W#9žœI>æ›rÞôÌÒ€,¨RpUN}E6âÜ<xä ÿ ¨ÖOCV ö"€)‹9?ç©ü¨«¿…FâÖ+b¡™Ý8Î8¤Šñ¡Â"¨ONMG&ù³œ“ÜÓ1‚	äP›ZÇ+´’üìzz
+™HÀP0:
+l-º% Ô‚…›5Ø¸yH|çh=©×[¤‰£Œõ&¦.•IåŽEuÂ‡ü W´F¶fUù‹ã­t:jG C}q1d$#£8ã=k™yºõ­¡¨ÞO§Ekq&b@¸L1Óž§ƒ@¤´ûA{»(èªp)­+\@ÛTa²¹&¢¾»<ÃKtf^ÞÕ-’µPx9=h;xd·ržÞ”—4î¥†Õµ!ÁÎµ5X:S•#ŠV‚Ž%ÛžG#<SÊã“Uí"ó™‡Ëœ÷©ç˜BœÎ~è€"¹`Á¢ îÆi!}ŠÏ=³EºÌI%Ï'5+m\’8 f€ žÔÜº°mª8<sR“nx#šFE3÷Þqû¾_¿Z ½k£Âþº¼-2Í
+³&Jì!H@êÝy=– Sóã“ŒÕéuK«}&K4›î
+”Ú9ÉŒã=…fÛrë’Oã@˜Ã)SÎzÓR0®àgŒR]åÇÉ8}I
+€§œä÷ K°˜§íN¹LÄNO§ÂO>µÇú†ü? àA<ì£ EZaÛ8¨ü§ÏúÖü… 2•v¨ÈSŠ…-÷HÛ‡ztLVBXä1Á5dð	<@•~PNàxÎ¶4]Û[iRçí
+SY
+…RAêOSÇ
+=ë&"ZrÇ¸ãéWí5K9\[Ïå+O òý‰ Ñn‘âEÎ~¼T›¹3ïQ°…v”e-‘Æüþ•eå 
+Ø}Å[n}¨kfçs¿L°bùËg“Jü)æ€+¥±Œ`?ËéL–Ü¡Þ	lžA«RœFÇÐRãpö Ê—R1Ãjxš,®r¹è{U¿j@½O­ DIVsNx<Â7cÚ›»t¹÷ÅNÝ ?JÒá¼Ô<©¼ï(!oÝ•\rK7
+9þC½Gr±éš•Ý£;0ŠBŠHä€zš[É,®XËœ‚„•ÎG^üv¨î‹Os%Ä§t³9gcÜž¦€$¯ÏåH&.ÅBàzš6…<S‚÷ Ö œA¨¤Lx~†¤vÚÂ•[‘@ˆ¾ÂÃ•—ó,*ñ.Ù0Gb*FÎÜníž”ÁçžÅlÐ1ûÇ½]§Ã¸u¢€y’û“îÒ ‚žMªBñÔŠÑ1©;8Ü9ÛÞˆ¡òß þ” Göe)¹Ÿ<ô«
+rF	ìi¯"Ä…Ü¢£Y–Ef0K‘Ù—úP!$¾·…Ê»Ã®jGQ<8åuàÖT–ò»±p±dçhäÔö‘m “Z ‚XnU¥8
+pr+L\FÃ;‰ü@ÖèÜÍO 1@
+'Œô'îÕx®ÞÌH%ÏáSÆSþñþtõ\ÐŸ\s@ñÁq+ÌÕÃ)ÏÎ0Höh•·„€ª1š”JŽìŠà°ê*É–6Ïq@ŠCä©*Ê  nÏáJ$Þp`u8â¥™7!õ"í@j ªÍ‰÷rr¸À§HþZ–~1Ú¥Xñ3ÊªêO…XÇÔÐ¨ŽcŽy¦¤Áçxºçê(E>J€Hã­Dè )ÜÄ¹äÐ2;ø˜€ã$tÇ¡¢Þ‹isÏ¥Y¶&[Tfä‘“N2GœÔ­pD‚5èwƒú•qåJ‚éÕ®axjÊ3@Â	®]ÁÊqƒŠ–\K@y<þµ"¨Q€03QÈq,Žhb3‘Ï5·_Fÿ ¾6x¡Û}©Z%Ž2{( d-6ð¹<TòÈÀ’*8æXaQ&x=@÷«,B©' ô E%Ìr«?‚	« ‡\ŽEC$¢b¡Î{Õ€ŠWœ¢#(n£Žj[sº!õ¤2¹ôëIî@T‘ê G$“%ÆýÙ *ÃðMebNFáõæ£]Îî° à@N¥áp½JñL·b"
+øV`špFcøqÖ‡Qp2æO´Fè2‹ÁùëSN-Úœ3CF	ÈÆ{Ð(ÃÆÊ{ýáÒ¯7CJ*¾Já\®ÓØP»À#¯=8¨î7¤/ Ó¶°pÅ²;t§2+>¢€Ùd‰—pù”Ò™oæGÉl}ÓíA‰£´ŽÃÐJ(;‰
+²­ŽçQ™eÇ­YŒüµ›9ÏZ  …m§×Ò£òå™É…8«8sQ4;²{Ð¸^åsô¢¡óXöPý3J7÷Í¶Ó3!Þ60 sÍ5G¾b§€Hàýw–ÓEv–3¥ÏÛ2·+çì
+[äè¥E,Î¶Çxbó£–Ôˆ#_’ X‚y'M pòEæ®Í­ž£å=ºÓÂ¿B§¦zžµèê_¶@»Wº¹ˆŒ¸ àVuÓJlnÀ Ä9¾c@}{.ÉØtÆ:Ó´æ/æ1)Æ	jX­Qä2ÉûÆ'ÜÕ‚Êr €h]ËÇròåV"€e¥³À‡9-¹‰,F3ïN[hËyŒÆVê¥º éR…îy4 ÈsƒÁûÇùÒÛ–1ÙÎãüø¨¤d–çÈ.ÙÛ’ã>Õ1+ ¨vŽGJ OÝ#%÷$ÖuõÚJêå‚ÿ èOµZû"I+É0ã9ç°ª#÷—+³…Ï€5`s,üå‡9¤’eŠH‘ºÈHsF€Mm pìP“Žœ98ÇAÖ«øšÖ;Ì°ÄÉe<´ÇO© ÖLòîÛo85«÷•¹ ôÈ¦Go*/âzš Û# ¦C0¸„>0t±n3´?Ó1
+0ª0  ÄPª/AÒ3ò¥‹îj£Ì1òXœv 
+W9k¸ß d~u,Í…Œ©ÁßúT­’UfÙ“‘Ïô RÍ6îŠ’ƒæ)Ç Ó`o8.»>}Ô1ló<ÉvnÛ»'¦{P*r£ÔTS·*ºšÖñ%œ67¶Éo€¼[JŒ†#€yíøõïY³DÔZéÑÉÇL:µ0ýÓýEéƒÐÓäf
+wcoz ­j33‚1³m¶ôr1îi¨èq»¾:Ô!“0î*q“@Ë§Ð÷¦$xÚ¤
+1éUäß+ò 	Æá÷°}Å!îpv¨äãøÒ lÇô®ÇM,|9ä\4Ha+Çn‹÷”ËF'ø²x€9=NÒçK½û,Ñ“ËY–K §jÍ339,Ð2^1ë^£’Åªž8­ÝáB@Ý$ÎSîg P*œr46)d—lÑŒ«ü¿—¥ pÑdÅ÷þù?…
+á¤’>CÆpAà×yq#ýs’ÎídÌ}Ná\‰#Y|G©0È-3{ö 
+H&MëÓ$S–Ò¶pXuõ¤·cù{ËÜT„/˜Ñ¸÷Ç4 ŒßwƒÖšÂ9•#2®3Þ†QŒŽ¢€+˜bU%#±Å1dõàûÕ²B®N09¨%’	xóîÜ š"
+SZtY6çéÅ6+]¹ç®i²FmÀÝH îÔy‚½t/aü!ÍvÖ‹øVY†K0.W$ôí÷{uïX€IúÐ/µîš*îÅ?Â?*(z_j‡C²nÚküCtéT%×u©bU¹»]‹³åò”ò§*zuÏçŠƒ._@Qß<ŸÂ£¸F™v)ÚsÖ€5añ þ\‚áwÇ#È–¿}†ôïšÑ›Ävöþž'¹¹šåí„*ª#ùJæaƒìÈØ$ç“Lž»ÚìŒsÁå¿Â€§I#BARQOÊ}M\ÎáÐþ"«Å.Ý±Dƒ
+8éR³0À
+	=x B¡ÚÅ ÂœŽÞÔ“;$LÈ2ÀqJd…œ€ É¨í®>Ñò»NHÁ f^YHÎsZðÊ&‰d^ýG¡¬ëÈDReyÐåVìch-ñ(
+Å‰Çqõ _Ï„ò”òyoaUìÔ3ƒïROšåÏðqÍ>pà& hÄ—-fžrFÁçÞ™,qó>âÌFY›&¥*ÁÁÏ5Î"dÝÕØ@‰ÇÍ²y¹Ü6zb¤
+ÌMÓÂG
+Sý(/[e£’qØ}imn>Ñoâ0÷¨¯á.Æ~^ßÖgn!9Éa’}h4²,3·E*ƒ4’K#}æÁ¥ÕIòãP~V$ŸÂ¤³‹ÊŒ1à° çÎóc¹ŽÕ`ÃøÒNK¨úšŽVfŒˆ»¼{P"¶™óOeÀ|#ž;TPùª?‰¾cRn@~òäñÖ€*_M/ÛQ¥‘Ü7 »ß=ýÿ Y‘KFÀw¨¯¢ó!Þ6ðïSrÖ2H¨HÏJ°H“Œ{ÔK/˜Œ6œä¯&œNõ)ÁÁæ€®#Qwc°¦[6åÝýãºœˆ™1‘Ô})¶±¼Å<(?)ö E†8üñQ\©1duCšy“i8R}Å*°eèG± b+n@Tõ»g®ê0iéeçb5FŒƒ9SïŠ¡ù@ªò¹àzS·‘ƒš Ö_ê‘¹)r›iâ5þÛÒ«¶·¨ Bˆä‹Zý×9aøšÏ ¹ÛÐÒ³°lmÏ¾h¡Òµý­#jW³Æª±ª¬0©«ØžÞ™ÖÞ º†±y2)Q,¥ÕOP;S0XsÀô¨d¶Ë¬‘œ:ŸÎ€''Š†9—Ž‹ÅJ°û¥G¹¤*°e?Î€Ù— }j'¹Œ¨Ù'Òœÿ 3 Ê09ÎjµRwGò7èhÙb àŽÃ½GçHOú‰1þ4Å‹ì)´úRn4 ‘©ã¡§nÃãëLA°6rsÍ3í![lªcôbrã@Ë4¾PÎ“ËòÏqÛùTY¢PÅ2§#Û½F Í KE&M—öëŸùï'ýôh·'þ[Éÿ }TcOHåÔm’h¥š6•CÇßq‘•_sÐP°>¡vì–ææg
+Y–0X…IÇaQË Ë÷«Ü­´k5žòÚÂÓM¸[këWŠÊMíÕ•däƒ(êqÇ=ê-/Â:÷öjÜhVv†;˜ÓìÅ÷ÜymŸôŒnb7ÔtäPˆ‰Ãn¸>¹§Ëž3<‡>c^·k¥xTÓ­qáë+w»Ò>ÖZ6rP¤ê€žáŽOSXž9ÐtÍ?ÃÚÌövPÃ,^!û4lƒ•‹ÈÝ´{gš óÃw9ë+Ÿ© ]ÎÎ¦j*(O´K¿˜Û½sOûmÉÿ –òßU7Ûn?ç¼Ÿ÷Õòás‰¤ë†¨h 	þÝsÿ =äÿ ¾©q+¸v‘‹/BO"£¢€&kË†3ÈGûÆš.f>käwÍGE Jnç?òÚOûê”^\4˜ÿ z¡¢€${™¤Æù]±Ó&œ/n ÇŸ&?Þ¨h ¼Ò9Ë;êM<^\À™ñéº¡¢€&ûmÇüö“þú¦ä8ùÛƒ‘Í2Š ˜ÞÜAžBûTË€0&÷ª(Qu8$‰_'“Íêe$‰\ß5/ÚçÈ>sät;¨{©ä]¯+‘èMEE J·S ÂÊãèh7S·Þ•Èõ(»œt™Çü
+—í—óÚOûê¡¢€ÓÊÇ-#“îiVâUé#Æ£¢€&ûmÇü÷“þú£í—óÚOûê¡¢€%s3ÿ ßT‚æ`Ùó_?ZŽŠ —ísÿ ÏgüèSçýkþu PÆêr1ç9ühûLÿ óÕÿ :ÓþÑÒ^\É¥’~Yv“Áü1ÏaéNšóIIbÖ;¶Èù?0)Œ`ô»÷ ¯´Ïÿ =Ÿó¤k‰YpÒ¹¨&´ŸQÓÚðËýž¯Í»'p9ùxqÇãš|ºÅ‹SK‚2³´¹OLäpF:Œg&€2RybIG 4†yIÏ˜ÙúÕÝNúÚè"ZÙÇ«3 nlœ€qØ
+Ï 	>Ó0ÿ –¯ùÑQÑ@XÓ¯eÓukÛ|yÖò¬±î”‚3ùTw#¸•î«•@j: ï%ø­¨1¸X´­.ÜLÓ3yq°;¥\;›’zóR‹ú¢]‹„Òô±1‘&‘Ö7I
+nc»žé^E uv~>¾´‚Þ­íTCbÖä1Â4÷uêÞÕÐüAñF—©øPYZßXÝß\j_l”ØÚI`Êå·’KG?áÏ™Ñ@Q@Q@Q@fŒÐEPEPE£4 QE QE QE QE QFhÍ QE QE Qš3@Q@Q@khšÒi8}:Ò÷Îh\ùdg•üÿ JÉ¢€:¨üi<lÞÒ\"àƒß<|ÇßïßGÐT6~*ŠÎÖ8g&¼ŒÄî—,­ƒŽÙQÇN:zótPWŒmšâ1u¢Ø‹A.÷Ž8,3’¹=#Ø1ÇAU`ñDp)¤YHXÈNáÁ/‚N=±¡Ç½sÔP¾µ¯ÿ lE}†ÖØÆÄ†…6’cùVEPE¢€?ÿÙ
+------WebKitFormBoundaryHWpTds0tmuLQWj30--
+
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:37:30 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:37:30 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:37:30 ===
+URI: /robotsapis/api/robots
+ID: null
+RAW:
+
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:37:30 ===
+URI: /robotsapis/api/robots
+ID: null
+RAW:
+
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:37:51 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:38:21 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:38:51 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:39:21 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:42:34 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:43:34 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:44:34 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:45:34 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:46:41 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:46:44 ===
+URI: /robotsapis/api/robots.php/53
+ID: 53
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:46:45 ===
+URI: /robotsapis/api/robots.php/53
+ID: 53
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:46:51 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:47:39 ===
+URI: /robotsapis/api/robots.php
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:47:42 ===
+URI: /robotsapis/api/robots.php
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:47:42 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:47:42 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:47:50 ===
+URI: /robotsapis/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:47:50 ===
+URI: /robotsapis/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:48:12 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:48:41 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:49:11 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:49:41 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:50:11 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:50:14 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:50:14 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:50:15 ===
+URI: /robotsapis/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:50:15 ===
+URI: /robotsapis/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:50:41 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-12-05 14:50:51 ===
+URI: /robotsapis/api/robots
+ID: null
+POST:
+Array
+(
+    [RobotName] => Omega Robot
+    [projectId] => 21
+    [isTrolley] => 0
+    [Sections] => {"main":{"Voltage":"0","Cycles":"0","Status":"stopped","ActiveBtns":[],"Topic_subscribe":"fdfdf","Topic_main":"fdfdfd","mqttUrl":"cdfffgfd","mqttUsername":"fdfdfd","mqttPassword":"123456fdfdfd"}}
+)
+
+FILES:
+Array
+(
+    [Image] => Array
+        (
+            [name] => Robot1 - Copy.jpeg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php6B1E.tmp
+            [error] => 0
+            [size] => 9765
+        )
+
+)
+
+
+=== GET 2025-12-05 14:50:51 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:50:51 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:50:53 ===
+URI: /robotsapis/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:50:53 ===
+URI: /robotsapis/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:51:06 ===
+URI: /robotsapis/api/robots.php/54
+ID: 54
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:51:06 ===
+URI: /robotsapis/api/robots.php/54
+ID: 54
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:51:46 ===
+URI: /robotsapis/api/robots.php
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:51:46 ===
+URI: /robotsapis/api/robots.php
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:51:57 ===
+URI: /robotsapis/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:51:58 ===
+URI: /robotsapis/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:51:58 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:51:59 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:52:04 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:52:04 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:52:05 ===
+URI: /robotsapis/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:52:05 ===
+URI: /robotsapis/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:52:10 ===
+URI: /robotsapis/api/robots.php/54
+ID: 54
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:52:10 ===
+URI: /robotsapis/api/robots.php/54
+ID: 54
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:54:11 ===
+URI: /robotsapis/api/robots.php
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:54:11 ===
+URI: /robotsapis/api/robots.php
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:54:14 ===
+URI: /robotsapis/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:54:14 ===
+URI: /robotsapis/api/users.php
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:54:18 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:54:18 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:54:22 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:54:22 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:54:23 ===
+URI: /robotsapis/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:54:23 ===
+URI: /robotsapis/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:54:29 ===
+URI: /robotsapis/api/robots.php/54
+ID: 54
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:54:29 ===
+URI: /robotsapis/api/robots.php/54
+ID: 54
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:54:48 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== PUT 2025-12-05 14:55:02 ===
+URI: /robotsapis/api/robots.php/54
+ID: 54
+POST:
+Array
+(
+    [RobotName] => Omega Robot Update
+    [isTrolley] => false
+    [_method] => PUT
+    [Sections] => {"main":{"Voltage":"0","Cycles":"0","Status":"stopped","Topic_subscribe":"fdfdf","Topic_main":"fdfdfd","mqttUrl":"cdfffgfd","mqttUsername":"fdfdfd","mqttPassword":"123456fdfdfd"},"car":null}
+)
+
+FILES:
+Array
+(
+    [Image] => Array
+        (
+            [name] => cup.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php3FF5.tmp
+            [error] => 0
+            [size] => 61429
+        )
+
+)
+
+
+=== GET 2025-12-05 14:55:03 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:55:03 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:55:04 ===
+URI: /robotsapis/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:55:04 ===
+URI: /robotsapis/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:55:18 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:55:48 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== POST 2025-12-05 14:55:55 ===
+URI: /robotsapis/api/robots
+ID: null
+POST:
+Array
+(
+    [RobotName] => Omega Trolley
+    [projectId] => 21
+    [isTrolley] => 1
+    [Sections] => {"main":{"Voltage":"0","Cycles":"0","Status":"stopped","ActiveBtns":[],"Topic_subscribe":"fgggf","Topic_main":"gfgfgf","mqttUrl":"vcvcgvg","mqttUsername":"gfggfgf","mqttPassword":"gfgfgf"},"car":{"Voltage":"0","Cycles":"0","Status":"stopped","ActiveBtns":[],"Topic_subscribe":"ggfgf","Topic_main":"gggf","mqttUrl":"fdfff","mqttUsername":"fgfg","mqttPassword":"123456gfgfgf"}}
+)
+
+FILES:
+Array
+(
+    [Image] => Array
+        (
+            [name] => Robot1 - Copy.jpeg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php10C3.tmp
+            [error] => 0
+            [size] => 9765
+        )
+
+)
+
+
+=== GET 2025-12-05 14:55:56 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:55:56 ===
+URI: /robotsapis/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:55:56 ===
+URI: /robotsapis/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:55:56 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:56:03 ===
+URI: /robotsapis/api/robots.php/55
+ID: 55
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:56:03 ===
+URI: /robotsapis/api/robots.php/55
+ID: 55
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:56:18 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== PUT 2025-12-05 14:56:24 ===
+URI: /robotsapis/api/robots.php/55
+ID: 55
+POST:
+Array
+(
+    [RobotName] => Omega Trolley Update
+    [isTrolley] => true
+    [_method] => PUT
+    [Sections] => {"main":{"Voltage":"0","Cycles":"0","Status":"stopped","Topic_subscribe":"fgggf","Topic_main":"gfgfgf","mqttUrl":"vcvcgvg","mqttUsername":"gfggfgf","mqttPassword":"gfgfgf"},"car":{"Voltage":"0","Cycles":"0","Status":"stopped","Topic_subscribe":"ggfgf","Topic_main":"gggf","mqttUrl":"fdfff","mqttUsername":"fgfg","mqttPassword":"123456gfgfgf"}}
+)
+
+FILES:
+Array
+(
+    [Image] => Array
+        (
+            [name] => th.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php825A.tmp
+            [error] => 0
+            [size] => 15420
+        )
+
+)
+
+
+=== GET 2025-12-05 14:56:25 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:56:25 ===
+URI: /robotsapis/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:56:25 ===
+URI: /robotsapis/api/robots
+ID: null
+POST:
+Array
+(
+)
+
+FILES:
+Array
+(
+)
+
+
+=== GET 2025-12-05 14:56:25 ===
+URI: /robotsapis/api/buttons
+ID: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:56:48 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:57:18 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:58:34 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
+=== GET 2025-12-05 14:59:34 ===
+URI: /robotsapis/api/notifications.php
+notificationId: null
+RAW:
+
+Decoded:
+
+
