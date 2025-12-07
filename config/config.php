@@ -1,3 +1,12 @@
+<?php
+// File: config.php
+
+// ---------- Database config ----------
+$DB_HOST = '127.0.0.1';
+$DB_PORT = 3307; 
+$DB_NAME = 'robotswebdb';
+$DB_USER = 'root';
+$DB_PASS = '';
 
 try {
     $pdo = new PDO(
