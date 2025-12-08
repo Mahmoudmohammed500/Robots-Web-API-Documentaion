@@ -1,13 +1,25 @@
 <?php
 // File: config.php
 
-// ---------- Database config ----------
-$DB_HOST = 'nozomi.proxy.rlwy.net';
-$DB_NAME = 'railway';
-$DB_USER = 'root';
-$DB_PASS = 'icRgAivWFhUlJbjNuFfOgqQgcJvIUsgm'; // الباسورد من Railway
-$DB_PORT = 16187;
+// ---------- Database config via ENV ----------
+$dbUrl = getenv('DB_URL'); // اقرأ URL قاعدة البيانات من Environment Variable
 
+if ($dbUrl) {
+    $dbParts = parse_url($dbUrl);
+
+    $DB_HOST = $dbParts['host'];
+    $DB_PORT = $dbParts['port'] ?? 3306;
+    $DB_NAME = ltrim($dbParts['path'], '/');
+    $DB_USER = $dbParts['user'];
+    $DB_PASS = $dbParts['pass'];
+} else {
+    // fallback للـ local dev
+    $DB_HOST = 'localhost';
+    $DB_NAME = 'railway';
+    $DB_USER = 'root';
+    $DB_PASS = '';
+    $DB_PORT = 3306;
+}
 
 try {
     $pdo = new PDO(
@@ -38,18 +50,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 }
 
 // ---------- Encryption key (APP_ENC_KEY) ----------
-// سنستخدم ملف app_secret.key بدل الملفات المخفية لتجنب مشاكل InfinityFree
 $secretFilePath = __DIR__ . '/../app_secret.key';
-
 if (is_readable($secretFilePath)) {
     $APP_ENC_KEY = trim(file_get_contents($secretFilePath));
 } else {
-    // fallback لمفتاح ثابت مؤقت (لـ local dev فقط)
     $APP_ENC_KEY = '282f1b1fe064d7cc3d6bf22b8d2ba6c9ba568fff12873c5dff1db5345f6874c1';
     file_put_contents(__DIR__ . "/debug_log.txt", "WARNING: APP_ENC_KEY fallback used\n", FILE_APPEND);
 }
 
-// التحقق من طول المفتاح (32 bytes بعد التحويل من hex)
 if (strlen($APP_ENC_KEY) !== 64) {
     file_put_contents(__DIR__ . "/debug_log.txt", "ERROR: Invalid APP_ENC_KEY length\n", FILE_APPEND);
     http_response_code(500);
@@ -57,10 +65,8 @@ if (strlen($APP_ENC_KEY) !== 64) {
     exit;
 }
 
-// تعريف الثابت للاستخدام في بقية الكود
 if (!defined('APP_ENC_KEY')) {
     define('APP_ENC_KEY', $APP_ENC_KEY);
 }
 
-// ---------- Debug log ----------
 file_put_contents(__DIR__ . "/debug_log.txt", "APP_ENC_KEY loaded successfully\n", FILE_APPEND);
