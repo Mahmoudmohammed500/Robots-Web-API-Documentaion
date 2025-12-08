@@ -5,30 +5,37 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
 
-    # REST API endpoints
+    # login
     RewriteRule ^login/?$ login.php [QSA,L]
-    RewriteRule ^users/([0-9]+)$ users.php?id=$1 [QSA,L]
+
+    # users
+    RewriteRule ^users/([0-9]+)/?$ users.php?id=$1 [QSA,L]
     RewriteRule ^users/?$ users.php [QSA,L]
 
-    RewriteRule ^projects/([0-9]+)$ projects.php?id=$1 [QSA,L]
+    # projects
+    RewriteRule ^projects/([0-9]+)/?$ projects.php?id=$1 [QSA,L]
     RewriteRule ^projects/?$ projects.php [QSA,L]
 
-    RewriteRule ^robots/([0-9]+)$ robots.php?id=$1 [QSA,L]
+    # robots
+    RewriteRule ^robots/([0-9]+)/?$ robots.php?id=$1 [QSA,L]
     RewriteRule ^robots/?$ robots.php [QSA,L]
 
-    RewriteRule ^buttons/([0-9]+)$ buttons.php?id=$1 [QSA,L]
+    # buttons
+    RewriteRule ^buttons/([0-9]+)/?$ buttons.php?id=$1 [QSA,L]
     RewriteRule ^buttons/?$ buttons.php [QSA,L]
 
-    RewriteRule ^notifications/([0-9]+)$ notifications.php?id=$1 [QSA,L]
+    # notifications
+    RewriteRule ^notifications/([0-9]+)/?$ notifications.php?id=$1 [QSA,L]
     RewriteRule ^notifications/?$ notifications.php [QSA,L]
 
-    RewriteRule ^logs/([0-9]+)$ logs.php?id=$1 [QSA,L]
+    # logs
+    RewriteRule ^logs/([0-9]+)/?$ logs.php?id=$1 [QSA,L]
     RewriteRule ^logs/?$ logs.php [QSA,L]
 
-    # New endpoint: sendEmail
+    # sendEmail
     RewriteRule ^sendEmail/?$ sendEmail.php [QSA,L]
 
-    # Swagger support
+    # swagger
     RewriteRule ^swagger\.json$ swagger.json [QSA,L]
 
 </IfModule>

@@ -59,7 +59,7 @@ try {
     // Fetch user by exact Username match (case-sensitive)
     $stmt = $pdo->prepare(
         "SELECT id, Username, Password, TelephoneNumber, ProjectName
-         FROM Users
+         FROM users
          WHERE BINARY Username = BINARY ?
          LIMIT 1"
     );

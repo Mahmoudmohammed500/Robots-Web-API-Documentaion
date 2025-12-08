@@ -62,7 +62,7 @@ try {
         // ================== GET ==================
         case 'GET':
             if ($id) {
-                $stmt = $pdo->prepare("SELECT * FROM Robots WHERE id = ?");
+                $stmt = $pdo->prepare("SELECT * FROM robots WHERE id = ?");
                 $stmt->execute([$id]);
                 $robot = $stmt->fetch();
                 if ($robot) {
@@ -73,7 +73,7 @@ try {
                     echo json_encode(['message' => 'Robot not found']);
                 }
             } else {
-                $stmt = $pdo->query("SELECT * FROM Robots ORDER BY id DESC");
+                $stmt = $pdo->query("SELECT * FROM robots ORDER BY id DESC");
                 $robots = $stmt->fetchAll();
                 foreach ($robots as &$r) {
                     $r['Sections'] = json_decode($r['Sections'], true);
@@ -108,7 +108,7 @@ try {
             $imageName = handleImageUpload('Image') ?? trim($data['Image'] ?? '');
 
             // Insert
-            $stmt = $pdo->prepare("INSERT INTO Robots (RobotName, Image, projectId, isTrolley, Sections)
+            $stmt = $pdo->prepare("INSERT INTO robots (RobotName, Image, projectId, isTrolley, Sections)
                                    VALUES (?, ?, ?, ?, ?)");
             $stmt->execute([
                 trim($data['RobotName']),
@@ -132,7 +132,7 @@ try {
             }
 
             // Get existing robot
-            $stmt = $pdo->prepare("SELECT * FROM Robots WHERE id = ?");
+            $stmt = $pdo->prepare("SELECT * FROM robots WHERE id = ?");
             $stmt->execute([$id]);
             $existing = $stmt->fetch();
 
@@ -151,7 +151,7 @@ try {
 
             // Update
             $stmt = $pdo->prepare("
-                UPDATE Robots 
+                UPDATE robots 
                 SET 
                     RobotName = ?,
                     Image = ?,
@@ -176,11 +176,11 @@ try {
         // ================== DELETE ==================
         case 'DELETE':
             if ($id) {
-                $stmt = $pdo->prepare("DELETE FROM Robots WHERE id = ?");
+                $stmt = $pdo->prepare("DELETE FROM robots WHERE id = ?");
                 $stmt->execute([$id]);
                 echo json_encode(['message' => 'Robot deleted successfully']);
             } else {
-                $pdo->exec("DELETE FROM Robots");
+                $pdo->exec("DELETE FROM robots");
                 echo json_encode(['message' => 'All robots deleted successfully']);
             }
             break;

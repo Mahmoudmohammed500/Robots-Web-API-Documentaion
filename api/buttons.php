@@ -33,7 +33,7 @@ try {
         // ✅ GET buttons
         case 'GET':
             if ($id) {
-                $stmt = $pdo->prepare("SELECT * FROM Buttons WHERE BtnID = ?");
+                $stmt = $pdo->prepare("SELECT * FROM buttons WHERE BtnID = ?");
                 $stmt->execute([$id]);
                 $button = $stmt->fetch();
 
@@ -44,7 +44,7 @@ try {
                     echo json_encode(['message' => 'Button not found']);
                 }
             } else {
-                $stmt = $pdo->query("SELECT * FROM Buttons ORDER BY BtnID DESC");
+                $stmt = $pdo->query("SELECT * FROM buttons ORDER BY BtnID DESC");
                 $buttons = $stmt->fetchAll();
                 echo json_encode($buttons);
             }
@@ -89,7 +89,7 @@ try {
             }
 
             $projectId = intval($robot['projectId']);
-            $stmt = $pdo->prepare("INSERT INTO Buttons (BtnName, RobotId, Color, Operation, projectId) VALUES (?, ?, ?, ?, ?)");
+            $stmt = $pdo->prepare("INSERT INTO buttons (BtnName, RobotId, Color, Operation, projectId) VALUES (?, ?, ?, ?, ?)");
             $stmt->execute([$btnName, $robotId, $color, $operation, $projectId]);
             $newBtnId = $pdo->lastInsertId();
 
@@ -120,7 +120,7 @@ try {
                 exit;
             }
 
-            $stmt = $pdo->prepare("SELECT * FROM Buttons WHERE BtnID = ?");
+            $stmt = $pdo->prepare("SELECT * FROM buttons WHERE BtnID = ?");
             $stmt->execute([$id]);
             $button = $stmt->fetch();
 
@@ -172,7 +172,7 @@ try {
                 }
             }
 
-            $stmt = $pdo->prepare("UPDATE Buttons SET BtnName = ?, RobotId = ?, Color = ?, Operation = ? WHERE BtnID = ?");
+            $stmt = $pdo->prepare("UPDATE buttons SET BtnName = ?, RobotId = ?, Color = ?, Operation = ? WHERE BtnID = ?");
             $stmt->execute([$btnName, $robotId, $color, $operation, $id]);
 
             $stmt = $pdo->prepare("UPDATE Robots SET Sections = ? WHERE id = ?");
@@ -189,7 +189,7 @@ try {
                 exit;
             }
 
-            $stmt = $pdo->prepare("SELECT * FROM Buttons WHERE BtnID = ?");
+            $stmt = $pdo->prepare("SELECT * FROM buttons WHERE BtnID = ?");
             $stmt->execute([$id]);
             $button = $stmt->fetch();
 
@@ -229,7 +229,7 @@ try {
                 exit;
             }
 
-            $stmt = $pdo->prepare("DELETE FROM Buttons WHERE BtnID = ?");
+            $stmt = $pdo->prepare("DELETE FROM buttons WHERE BtnID = ?");
             $stmt->execute([$id]);
 
             foreach ($sections as &$sec) {

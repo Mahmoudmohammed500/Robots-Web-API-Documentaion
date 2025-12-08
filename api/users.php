@@ -65,7 +65,7 @@ try {
         // ---------- GET ----------
         case 'GET':
             if ($id) {
-                $stmt = $pdo->prepare("SELECT id, Username, Password, TelephoneNumber, Email, ProjectName FROM Users WHERE id = ?");
+                $stmt = $pdo->prepare("SELECT id, Username, Password, TelephoneNumber, Email, ProjectName FROM users WHERE id = ?");
                 $stmt->execute([$id]);
                 $user = $stmt->fetch(PDO::FETCH_ASSOC);
                 if ($user) {
@@ -76,7 +76,7 @@ try {
                     echo json_encode(['message' => 'User not found']);
                 }
             } else {
-                $stmt = $pdo->query("SELECT id, Username, Password, TelephoneNumber, Email, ProjectName FROM Users ORDER BY id DESC");
+                $stmt = $pdo->query("SELECT id, Username, Password, TelephoneNumber, Email, ProjectName FROM users ORDER BY id DESC");
                 $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 foreach ($users as &$u) {
                     $u['Password'] = decrypt_password($u['Password'], $encKey);
@@ -93,7 +93,7 @@ try {
                 exit;
             }
 
-            $stmt = $pdo->prepare("INSERT INTO Users (Username, Password, TelephoneNumber, Email, ProjectName) VALUES (?, ?, ?, ?, ?)");
+            $stmt = $pdo->prepare("INSERT INTO users (Username, Password, TelephoneNumber, Email, ProjectName) VALUES (?, ?, ?, ?, ?)");
             $stmt->execute([
                 trim($data['Username']),
                 encrypt_password($data['Password'], $encKey),
@@ -119,7 +119,7 @@ try {
                 exit;
             }
 
-            $stmt = $pdo->prepare("SELECT id FROM Users WHERE id = ?");
+            $stmt = $pdo->prepare("SELECT id FROM users WHERE id = ?");
             $stmt->execute([$id]);
             if ($stmt->rowCount() === 0) {
                 http_response_code(404);
@@ -127,7 +127,7 @@ try {
                 exit;
             }
 
-            $stmt = $pdo->prepare("UPDATE Users 
+            $stmt = $pdo->prepare("UPDATE users 
                 SET Username = ?, Password = ?, TelephoneNumber = ?, Email = ?, ProjectName = ? 
                 WHERE id = ?");
             $stmt->execute([
@@ -145,7 +145,7 @@ try {
         // ---------- DELETE ----------
         case 'DELETE':
             if ($id) {
-                $stmt = $pdo->prepare("SELECT id FROM Users WHERE id = ?");
+                $stmt = $pdo->prepare("SELECT id FROM users WHERE id = ?");
                 $stmt->execute([$id]);
                 if ($stmt->rowCount() === 0) {
                     http_response_code(404);
@@ -153,11 +153,11 @@ try {
                     exit;
                 }
 
-                $stmt = $pdo->prepare("DELETE FROM Users WHERE id = ?");
+                $stmt = $pdo->prepare("DELETE FROM users WHERE id = ?");
                 $stmt->execute([$id]);
                 echo json_encode(['message' => 'User deleted successfully']);
             } else {
-                $stmt = $pdo->query("DELETE FROM Users");
+                $stmt = $pdo->query("DELETE FROM users");
                 echo json_encode(['message' => 'All users deleted successfully']);
             }
             break;
