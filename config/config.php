@@ -2,7 +2,7 @@
 // File: config.php
 
 // ---------- Database config via ENV ----------
-$dbUrl = getenv('DB_URL'); // اقرأ URL قاعدة البيانات من Environment Variable
+$dbUrl = getenv('MYSQL_URL'); // اقرأ URL قاعدة البيانات من Environment Variable
 
 if ($dbUrl) {
     $dbParts = parse_url($dbUrl);
